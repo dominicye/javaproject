@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.Contact" table="CONTACT" optimistic-lock="version">
+        <comment>Contact information about an individual or group.</comment>
+        <id name="contactId" type="big_decimal">
+            <column name="CONTACT_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="site" class="com.avnet.alapps.model.gsfc.Site" fetch="select">
+            <column name="DEFAULT_SITE_ID" precision="22" scale="0">
+                <comment>An Identifier of the Default Site of a Contact.</comment>
+            </column>
+        </many-to-one>
+        <property name="contactNm" type="string">
+            <column name="CONTACT_NM" length="100">
+                <comment>The Name of a Group to Contact, or the name of an Individual which is not broken into separate First and Last names.</comment>
+            </column>
+        </property>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="defaultEmailAddressTx" type="string">
+            <column name="DEFAULT_EMAIL_ADDRESS_TX">
+                <comment>The Default Email Address of the Contact Person or Group.</comment>
+            </column>
+        </property>
+        <property name="defaultPostalAddressId" type="big_decimal">
+            <column name="DEFAULT_POSTAL_ADDRESS_ID" precision="22" scale="0">
+                <comment>The Identifier of the Default Postal Address of a Contact.</comment>
+            </column>
+        </property>
+        <property name="firstNm" type="string">
+            <column name="FIRST_NM" length="60">
+                <comment>A First Name of a Person to Contact.</comment>
+            </column>
+        </property>
+        <property name="lastNm" type="string">
+            <column name="LAST_NM" length="60">
+                <comment>A Last Name of a Person to Contact.</comment>
+            </column>
+        </property>
+        <property name="mobilePhoneNo" type="string">
+            <column name="MOBILE_PHONE_NO" length="30">
+                <comment>The Mobile Phone Number of a Contact.</comment>
+            </column>
+        </property>
+        <property name="languageId" type="big_decimal">
+            <column name="LANGUAGE_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Preferred Language of a Contact.</comment>
+            </column>
+        </property>
+        <property name="preferredLanguageId" type="big_decimal">
+            <column name="PREFERRED_LANGUAGE_ID" precision="22" scale="0">
+                <comment>An Identifier of the Preferred Language of a Contact.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="workFaxNo" type="string">
+            <column name="WORK_FAX_NO" length="30">
+                <comment>The Work Fax Number of the Contact Person or Group.</comment>
+            </column>
+        </property>
+        <property name="workPhoneNo" type="string">
+            <column name="WORK_PHONE_NO" length="30">
+                <comment>The Work Phone Number of a Contact.</comment>
+            </column>
+        </property>
+        <property name="titleTx" type="string">
+            <column name="TITLE_TX" length="50">
+                <comment>A Title of a Contact.</comment>
+            </column>
+        </property>
+        <property name="federalExpressAccountNo" type="string">
+            <column name="FEDERAL_EXPRESS_ACCOUNT_NO" length="50" />
+        </property>
+        <set name="userContacts" table="USER_CONTACT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTACT_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Contact.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserContact" />
+        </set>
+        <set name="contactGroupMembers" table="CONTACT_GROUP_MEMBER" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTACT_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Contact.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.ContactGroupMember" />
+        </set>
+        <set name="userses" table="USERS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTACT_ID" precision="22" scale="0" not-null="true">
+                    <comment>An Identifier of a Contact which contains the Contact information for a User.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.Users" />
+        </set>
+    </class>
+</hibernate-mapping>

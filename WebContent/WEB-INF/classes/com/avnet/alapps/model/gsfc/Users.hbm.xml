@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.Users" table="USERS" optimistic-lock="version">
+        <comment>A User of one or more Avnet Programming Center Applications. This User may be an individual, group, or application/system.</comment>
+        <id name="userId" type="big_decimal">
+            <column name="USER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="contact" class="com.avnet.alapps.model.gsfc.Contact" fetch="join" lazy="false">
+            <column name="CONTACT_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of a Contact which contains the Contact information for a User.</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="userRole" class="com.avnet.alapps.model.gsfc.UserRole" fetch="select">
+            <column name="PRIMARY_USER_ROLE_ID" precision="22" scale="0">
+                <comment>An Identifier of the Primary User Role assigned to a User.</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="users" class="com.avnet.alapps.model.gsfc.Users" fetch="select">
+            <column name="SUPERVISOR_USER_ID" precision="22" scale="0" />
+        </many-to-one>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a User is Active.</comment>
+            </column>
+        </property>
+        <property name="avnetGlobalUserId" type="string">
+            <column name="AVNET_GLOBAL_USER_ID" unique="true">
+                <comment>A Global Identifier of a User assigned by Avnet Identity Services.</comment>
+            </column>
+        </property>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="internalUserFl" type="string">
+            <column name="INTERNAL_USER_FL" length="1">
+                <comment>A Y/N Flag identifying whether a User is an Internal User of the Avnet Programming Center Application(s). An Internal User is any user that is logged into
+                an Avnet Programming Center Application using their Login Name and Password. An External User is any user that is accessing functionality within an Avnet
+                Programming Center Application without logging direct into an Avnet Programming Center Application using their Login Name and Password. For example, an External
+                User can be a customer requesting a First Article or Order status as well as a Avnet Sales Person requesting First Article or Order Status via a Web
+                interface.</comment>
+            </column>
+        </property>
+        <property name="lastLoginDt" type="date">
+            <column name="LAST_LOGIN_DT" length="7">
+                <comment>The Last Date and Time a User logged into a Programming Center application/system.</comment>
+            </column>
+        </property>
+        <property name="loginNm" type="string">
+            <column name="LOGIN_NM" length="80">
+                <comment>A Name a User uses to Log Into the Programming Center application system(s). This Name is stored in the Preferred Language of the User.</comment>
+            </column>
+        </property>
+        <property name="passwordTx" type="string">
+            <column name="PASSWORD_TX" length="50">
+                <comment>Text containing a User Password which has been encrypted by the application system. This Password is stored in the Preferred Language of the User, which
+                is stored with their Contact information.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="selfInspectionQt" type="big_decimal">
+            <column name="SELF_INSPECTION_QT" precision="22" scale="0">
+                <comment>The Number of times a User has Self Inspected a Job, since one of their Jobs was formally inspected.</comment>
+            </column>
+        </property>
+        <set name="userses" table="USERS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="SUPERVISOR_USER_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.Users" />
+        </set>
+        <set name="userContacts" table="USER_CONTACT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a User.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserContact" />
+        </set>
+        <set name="userOperations" table="USER_OPERATION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a User.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserOperation" />
+        </set>
+    </class>
+</hibernate-mapping>

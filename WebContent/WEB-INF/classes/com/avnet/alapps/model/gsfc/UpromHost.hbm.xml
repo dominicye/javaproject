@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.UpromHost" table="UPROM_HOST" optimistic-lock="version">
+        <comment>A Host Server of Customer Prom File information.</comment>
+        <id name="upromHostId" type="big_decimal">
+            <column name="UPROM_HOST_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="hostCd" type="string">
+            <column name="HOST_CD" length="5">
+                <comment>A Code identifying a UProm Host.</comment>
+            </column>
+        </property>
+        <property name="hostDs" type="string">
+            <column name="HOST_DS" length="100" not-null="true">
+                <comment>A Description of a UProm Host.</comment>
+            </column>
+        </property>
+        <property name="hostNm" type="string">
+            <column name="HOST_NM" length="30" not-null="true">
+                <comment>A Name of a UProm Host.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a Host is Active.</comment>
+            </column>
+        </property>
+        <property name="masterFl" type="string">
+            <column name="MASTER_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a Host is the VProm Master.</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

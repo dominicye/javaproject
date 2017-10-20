@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 4:46:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstTestResultCode" table="AST_TEST_RESULT_CODE" optimistic-lock="version">
+        <id name="testResultCodeId" type="big_decimal">
+            <column name="TEST_RESULT_CODE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="codeNm" type="string">
+            <column name="CODE_NM" length="20" not-null="true" />
+        </property>
+        <property name="codeDs" type="string">
+            <column name="CODE_DS" length="100" not-null="true" />
+        </property>
+        <set name="astTestResults" table="AST_TEST_RESULT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="TEST_RESULT_CODE_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstTestResult" />
+        </set>
+        <set name="astTestResultItems" table="AST_TEST_RESULT_ITEM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="TEST_RESULT_CODE_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstTestResultItem" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="NutanixCustomerPackingSlip" language="groovy" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="10" bottomMargin="5" uuid="d55d9bf5-20a1-419c-a0a3-9565a6629983">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\ALApps_Repo\\alapps\\src\\com\\avnet\\alapps\\report\\jrxml\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="REPORT_IMAGE_PATH" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:/ALApps_Repo/alapps/WebContent/WEB-INF/resources/images/"]]></defaultValueExpression>
+	</parameter>
+	<field name="nutanixOrderNumber" class="java.lang.String"/>
+	<field name="shippingCarrier" class="java.lang.String"/>
+	<field name="customerOrderNumber" class="java.lang.String"/>
+	<field name="shipToContactName" class="java.lang.String"/>
+	<field name="shipToContactPhone" class="java.lang.String"/>
+	<field name="shipToName" class="java.lang.String"/>
+	<field name="shipToAttention" class="java.lang.String"/>
+	<field name="shipToAddress1" class="java.lang.String"/>
+	<field name="shipToAddress2" class="java.lang.String"/>
+	<field name="shipToAddress3" class="java.lang.String"/>
+	<field name="shipToCity" class="java.lang.String"/>
+	<field name="shipToState" class="java.lang.String"/>
+	<field name="shipToZip" class="java.lang.String"/>
+	<field name="shipToCountry" class="java.lang.String"/>
+	<field name="nutanixCustomerPackingSlipLines" class="java.util.List"/>
+	<title>
+		<band height="308">
+			<image isUsingCache="false">
+				<reportElement uuid="8e56bb92-0d16-40db-b5e1-e571c8c96e3c" x="15" y="20" width="261" height="38"/>
+				<imageExpression><![CDATA[$P{REPORT_IMAGE_PATH} + "nutanix-logo-color.gif"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="66" width="191" height="22"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nutanix, Inc.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="88" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1740 Technology Drive]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="105" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Suite 400]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="122" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[San Jose, CA 95110]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="139" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[USA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="192" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ship From]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="226" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6700 West Morelos Place]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="209" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nutanix Fulfillment Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="260" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[USA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="15" y="243" width="191" height="17"/>
+				<textElement>
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Chandler, AZ 85226]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="334" y="19" width="102" height="22"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Packing Slip ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="334" y="41" width="32" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField pattern="MM/dd/yyyy">
+				<reportElement uuid="5db502a5-1333-4390-b93c-5a7c9378665c" x="366" y="41" width="230" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="334" y="88" width="105" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer PO # ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eb4d88-8d26-473c-a23d-b3a8e1a8ccb6" x="334" y="105" width="262" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ship To Contact]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="13d4450f-3c53-4a88-a91e-0cbc73603fe3" x="436" y="19" width="160" height="22"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nutanixOrderNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="160b3745-8111-46be-b1da-800920d34095" x="439" y="88" width="157" height="17"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerOrderNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="64e82bfd-d3e2-4bbe-b1e9-7ef635c09fdc" x="334" y="122" width="262" height="17"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shipToContactName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="0b984618-793d-4131-b19b-edb01f11f95c" x="334" y="139" width="262" height="17"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shipToContactPhone}]]></textFieldExpression>
+			</textField>
+			<subreport isUsingCache="false">
+				<reportElement uuid="c6cea47f-d5d5-40e8-9c34-7e6419ed2daa" x="334" y="173" width="248" height="119">
+					<printWhenExpression><![CDATA[$F{nutanixCustomerPackingSlipLines} != null && $F{nutanixCustomerPackingSlipLines}.size() > 0]]></printWhenExpression>
+				</reportElement>
+				<subreportParameter name="shipToAddress1">
+					<subreportParameterExpression><![CDATA[$F{shipToAddress1}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToName">
+					<subreportParameterExpression><![CDATA[$F{shipToName}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToAddress2">
+					<subreportParameterExpression><![CDATA[$F{shipToAddress2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToAddress3">
+					<subreportParameterExpression><![CDATA[$F{shipToAddress3}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToState">
+					<subreportParameterExpression><![CDATA[$F{shipToState}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToAttention">
+					<subreportParameterExpression><![CDATA[$F{shipToAttention}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToCity">
+					<subreportParameterExpression><![CDATA[$F{shipToCity}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_IMAGE_PATH">
+					<subreportParameterExpression><![CDATA[$P{REPORT_IMAGE_PATH}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToZip">
+					<subreportParameterExpression><![CDATA[$F{shipToZip}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="shipToCountry">
+					<subreportParameterExpression><![CDATA[$F{shipToCountry}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{nutanixCustomerPackingSlipLines}.subList(0, 1))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[($P{SUBREPORT_DIR} != null) ? $P{SUBREPORT_DIR} + "NutanixPackingSlip_ShipTo.jasper" : "NutanixPackingSlip_ShipTo.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<detail>
+		<band height="50">
+			<subreport isUsingCache="false">
+				<reportElement uuid="4609bcae-1275-4cf4-89cd-4b74b1d45f10" x="15" y="0" width="581" height="44"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{nutanixCustomerPackingSlipLines})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[($P{SUBREPORT_DIR} != null) ? $P{SUBREPORT_DIR} + "NutanixCustomerPackingSlip_PartList.jasper" : "NutanixCustomerPackingSlip_PartList.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25">
+			<textField>
+				<reportElement uuid="977d68b5-8fe7-4fe3-81cf-271c35ffe934" x="480" y="5" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="b8e91816-0eb6-4ba0-8bea-d6c6f5c49bca" x="560" y="5" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

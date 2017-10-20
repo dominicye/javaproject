@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>alapps</display-name>
+	
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>alapps.root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/applicationContext.xml
+			/WEB-INF/applicationContext-security.xml
+		</param-value>
+	</context-param>
+	<!-- ATTEMPTING XML CONFIG UNTIL WE CAN REPRESENT WITH JAVA CONFIG (WebSphere update required)
+		/WEB-INF/applicationContext-security.xml
+-->	
+
+	<!-- Enable "CORS" -->
+	<filter>
+	  <filter-name>cors</filter-name>
+	  <filter-class>com.avnet.alapps.spring.CORSFilter</filter-class>
+	</filter>
+	<filter-mapping>
+	  <filter-name>cors</filter-name>
+	  <url-pattern>/*</url-pattern>
+	</filter-mapping>
+ 
+	<filter>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSecurityFilterChain</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	
+ 
+	<listener>
+		<listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+	</listener>
+
+	<listener>
+    	<listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+  	</listener>
+  	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<service-ref>
+		<description>
+		WSDL Service getEvolveSalesOrderDetailVS</description>
+		<service-ref-name>service/getEvolveSalesOrderDetailVS</service-ref-name>
+		<service-interface>com.avnet.alapps.webservice.evolvesalesorderdetail.GetEvolveSalesOrderDetailVS</service-interface>
+		<wsdl-file>WEB-INF/wsdl/getEvolveSalesOrderDetailVS.wsdl</wsdl-file>
+		<jaxrpc-mapping-file>WEB-INF/getEvolveSalesOrderDetailVS_mapping.xml</jaxrpc-mapping-file>
+		<service-qname xmlns:pfx="urn:sap-com:document:sap:soap:functions:mc-style">
+		pfx:getEvolveSalesOrderDetailVS</service-qname>
+		<port-component-ref>
+			<service-endpoint-interface>com.avnet.alapps.webservice.evolvesalesorderdetail.ZWS_QTC_SALESORDER_GETDETAIL</service-endpoint-interface>
+		</port-component-ref>
+	</service-ref>
+	
+	<resource-ref>
+		<res-ref-name>jdbc/GSFC</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	
+	<resource-ref>
+		<res-ref-name>jdbc/GSFC_Report</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	
+	<resource-ref>
+		<res-ref-name>jdbc/ALAPPS</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	
+	<resource-ref>
+		<res-ref-name>jdbc/dbconnect</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+	
+	<resource-ref>
+		<description>CommonJ work manager</description>
+	    <res-ref-name>wm/default</res-ref-name>
+	    <res-type>commonj.work.WorkManager</res-type>
+	    <res-auth>Container</res-auth>
+	    <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    
+    <resource-ref>
+		<description>CommonJ time manager</description >
+		<res-ref-name>tm/default</res-ref-name >
+		<res-type>commonj.timers.TimerManager</res-type >
+		<res-auth>Container</res-auth >
+		<res-sharing-scope>Unshareable</res-sharing-scope >
+	</resource-ref>
+
+	<servlet>
+	    <servlet-name>alappsSpringMvc</servlet-name>
+	    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	    <init-param>
+	      <param-name>contextClass</param-name>
+	      <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+	    </init-param>
+	    <init-param>
+	      <param-name>contextConfigLocation</param-name>
+	      <param-value>
+	      	com.avnet.alapps.spring.WebConfig 
+	      	com.avnet.alapps.spring.GSFCHibernateConfig
+	      	com.avnet.alapps.spring.GSFCReportHibernateConfig
+	      	com.avnet.alapps.spring.ALAPPSHibernateConfig
+	      	com.avnet.alapps.spring.DBCONNECTHibernateConfig
+	      	com.avnet.alapps.spring.MailConfig
+	      </param-value>
+	      <!-- com.avnet.alapps.spring.SecurityConfig  -->
+	      <!-- com.avnet.alapps.spring.ScheduledJobConfig  -->
+	    </init-param>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alappsSpringMvc</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+  
+  <security-constraint>
+		<display-name>Secure</display-name>
+		<web-resource-collection>
+			<web-resource-name>Secure</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>AlAppsAuthRole</description>
+			<role-name>AlAppsAuthRole</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<security-role>
+		<role-name>AlAppsAuthRole</role-name>
+	</security-role>
+  <!--  
+  <security-constraint>
+		<display-name>Everyone</display-name>
+		<web-resource-collection>
+			<web-resource-name>Everyone</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>Everyone</description>
+			<role-name>Everyone</role-name></auth-constraint>
+	</security-constraint>
+	<security-role>
+		<role-name>Everyone</role-name>
+	</security-role>
+	-->
+	<security-constraint>
+		<display-name>Everyone</display-name>
+		<web-resource-collection>
+			<web-resource-name>resources</web-resource-name>
+			<url-pattern>/resources/*</url-pattern>
+		</web-resource-collection>
+		<web-resource-collection>
+			<web-resource-name>systest_services</web-resource-name>
+			<url-pattern>/systest/services/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>Everyone</role-name>
+		</auth-constraint>
+	</security-constraint>
+</web-app>

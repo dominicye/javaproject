@@ -1,0 +1,130 @@
+{
+  "chassisAttrs": [
+    {
+      "nutanixSerialNum": "16AP99990708",
+      "chassisSerialNum": "C2170AE46NA00401"
+    }
+  ],
+  "chassisParts": [
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "BOTTOM"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K02P-1R",
+      "serialNum": "P2K04CF48NB0356"
+    },
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "TOP"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K02P-1R",
+      "serialNum": "P2K04CF48NB0355"
+    }
+  ],
+  "nodeData": [
+    {
+      "nodeAttrs": [
+        {
+          "attrNm": "location",
+          "attrDs": "Location",
+          "dataSourceNm": "USER",
+          "dataTypeNm": "STRING",
+          "valueTx": "D"
+        }
+      ],
+      "nodeParts": [
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR4",
+          "serialNum": "1E5552D1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA2"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR4",
+          "serialNum": "1E5557B1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMB1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR4",
+          "serialNum": "1E5557A1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMB2"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR4",
+          "serialNum": "1E5552A1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A3"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "9XG9MEHD1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A1"
+          },
+          "compTypeNm": "Solid State Drive",
+          "serialNum": "BTHC545605T21200MGN1"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A2"
+          },
+          "compTypeNm": "Solid State Drive",
+          "serialNum": "BTHC545605TG1200MGN1"
+        }
+      ]
+    }
+  ]
+}

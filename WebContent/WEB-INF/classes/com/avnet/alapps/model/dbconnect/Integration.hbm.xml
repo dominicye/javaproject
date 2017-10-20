@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 4:31:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.Integration" table="INTEGRATION" optimistic-lock="version">
+        <composite-id name="id" class="com.avnet.alapps.model.dbconnect.IntegrationId">
+            <key-property name="itsInvoiceNo" type="string">
+                <column name="ITS_INVOICE_NO" length="35" />
+            </key-property>
+            <key-property name="itsScn" type="string">
+                <column name="ITS_SCN" length="13" />
+            </key-property>
+            <key-property name="sourceErpId" type="int">
+                <column name="SOURCE_ERP_ID" precision="5" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="itsTeamId" type="int">
+            <column name="ITS_TEAM_ID" precision="8" scale="0" not-null="true" />
+        </property>
+        <property name="itsQty" type="int">
+            <column name="ITS_QTY" precision="8" scale="0" not-null="true" />
+        </property>
+        <property name="itsAmsNum" type="string">
+            <column name="ITS_AMS_NUM" length="50" not-null="true" />
+        </property>
+        <property name="itsCreateDate" type="date">
+            <column name="ITS_CREATE_DATE" length="7" />
+        </property>
+        <property name="itsUlSnTrackingFlg" type="string">
+            <column name="ITS_UL_SN_TRACKING_FLG" length="1" />
+        </property>
+        <property name="itsCustno" type="string">
+            <column name="ITS_CUSTNO" length="14" />
+        </property>
+        <property name="itsNotes" type="string">
+            <column name="ITS_NOTES" length="800" />
+        </property>
+        <property name="itsShiptoName" type="string">
+            <column name="ITS_SHIPTO_NAME" length="60" />
+        </property>
+        <property name="itsShiptoDate" type="date">
+            <column name="ITS_SHIPTO_DATE" length="7" />
+        </property>
+        <property name="itsShiptoAddr1" type="string">
+            <column name="ITS_SHIPTO_ADDR1" length="60" />
+        </property>
+        <property name="itsShiptoAddr2" type="string">
+            <column name="ITS_SHIPTO_ADDR2" length="60" />
+        </property>
+        <property name="itsShiptoCity" type="string">
+            <column name="ITS_SHIPTO_CITY" length="40" />
+        </property>
+        <property name="itsShiptoState" type="string">
+            <column name="ITS_SHIPTO_STATE" length="16" />
+        </property>
+        <property name="itsShiptoCountry" type="string">
+            <column name="ITS_SHIPTO_COUNTRY" length="4" />
+        </property>
+        <property name="itsShiptoZip" type="string">
+            <column name="ITS_SHIPTO_ZIP" length="10" />
+        </property>
+        <property name="itsPromiseDate" type="date">
+            <column name="ITS_PROMISE_DATE" length="7" />
+        </property>
+        <property name="itsCompanyname" type="string">
+            <column name="ITS_COMPANYNAME" length="55" />
+        </property>
+        <property name="itsPlannedShipDate" type="date">
+            <column name="ITS_PLANNED_SHIP_DATE" length="7" />
+        </property>
+        <property name="itsAvailableToProdDate" type="date">
+            <column name="ITS_AVAILABLE_TO_PROD_DATE" length="7" />
+        </property>
+        <property name="itsUpdateDate" type="date">
+            <column name="ITS_UPDATE_DATE" length="7" />
+        </property>
+        <property name="itsUpdateUser" type="string">
+            <column name="ITS_UPDATE_USER" length="17" />
+        </property>
+        <property name="itsRequiredDate" type="date">
+            <column name="ITS_REQUIRED_DATE" length="7" />
+        </property>
+        <property name="itsCustShipviaCode" type="string">
+            <column name="ITS_CUST_SHIPVIA_CODE" length="3" />
+        </property>
+        <property name="itsWaybillno" type="string">
+            <column name="ITS_WAYBILLNO" length="20" />
+        </property>
+        <property name="itsCustpono" type="string">
+            <column name="ITS_CUSTPONO" length="35" />
+        </property>
+        <property name="itsIbmOrder" type="string">
+            <column name="ITS_IBM_ORDER" length="1" />
+        </property>
+        <property name="itsEnterprise" type="string">
+            <column name="ITS_ENTERPRISE" length="1" />
+        </property>
+        <property name="soaNo" type="string">
+            <column name="SOA_NO" length="30" />
+        </property>
+        <property name="integrationBranchNo" type="string">
+            <column name="INTEGRATION_BRANCH_NO" length="4" />
+        </property>
+        <property name="originallySetPromiseDt" type="date">
+            <column name="ORIGINALLY_SET_PROMISE_DT" length="7" />
+        </property>
+        <property name="originallySetPlannedShipDt" type="date">
+            <column name="ORIGINALLY_SET_PLANNED_SHIP_DT" length="7" />
+        </property>
+        <property name="originallySetAtpDt" type="date">
+            <column name="ORIGINALLY_SET_ATP_DT" length="7" />
+        </property>
+        <property name="originallySetRequiredDt" type="date">
+            <column name="ORIGINALLY_SET_REQUIRED_DT" length="7" />
+        </property>
+        <property name="drawingTx" type="string">
+            <column name="DRAWING_TX" length="25" />
+        </property>
+        <property name="amsCustno" type="string">
+            <column name="AMS_CUSTNO" length="14" />
+        </property>
+        <property name="itsCurrentStatusTypeId" type="java.lang.Integer">
+            <column name="ITS_CURRENT_STATUS_TYPE_ID" precision="8" scale="0" />
+        </property>
+        <property name="itsCurrentStatusDt" type="date">
+            <column name="ITS_CURRENT_STATUS_DT" length="7" />
+        </property>
+        <property name="itsOrderValueAm" type="big_decimal">
+            <column name="ITS_ORDER_VALUE_AM" precision="10" />
+        </property>
+        <property name="itsTotalCostAm" type="big_decimal">
+            <column name="ITS_TOTAL_COST_AM" precision="10" />
+        </property>
+        <property name="itsTotalResaleAm" type="big_decimal">
+            <column name="ITS_TOTAL_RESALE_AM" precision="10" />
+        </property>
+        <property name="itsBookDate" type="date">
+            <column name="ITS_BOOK_DATE" length="7" />
+        </property>
+        <property name="fgiOrderFl" type="string">
+            <column name="FGI_ORDER_FL" length="1" />
+        </property>
+        <property name="osiFl" type="string">
+            <column name="OSI_FL" length="1" />
+        </property>
+        <property name="latestOsiPrintDt" type="date">
+            <column name="LATEST_OSI_PRINT_DT" length="7" />
+        </property>
+        <property name="projectActivityId" type="java.lang.Short">
+            <column name="PROJECT_ACTIVITY_ID" precision="3" scale="0" />
+        </property>
+        <property name="approvingEngineerId" type="string">
+            <column name="APPROVING_ENGINEER_ID" length="17" />
+        </property>
+        <property name="approvalDt" type="date">
+            <column name="APPROVAL_DT" length="7" />
+        </property>
+        <property name="scn" type="string">
+            <column name="SCN" length="13" not-null="true" />
+        </property>
+        <property name="totalIntegrationCycleMins" type="java.lang.Integer">
+            <column name="TOTAL_INTEGRATION_CYCLE_MINS" precision="8" scale="0" />
+        </property>
+        <property name="invoiceNo" type="string">
+            <column name="INVOICE_NO" length="14" not-null="true" />
+        </property>
+        <property name="shipmentScheduledFl" type="string">
+            <column name="SHIPMENT_SCHEDULED_FL" length="1" not-null="true" />
+        </property>
+        <property name="projectId" type="big_decimal">
+            <column name="PROJECT_ID" precision="22" scale="0" />
+        </property>
+        <property name="elapsedCycleTimeDaysQt" type="big_decimal">
+            <column name="ELAPSED_CYCLE_TIME_DAYS_QT" precision="22" scale="0" />
+        </property>
+        <property name="elapsedCycleTimeMinutesQt" type="big_decimal">
+            <column name="ELAPSED_CYCLE_TIME_MINUTES_QT" precision="22" scale="0" />
+        </property>
+        <property name="totalCycleTimeDaysQt" type="big_decimal">
+            <column name="TOTAL_CYCLE_TIME_DAYS_QT" precision="22" scale="0" />
+        </property>
+        <property name="totalCycleTimeMinutesQt" type="big_decimal">
+            <column name="TOTAL_CYCLE_TIME_MINUTES_QT" precision="22" scale="0" />
+        </property>
+        <property name="insertDate" type="date">
+            <column name="INSERT_DATE" length="7" />
+        </property>
+        <property name="insertUser" type="string">
+            <column name="INSERT_USER" length="17" not-null="true" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="UPDATE_DATE" length="7" />
+        </property>
+        <property name="updateUser" type="string">
+            <column name="UPDATE_USER" length="17" />
+        </property>
+        <property name="specialIntegrationFl" type="string">
+            <column name="SPECIAL_INTEGRATION_FL" length="1" not-null="true" />
+        </property>
+        <property name="itsBilltoNm" type="string">
+            <column name="ITS_BILLTO_NM" length="60" />
+        </property>
+        <property name="firstFillDt" type="date">
+            <column name="FIRST_FILL_DT" length="7" />
+        </property>
+        <property name="lastFillDt" type="date">
+            <column name="LAST_FILL_DT" length="7" />
+        </property>
+        <property name="partVerificationRequiredFl" type="string">
+            <column name="PART_VERIFICATION_REQUIRED_FL" length="1" not-null="true" />
+        </property>
+        <property name="systemType" type="string">
+            <column name="SYSTEM_TYPE" length="15" />
+        </property>
+        <property name="sapMaterialNo" type="string">
+            <column name="SAP_MATERIAL_NO" length="18" />
+        </property>
+        <property name="billToCustNo" type="string">
+            <column name="BILL_TO_CUST_NO" length="14" />
+        </property>
+        <property name="endUserCustomerNo" type="string">
+            <column name="END_USER_CUSTOMER_NO" length="14" />
+        </property>
+        <property name="sapStatusTx" type="string">
+            <column name="SAP_STATUS_TX" length="100" />
+        </property>
+        <property name="endUserCustomerNm" type="string">
+            <column name="END_USER_CUSTOMER_NM" length="60" />
+        </property>
+        <property name="previousIcn" type="string">
+            <column name="PREVIOUS_ICN" length="35" />
+        </property>
+        <property name="splitIcnFl" type="string">
+            <column name="SPLIT_ICN_FL" length="1" />
+        </property>
+        <property name="salesOrderLineItemNo" type="big_decimal">
+            <column name="SALES_ORDER_LINE_ITEM_NO" precision="22" scale="0" />
+        </property>
+        <property name="carrierNm" type="string">
+            <column name="CARRIER_NM" length="100" />
+        </property>
+        <property name="integrationCostAm" type="big_decimal">
+            <column name="INTEGRATION_COST_AM" precision="10" />
+        </property>
+        <property name="rmaFl" type="java.lang.Character">
+            <column name="RMA_FL" length="1" />
+        </property>
+        <property name="sourceInspectionUserid" type="string">
+            <column name="SOURCE_INSPECTION_USERID" length="17" />
+        </property>
+        <property name="sourceInspectionDt" type="date">
+            <column name="SOURCE_INSPECTION_DT" length="7" />
+        </property>
+        <property name="dataCaptureRequiredFl" type="string">
+            <column name="DATA_CAPTURE_REQUIRED_FL" length="1">
+                <comment>A Y/N Flag identifying whether Data Capture is Required.</comment>
+            </column>
+        </property>
+        <property name="profitCenterCd" type="string">
+            <column name="PROFIT_CENTER_CD" length="6" />
+        </property>
+        <property name="serviceLevelExpectDayQt" type="big_decimal">
+            <column name="SERVICE_LEVEL_EXPECT_DAY_QT" precision="22" scale="0" />
+        </property>
+        <property name="availableToReleaseDt" type="date">
+            <column name="AVAILABLE_TO_RELEASE_DT" length="7" />
+        </property>
+        <property name="customerAbiDt" type="date">
+            <column name="CUSTOMER_ABI_DT" length="7" />
+        </property>
+        <property name="customerResponseReceivedDt" type="date">
+            <column name="CUSTOMER_RESPONSE_RECEIVED_DT" length="7" />
+        </property>
+        <property name="productionFatToAbiDt" type="date">
+            <column name="PRODUCTION_FAT_TO_ABI_DT" length="7" />
+        </property>
+        <property name="itsBuildTypeId" type="int">
+            <column name="ITS_BUILD_TYPE_ID" precision="8" scale="0" not-null="true" />
+        </property>
+        <property name="chargeOnlyBuildFl" type="string">
+            <column name="CHARGE_ONLY_BUILD_FL" length="1" />
+        </property>
+        <property name="mfgCd" type="string">
+            <column name="MFG_CD" length="10" />
+        </property>
+        <property name="groupCd" type="string">
+            <column name="GROUP_CD" length="10" />
+        </property>
+        <property name="shippedInvoiceNo" type="string">
+            <column name="SHIPPED_INVOICE_NO" length="11" />
+        </property>
+        <property name="customerPartNo" type="string">
+            <column name="CUSTOMER_PART_NO" length="40" />
+        </property>
+        <property name="customerRevNo" type="string">
+            <column name="CUSTOMER_REV_NO" length="15" />
+        </property>
+        <property name="connectorFl" type="string">
+            <column name="CONNECTOR_FL" length="1" />
+        </property>
+        <property name="cableFl" type="string">
+            <column name="CABLE_FL" length="1" />
+        </property>
+        <set name="dataCaptureDetails" table="DATA_CAPTURE_DETAIL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ITS_INVOICE_NO" length="35" not-null="true" />
+                <column name="ITS_SCN" length="13" not-null="true" />
+                <column name="SOURCE_ERP_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.DataCaptureDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

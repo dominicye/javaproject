@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 20, 2016 1:55:17 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstPartAsmAttr" table="AST_PART_ASM_ATTR" optimistic-lock="version">
+        <id name="partAsmAttrId" type="big_decimal">
+            <column name="PART_ASM_ATTR_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astPartAsm" class="com.avnet.alapps.model.alapps.AstPartAsm" fetch="select">
+            <column name="PART_ASM_ID" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="astPartAttr" class="com.avnet.alapps.model.alapps.AstPartAttr" fetch="select">
+            <column name="PART_ATTR_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="valueTx" type="string">
+            <column name="VALUE_TX" length="300" />
+        </property>
+        <property name="createUsrId" type="string">
+            <column name="CREATE_USR_ID" length="20" />
+        </property>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" />
+        </property>
+        <property name="updateDt" type="java.util.Date">
+            <column name="UPDATE_DT" />
+        </property>
+        <property name="updateUsrId" type="string">
+            <column name="UPDATE_USR_ID" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

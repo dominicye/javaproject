@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:test_result xmlns:tns="http://alapps.avnet.com/ISTResponseSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alapps.avnet.com/ISTResponseSchema ISTResponseSchema.xsd">
+  <client>Imaging</client>
+  <chassis_partnumber>CSE-217HQ+-R2K02BP</chassis_partnumber>
+  <chassis_serialnumber>15SM60370014</chassis_serialnumber>
+  <test_station>img_station_1</test_station>
+  <tester_name>Imaging Tester</tester_name>
+  <operator_id>imgop123</operator_id>
+  <result_code>FAIL</result_code>
+  <fail_results></fail_results>
+  <pass_results></pass_results>
+  <node_result>
+    <component_location>A</component_location>
+    <fail_results>
+        <fail_result>
+            <test_name>NOS_IMAGE</test_name>
+            <test_description>NOS Image</test_description>
+            <fail_code>FAIL123</fail_code>
+            <fail_description>Could not get nos image</fail_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034849</component_serialnumber>
+            <component_extracted_value>BADXYZ</component_extracted_value>
+        </fail_result>
+        <fail_result>
+            <test_name>GET_CLUSTER_ID</test_name>
+            <test_description>Get the mother board cluster ID</test_description>
+            <fail_code>FAIL456</fail_code>
+            <fail_description>Could not get cluster Id</fail_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034849</component_serialnumber>
+            <component_extracted_value></component_extracted_value>
+        </fail_result>
+    </fail_results>
+    <pass_results></pass_results>
+  </node_result>
+  <node_result>
+    <component_location>B</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+        <pass_result>
+            <test_name>GET_CLUSTER_ID</test_name>
+            <test_description>Get the mother board cluster ID</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034848</component_serialnumber>
+            <component_extracted_value>CUSTERXXXXXXXX</component_extracted_value>
+        </pass_result>
+        <pass_result>
+            <test_name>NOS_IMAGE</test_name>
+            <test_description>NOS Image</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034848</component_serialnumber>
+            <component_extracted_value></component_extracted_value>
+        </pass_result>    
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>C</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+        <pass_result>
+            <test_name>GET_CLUSTER_ID</test_name>
+            <test_description>Get the mother board cluster ID</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S035046</component_serialnumber>
+            <component_extracted_value>CUSTERXXXXXXXX</component_extracted_value>
+        </pass_result>
+        <pass_result>
+            <test_name>NOS_IMAGE</test_name>
+            <test_description>NOS Image</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S035046</component_serialnumber>
+            <component_extracted_value></component_extracted_value>
+        </pass_result>    
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>D</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+        <pass_result>
+            <test_name>GET_CLUSTER_ID</test_name>
+            <test_description>Get the mother board cluster ID</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034713</component_serialnumber>
+            <component_extracted_value>CUSTERXXXXXXXX</component_extracted_value>
+        </pass_result>
+        <pass_result>
+            <test_name>NOS_IMAGE</test_name>
+            <test_description>NOS Image</test_description>
+            <component_type>mb</component_type>
+            <component_location>1</component_location>
+            <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+            <component_serialnumber>OM156S034713</component_serialnumber>
+            <component_extracted_value></component_extracted_value>
+        </pass_result>    
+    </pass_results>
+  </node_result>
+</tns:test_result>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 8, 2015 6:04:27 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.MinAstTestResultItem" table="AST_TEST_RESULT_ITEM" optimistic-lock="version">
+        <id name="testResultItemId" type="big_decimal">
+            <column name="TEST_RESULT_ITEM_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+
+        <many-to-one name="astTestResult" class="com.avnet.alapps.model.alapps.MinAstTestResult" fetch="select">
+            <column name="TEST_RESULT_ID" precision="22" scale="0" />
+        </many-to-one>
+   
+        <many-to-one name="astTestResultCode" class="com.avnet.alapps.model.alapps.AstTestResultCode" fetch="select">
+            <column name="TEST_RESULT_CODE_ID" precision="22" scale="0" />
+        </many-to-one>
+        <!-- 
+        <many-to-one name="astPartAsm" class="com.avnet.alapps.model.alapps.AstPartAsm" fetch="select">
+            <column name="PART_ASM_ID" precision="22" scale="0" />
+        </many-to-one>
+        -->
+        <property name="resultCodeNm" type="string">
+            <column name="RESULT_CODE_NM" length="100" />
+        </property>
+        <property name="resultCodeDs" type="string">
+            <column name="RESULT_CODE_DS" length="300" />
+        </property>
+        <property name="testNm" type="string">
+            <column name="TEST_NM" length="100" />
+        </property>
+        <property name="testDs" type="string">
+            <column name="TEST_DS" length="300" />
+        </property>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" not-null="true" />
+        </property>
+        <property name="extractedVal" type="string">
+            <column name="EXTRACTED_VAL" length="300" />
+        </property>
+        <filter name="MinAstTestResultItem_testResultId_IN_Filter" condition="TEST_RESULT_ID IN (:testResultIdList)"/>
+    </class>
+    <filter-def name="MinAstTestResultItem_testResultId_IN_Filter">
+        <filter-param name="testResultIdList" type="java.math.BigDecimal" />
+    </filter-def>
+</hibernate-mapping>

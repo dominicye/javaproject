@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 9, 2016 3:01:05 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.Orderheader" table="ORDERHEADER" schema="GENESIS_OWN" optimistic-lock="version">
+        <id name="scn" type="string">
+            <column name="SCN" length="13" />
+            <generator class="assigned" />
+        </id>
+        <property name="custno" type="string">
+            <column name="CUSTNO" length="12" />
+        </property>
+        <property name="custpono" type="string">
+            <column name="CUSTPONO" length="22" />
+        </property>
+        <property name="orderstatus" type="string">
+            <column name="ORDERSTATUS" length="2" />
+        </property>
+        <property name="custponoreleaseno" type="string">
+            <column name="CUSTPONORELEASENO" length="15" />
+        </property>
+        <property name="specialinstruction" type="string">
+            <column name="SPECIALINSTRUCTION" length="55" />
+        </property>
+        <property name="internalinstruction" type="string">
+            <column name="INTERNALINSTRUCTION" length="55" />
+        </property>
+        <property name="primaryshipcarrier" type="string">
+            <column name="PRIMARYSHIPCARRIER" length="3" />
+        </property>
+        <property name="balanceshipcarrier" type="string">
+            <column name="BALANCESHIPCARRIER" length="3" />
+        </property>
+        <property name="govtcontractno" type="string">
+            <column name="GOVTCONTRACTNO" length="22" />
+        </property>
+        <property name="cancelcode" type="string">
+            <column name="CANCELCODE" length="3" />
+        </property>
+        <property name="lastupdatedate" type="date">
+            <column name="LASTUPDATEDATE" length="7" />
+        </property>
+        <property name="note" type="string">
+            <column name="NOTE" length="40" />
+        </property>
+        <property name="closedate" type="date">
+            <column name="CLOSEDATE" length="7" />
+        </property>
+        <property name="buyerphoneno" type="string">
+            <column name="BUYERPHONENO" length="15" />
+        </property>
+        <property name="custspecdesc" type="string">
+            <column name="CUSTSPECDESC" length="25" />
+        </property>
+        <property name="custdrawdescBom" type="string">
+            <column name="CUSTDRAWDESC_BOM" length="25" />
+        </property>
+        <property name="isr" type="string">
+            <column name="ISR" length="3" />
+        </property>
+        <property name="paymentmethod" type="string">
+            <column name="PAYMENTMETHOD" length="4" />
+        </property>
+        <property name="govtpriorityrating" type="string">
+            <column name="GOVTPRIORITYRATING" length="4" />
+        </property>
+        <property name="freightchargecode" type="java.lang.Character">
+            <column name="FREIGHTCHARGECODE" length="1" />
+        </property>
+        <property name="paymenttermscode" type="string">
+            <column name="PAYMENTTERMSCODE" length="2" />
+        </property>
+        <property name="fob" type="string">
+            <column name="FOB" length="2" />
+        </property>
+        <property name="bookdate" type="date">
+            <column name="BOOKDATE" length="7" />
+        </property>
+        <property name="taxableflag" type="java.lang.Character">
+            <column name="TAXABLEFLAG" length="1" />
+        </property>
+        <property name="creditcategorycode" type="java.lang.Character">
+            <column name="CREDITCATEGORYCODE" length="1" />
+        </property>
+        <property name="shipcompletecode" type="java.lang.Character">
+            <column name="SHIPCOMPLETECODE" length="1" />
+        </property>
+        <property name="designwintypecode" type="java.lang.Character">
+            <column name="DESIGNWINTYPECODE" length="1" />
+        </property>
+        <property name="authorizer" type="string">
+            <column name="AUTHORIZER" length="15" />
+        </property>
+        <property name="paytermauthcode" type="java.lang.Character">
+            <column name="PAYTERMAUTHCODE" length="1" />
+        </property>
+        <property name="paytermauthorizer" type="string">
+            <column name="PAYTERMAUTHORIZER" length="3" />
+        </property>
+        <property name="tradeterms" type="string">
+            <column name="TRADETERMS" length="2" />
+        </property>
+        <property name="tradetermauthcode" type="java.lang.Character">
+            <column name="TRADETERMAUTHCODE" length="1" />
+        </property>
+        <property name="tradetermauthorizer" type="string">
+            <column name="TRADETERMAUTHORIZER" length="3" />
+        </property>
+        <property name="shipcarrierflag" type="java.lang.Character">
+            <column name="SHIPCARRIERFLAG" length="1" />
+        </property>
+        <property name="hotshipflag" type="java.lang.Character">
+            <column name="HOTSHIPFLAG" length="1" />
+        </property>
+        <property name="custcarrieracctno" type="string">
+            <column name="CUSTCARRIERACCTNO" length="12" />
+        </property>
+        <property name="lineitemcount" type="big_decimal">
+            <column name="LINEITEMCOUNT" precision="22" scale="0" />
+        </property>
+        <property name="ordervalue" type="big_decimal">
+            <column name="ORDERVALUE" precision="22" scale="0" />
+        </property>
+        <property name="webuserid" type="string">
+            <column name="WEBUSERID" length="16" />
+        </property>
+        <property name="insertdate" type="date">
+            <column name="INSERTDATE" length="7" />
+        </property>
+        <property name="insertuser" type="string">
+            <column name="INSERTUSER" length="25" />
+        </property>
+        <property name="updatedate" type="date">
+            <column name="UPDATEDATE" length="7" />
+        </property>
+        <property name="updateuser" type="string">
+            <column name="UPDATEUSER" length="25" />
+        </property>
+        <property name="district" type="string">
+            <column name="DISTRICT" length="4" />
+        </property>
+        <property name="accountno" type="string">
+            <column name="ACCOUNTNO" length="5" />
+        </property>
+        <property name="shipplate" type="string">
+            <column name="SHIPPLATE" length="3" />
+        </property>
+        <property name="jobno" type="string">
+            <column name="JOBNO" length="12" />
+        </property>
+        <property name="b2bindicator" type="string">
+            <column name="B2BINDICATOR" length="1" />
+        </property>
+        <property name="weborder" type="string">
+            <column name="WEBORDER" length="9" />
+        </property>
+        <property name="applSorRecordFl" type="string">
+            <column name="APPL_SOR_RECORD_FL" length="1" not-null="true" />
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+        <property name="auditLogKey" type="big_decimal">
+            <column name="AUDIT_LOG_KEY" precision="22" scale="0" />
+        </property>
+        <property name="webemailaddress" type="string">
+            <column name="WEBEMAILADDRESS" length="65" />
+        </property>
+        <property name="buyerName" type="string">
+            <column name="BUYER_NAME" length="15" />
+        </property>
+    </class>
+</hibernate-mapping>

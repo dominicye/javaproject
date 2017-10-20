@@ -1,0 +1,189 @@
+{{{{{
+  "chassisAttrs": [
+    {
+      "nutanixSerialNum": "16AP6C260001",
+      "chassisSerialNum": "C8270AF12NF0065"
+    }
+  ],
+  "chassisParts": [
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "BOTTOM"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K04A-1R",
+      "serialNum": "P2K4ACF44MB0276"
+    },
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "TOP"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K04A-1R",
+      "serialNum": "P2K4ACF44MB0275"
+    }
+  ],
+  "nodeData": [
+    {
+      "nodeAttrs": [
+        {
+          "attrNm": "location",
+          "attrDs": "Location",
+          "dataSourceNm": "USER",
+          "dataTypeNm": "STRING",
+          "valueTx": "A"
+        }
+      ],
+      "nodeParts": [
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMB1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "315322EB"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P2-DIMMF1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "31631CCC"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P2-DIMMH1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "31D15ED0"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P2-DIMMG1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "31D15C9F"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMD1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "315322EE"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P2-DIMME1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "31531468"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMC1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "31531FD8"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB1-CRC0Q",
+          "serialNum": "315320A7"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A2"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "Z1X5PRNQ"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A3"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "Z1X5MH7Z"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A1"
+          },
+          "compTypeNm": "Solid State Drive",
+          "serialNum": "BTHC5453058J1P2OGN"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "SATA3"
+          },
+          "compTypeNm": "SATA DOM",
+          "serialNum": "BCA11602030230276"
+        }
+      ]
+    }
+  ]
+}

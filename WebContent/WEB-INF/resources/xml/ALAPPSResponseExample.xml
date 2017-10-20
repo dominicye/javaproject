@@ -1,0 +1,3126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:system_info xmlns:tns="http://alapps.avnet.com/ALAPPSResponseSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://alapps.avnet.com/ALAPPSResponseSchema ALAPPSResponseSchema.xsd ">
+	<chassis_info>
+		<chassis_backplane_mcu_firmware_version>1.08
+		</chassis_backplane_mcu_firmware_version>
+		<chassis_hardware_version>1.02</chassis_hardware_version>
+		<chassis_mfg_name>Supermicro</chassis_mfg_name>
+		<chassis_mfg_part_number>CSE-217HQ+-R2K02BP</chassis_mfg_part_number>
+		<chassis_nutanix_part_number>525-0037-0001</chassis_nutanix_part_number>
+		<chassis_nutanix_serial_number>15SM60370014</chassis_nutanix_serial_number>
+		<chassis_nutanix_top_level_part_number>P140-ABI-H143565</chassis_nutanix_top_level_part_number>
+		<chassis_partnumber>SYS-2028TP-HC0R</chassis_partnumber>
+		<chassis_serialnumber>C2170AE28N90375</chassis_serialnumber>
+		<node_info>
+			<node_location>D</node_location>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU2</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_8</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</cpu_info>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU1</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_7</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</cpu_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242631
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242EBD
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242E89
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242E8D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242607
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242609
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242606
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242619
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242DBC
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242DC0
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY004024288B
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242E65
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242D8B
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242630
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY004024264B
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242DBD
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>D5</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603CD6</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D5</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>D4</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4601XBK</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D4</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>D6</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4601X73</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D6</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>D3</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603D90</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D3</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<mb_info>
+				<mb_bmcipmi_firmware_version>1.97</mb_bmcipmi_firmware_version>
+				<mb_bmc_product_manufacturer>Nutanix
+				</mb_bmc_product_manufacturer>
+				<mb_bmc_product_part_number>NX-3060-G4
+				</mb_bmc_product_part_number>
+				<mb_dmi_system_mfg>Nutanix</mb_dmi_system_mfg>
+				<mb_dmi_system_name>NX</mb_dmi_system_name>
+				<mb_firmware_version>1.0b</mb_firmware_version>
+				<mb_hardware_version>1.10</mb_hardware_version>
+				<mb_ipmi_mac>0CC47A66B5B9</mb_ipmi_mac>
+				<mb_location>1</mb_location>
+				<mb_mac_1>0CC47A647EDA</mb_mac_1>
+				<mb_mac_2>0CC47A647EDB</mb_mac_2>
+				<mb_mfg_name>Supermicro</mb_mfg_name>
+				<mb_mfg_part_number>X10DRT-P-NI22</mb_mfg_part_number>
+				<mb_nic_firmware_version>0x80000a05
+				</mb_nic_firmware_version>
+				<mb_nutanix_bios_version>G4-1.2</mb_nutanix_bios_version>
+				<mb_nutanix_part_number>510-0020-0001
+				</mb_nutanix_part_number>
+				<mb_partnumber>NODE-2028TP-HC0R-XXX
+				</mb_partnumber>
+				<mb_sas_firmware_version>06.00.00.00-IT
+				</mb_sas_firmware_version>
+				<mb_serialnumber>OM156S034713</mb_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</mb_info>
+			<nic_info>
+				<nic_firmware_version>0x800006da</nic_firmware_version>
+				<nic_location>SLOT1</nic_location>
+				<nic_mac_1>0CC47ABC1294</nic_mac_1>
+				<nic_mac_2></nic_mac_2>
+				<nic_mac_3></nic_mac_3>
+				<nic_mac_4></nic_mac_4>
+				<nic_mfg_name>Supermicro</nic_mfg_name>
+				<nic_mfg_part_number>AOC-STGN-I2S-O-P
+				</nic_mfg_part_number>
+				<nic_nutanix_part_number>501-0021-0002
+				</nic_nutanix_part_number>
+				<nic_partnumber>AOC-STGN-I2S-O-P</nic_partnumber>
+				<nic_port_count>2</nic_port_count>
+				<nic_serialnumber>VA157S002308</nic_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>PASS</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</nic_info>
+			<sata_dom_info>
+				<satadom_capacity>64.0 GB</satadom_capacity>
+				<satadom_firmware_version>S140714</satadom_firmware_version>
+				<satadom_location>SATA3</satadom_location>
+				<satadom_mfg_name>Innodisk</satadom_mfg_name>
+				<satadom_mfg_part_number>SATADOM-SL 3ME
+				</satadom_mfg_part_number>
+				<satadom_nutanix_part_number>656-0028-0001
+				</satadom_nutanix_part_number>
+				<satadom_partnumber>DESSL-64GD07RCADC-B157A
+				</satadom_partnumber>
+				<satadom_serialnumber>BCA11506210221314
+				</satadom_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</sata_dom_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>D2</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC519107BC480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>D1</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC519104K1480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>D1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<test_results></test_results>
+			<extracted_values></extracted_values>
+		</node_info>
+		<node_info>
+			<node_location>C</node_location>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU2</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_6</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</cpu_info>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU1</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_5</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</cpu_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C40
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C0B
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F99
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242EC4
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F7F
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F82
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C85
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C56
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C44
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F68
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F0D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C45
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242F0F
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C7D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C5A
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C49
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>C4</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602ZBJ</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C4</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>C5</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4601B3H</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C5</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>C3</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602ZW9</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C3</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>C6</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603CSY</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C6</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<mb_info>
+				<mb_bmcipmi_firmware_version>1.97</mb_bmcipmi_firmware_version>
+				<mb_bmc_product_manufacturer>Nutanix
+				</mb_bmc_product_manufacturer>
+				<mb_bmc_product_part_number>NX-3060-G4
+				</mb_bmc_product_part_number>
+				<mb_dmi_system_mfg>Nutanix</mb_dmi_system_mfg>
+				<mb_dmi_system_name>NX</mb_dmi_system_name>
+				<mb_firmware_version>1.0b</mb_firmware_version>
+				<mb_hardware_version>1.10</mb_hardware_version>
+				<mb_ipmi_mac>0CC47A66B6BD</mb_ipmi_mac>
+				<mb_location>1</mb_location>
+				<mb_mac_1>0CC47A647FB2</mb_mac_1>
+				<mb_mac_2>0CC47A647FB3</mb_mac_2>
+				<mb_mfg_name>Supermicro</mb_mfg_name>
+				<mb_mfg_part_number>X10DRT-P-NI22</mb_mfg_part_number>
+				<mb_nic_firmware_version>0x80000a05
+				</mb_nic_firmware_version>
+				<mb_nutanix_bios_version>G4-1.2</mb_nutanix_bios_version>
+				<mb_nutanix_part_number>510-0020-0001
+				</mb_nutanix_part_number>
+				<mb_partnumber>NODE-2028TP-HC0R-XXX
+				</mb_partnumber>
+				<mb_sas_firmware_version>06.00.00.00-IT
+				</mb_sas_firmware_version>
+				<mb_serialnumber>OM156S035046</mb_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</mb_info>
+			<nic_info>
+				<nic_firmware_version>0x800006da</nic_firmware_version>
+				<nic_location>SLOT1</nic_location>
+				<nic_mac_1>0CC47ABC3C96</nic_mac_1>
+				<nic_mac_2></nic_mac_2>
+				<nic_mac_3></nic_mac_3>
+				<nic_mac_4></nic_mac_4>
+				<nic_mfg_name>Supermicro</nic_mfg_name>
+				<nic_mfg_part_number>AOC-STGN-I2S-O-P
+				</nic_mfg_part_number>
+				<nic_nutanix_part_number>501-0021-0002
+				</nic_nutanix_part_number>
+				<nic_partnumber>AOC-STGN-I2S-O-P</nic_partnumber>
+				<nic_port_count>2</nic_port_count>
+				<nic_serialnumber>VA157S002312</nic_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>PASS</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</nic_info>
+			<sata_dom_info>
+				<satadom_capacity>64.0 GB</satadom_capacity>
+				<satadom_firmware_version>S140714</satadom_firmware_version>
+				<satadom_location>SATA3</satadom_location>
+				<satadom_mfg_name>Innodisk</satadom_mfg_name>
+				<satadom_mfg_part_number>SATADOM-SL 3ME
+				</satadom_mfg_part_number>
+				<satadom_nutanix_part_number>656-0028-0001
+				</satadom_nutanix_part_number>
+				<satadom_partnumber>DESSL-64GD07RCADC-B157A
+				</satadom_partnumber>
+				<satadom_serialnumber>BCA11506210221315
+				</satadom_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</sata_dom_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>C2</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC506101JE480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>C1</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC506101KK480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>C1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<test_results></test_results>
+			<extracted_values></extracted_values>
+		</node_info>
+		<node_info>
+			<node_location>B</node_location>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU2</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_4</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</cpu_info>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU1</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_3</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</cpu_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C5C
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20CAA
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C2B
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C1D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C0A
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20BBF
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C83
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C27
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C46
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C1F
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C7C
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F2029D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C57
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C81
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C21
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F20C58
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>B4</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603DFW</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B4</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>B5</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602ZG5</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B5</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>B3</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602ZBV</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B3</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>B6</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603CLC</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B6</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<mb_info>
+				<mb_bmcipmi_firmware_version>1.97</mb_bmcipmi_firmware_version>
+				<mb_bmc_product_manufacturer>Nutanix
+				</mb_bmc_product_manufacturer>
+				<mb_bmc_product_part_number>NX-3060-G4
+				</mb_bmc_product_part_number>
+				<mb_dmi_system_mfg>Nutanix</mb_dmi_system_mfg>
+				<mb_dmi_system_name>NX</mb_dmi_system_name>
+				<mb_firmware_version>1.0b</mb_firmware_version>
+				<mb_hardware_version>1.10</mb_hardware_version>
+				<mb_ipmi_mac>0CC47A66B685</mb_ipmi_mac>
+				<mb_location>1</mb_location>
+				<mb_mac_1>0CC47A647E6C</mb_mac_1>
+				<mb_mac_2>0CC47A647E6D</mb_mac_2>
+				<mb_mfg_name>Supermicro</mb_mfg_name>
+				<mb_mfg_part_number>X10DRT-P-NI22</mb_mfg_part_number>
+				<mb_nic_firmware_version>0x80000a05
+				</mb_nic_firmware_version>
+				<mb_nutanix_bios_version>G4-1.2</mb_nutanix_bios_version>
+				<mb_nutanix_part_number>510-0020-0001
+				</mb_nutanix_part_number>
+				<mb_partnumber>NODE-2028TP-HC0R-XXX
+				</mb_partnumber>
+				<mb_sas_firmware_version>06.00.00.00-IT
+				</mb_sas_firmware_version>
+				<mb_serialnumber>OM156S034848</mb_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</mb_info>
+			<nic_info>
+				<nic_firmware_version>0x800006da</nic_firmware_version>
+				<nic_location>SLOT1</nic_location>
+				<nic_mac_1>0CC47ABC3DDE</nic_mac_1>
+				<nic_mac_2></nic_mac_2>
+				<nic_mac_3></nic_mac_3>
+				<nic_mac_4></nic_mac_4>
+				<nic_mfg_name>Supermicro</nic_mfg_name>
+				<nic_mfg_part_number>AOC-STGN-I2S-O-P
+				</nic_mfg_part_number>
+				<nic_nutanix_part_number>501-0021-0002
+				</nic_nutanix_part_number>
+				<nic_partnumber>AOC-STGN-I2S-O-P</nic_partnumber>
+				<nic_port_count>2</nic_port_count>
+				<nic_serialnumber>VA157S002292</nic_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>PASS</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</nic_info>
+			<sata_dom_info>
+				<satadom_capacity>64.0 GB</satadom_capacity>
+				<satadom_firmware_version>S140714</satadom_firmware_version>
+				<satadom_location>SATA3</satadom_location>
+				<satadom_mfg_name>Innodisk</satadom_mfg_name>
+				<satadom_mfg_part_number>SATADOM-SL 3ME
+				</satadom_mfg_part_number>
+				<satadom_nutanix_part_number>656-0028-0001
+				</satadom_nutanix_part_number>
+				<satadom_partnumber>DESSL-64GD07RCADC-B157A
+				</satadom_partnumber>
+				<satadom_serialnumber>BCA11506210221307
+				</satadom_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</sata_dom_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>B2</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC506502HN480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>B1</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC506101ZQ480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>B1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<test_results></test_results>
+			<extracted_values></extracted_values>
+		</node_info>
+		<node_info>
+			<node_location>A</node_location>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU2</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_2</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Socket Designation: CPU1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Xeon</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>2600</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>Intel</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>EXECHK_CPU_INFO</name>
+						<description>CPU info check</description>
+						<value>10</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</cpu_info>
+			<cpu_info>
+				<cpu_core_count>10</cpu_core_count>
+				<cpu_hardware_version>Intel(R) Xeon(R) CPU E5-2660 v3 @
+					2.60GHz</cpu_hardware_version>
+				<cpu_location>CPU1</cpu_location>
+				<cpu_mfg_name>Intel</cpu_mfg_name>
+				<cpu_mfg_part_number>CM8064401446117S R1XR
+				</cpu_mfg_part_number>
+				<cpu_nutanix_part_number>550-0018-0001
+				</cpu_nutanix_part_number>
+				<cpu_partnumber>CM8064401446117S R1XR
+				</cpu_partnumber>
+				<cpu_serialnumber>FAKE_CPU_SN_1</cpu_serialnumber>
+				<cpu_speed>2600 MHz</cpu_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</cpu_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242829
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F432C1
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242866
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402433BC
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402428A7
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040F42E7C
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402433EC
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242976
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMF1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402433BD
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMA1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242874
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMB1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402428C8
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMC1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY004024279D
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P1-DIMMD1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040243391
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMME1</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY0040242872
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMH2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402432C1
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<dimm_info>
+				<memory_capacity>16384 MB</memory_capacity>
+				<memory_data_rate>DDR4</memory_data_rate>
+				<memory_location>P2-DIMMG2</memory_location>
+				<memory_mfg_name>Samsung</memory_mfg_name>
+				<memory_mfg_part_number>M393A2G40DB0-CPB
+				</memory_mfg_part_number>
+				<memory_nutanix_part_number>502-0011-0001
+				</memory_nutanix_part_number>
+				<memory_partnumber>M393A2G40DB0-CPB00
+				</memory_partnumber>
+				<memory_serialnumber>TESTONLY00402433EA
+				</memory_serialnumber>
+				<memory_speed>2133 MHz</memory_speed>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</dimm_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>A4</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603D82</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A4</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>A5</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602ZBE</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A5</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>A3</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4602DJ6</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A3</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<hdd_info>
+				<hdd_capacity>2 TB</hdd_capacity>
+				<hdd_firmware_version>SN02</hdd_firmware_version>
+				<hdd_location>A6</hdd_location>
+				<hdd_mfg_name>Seagate</hdd_mfg_name>
+				<hdd_mfg_part_number>ST2000NX0253</hdd_mfg_part_number>
+				<hdd_nutanix_part_number>655-0006-0001
+				</hdd_nutanix_part_number>
+				<hdd_partnumber>ST2000NX0253</hdd_partnumber>
+				<hdd_serialnumber>S4603DFQ</hdd_serialnumber>
+				<hdd_size>2.5"</hdd_size>
+				<hdd_speed>7200 RPM</hdd_speed>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A6</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</hdd_info>
+			<mb_info>
+				<mb_bmcipmi_firmware_version>1.97</mb_bmcipmi_firmware_version>
+				<mb_bmc_product_manufacturer>Nutanix
+				</mb_bmc_product_manufacturer>
+				<mb_bmc_product_part_number>NX-3060-G4
+				</mb_bmc_product_part_number>
+				<mb_dmi_system_mfg>Nutanix</mb_dmi_system_mfg>
+				<mb_dmi_system_name>NX</mb_dmi_system_name>
+				<mb_firmware_version>1.0b</mb_firmware_version>
+				<mb_hardware_version>1.10</mb_hardware_version>
+				<mb_ipmi_mac>0CC47A66B686</mb_ipmi_mac>
+				<mb_location>1</mb_location>
+				<mb_mac_1>0CC47A647E70</mb_mac_1>
+				<mb_mac_2>0CC47A647E71</mb_mac_2>
+				<mb_mfg_name>Supermicro</mb_mfg_name>
+				<mb_mfg_part_number>X10DRT-P-NI22</mb_mfg_part_number>
+				<mb_nic_firmware_version>0x80000a05
+				</mb_nic_firmware_version>
+				<mb_nutanix_bios_version>G4-1.2</mb_nutanix_bios_version>
+				<mb_nutanix_part_number>510-0020-0001
+				</mb_nutanix_part_number>
+				<mb_partnumber>NODE-2028TP-HC0R-XXX
+				</mb_partnumber>
+				<mb_sas_firmware_version>06.00.00.00-IT
+				</mb_sas_firmware_version>
+				<mb_serialnumber>OM156S034849</mb_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</mb_info>
+			<nic_info>
+				<nic_firmware_version>0x800006da</nic_firmware_version>
+				<nic_location>SLOT1</nic_location>
+				<nic_mac_1>0CC47ABC127C</nic_mac_1>
+				<nic_mac_2></nic_mac_2>
+				<nic_mac_3></nic_mac_3>
+				<nic_mac_4></nic_mac_4>
+				<nic_mfg_name>Supermicro</nic_mfg_name>
+				<nic_mfg_part_number>AOC-STGN-I2S-O-P
+				</nic_mfg_part_number>
+				<nic_nutanix_part_number>501-0021-0002
+				</nic_nutanix_part_number>
+				<nic_partnumber>AOC-STGN-I2S-O-P</nic_partnumber>
+				<nic_port_count>2</nic_port_count>
+				<nic_serialnumber>VA157S002300</nic_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>PASS</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</nic_info>
+			<sata_dom_info>
+				<satadom_capacity>64.0 GB</satadom_capacity>
+				<satadom_firmware_version>S140714</satadom_firmware_version>
+				<satadom_location>SATA3</satadom_location>
+				<satadom_mfg_name>Innodisk</satadom_mfg_name>
+				<satadom_mfg_part_number>SATADOM-SL 3ME
+				</satadom_mfg_part_number>
+				<satadom_nutanix_part_number>656-0028-0001
+				</satadom_nutanix_part_number>
+				<satadom_partnumber>DESSL-64GD07RCADC-B157A
+				</satadom_partnumber>
+				<satadom_serialnumber>BCA11506210221309
+				</satadom_serialnumber>
+				<test_results>
+					<test_result>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<result_code>ABORT</result_code>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</test_result>
+				</test_results>
+				<extracted_values></extracted_values>
+			</sata_dom_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>A2</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC5061011B480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A2</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<ssd_info>
+				<ssd_capacity>480 GB</ssd_capacity>
+				<ssd_firmware_version>G2010140</ssd_firmware_version>
+				<ssd_location>A1</ssd_location>
+				<ssd_mfg_name>Intel</ssd_mfg_name>
+				<ssd_mfg_part_number>SSDSC2BX480G4
+				</ssd_mfg_part_number>
+				<ssd_nutanix_part_number>656-0023-0001
+				</ssd_nutanix_part_number>
+				<ssd_partnumber>SSDSC2BX480G401</ssd_partnumber>
+				<ssd_serialnumber>BTHC50100053480MGN
+				</ssd_serialnumber>
+				<ssd_size>2.5"</ssd_size>
+				<test_results></test_results>
+				<extracted_values>
+					<extracted_value>
+						<test_id>32</test_id>
+						<client>IST</client>
+						<name>DISK_RULE_CFG_VERIFY</name>
+						<description>get disks info</description>
+						<value>A1</value>
+						<date>01-14-2016 4:27:06 PM MST</date>
+					</extracted_value>
+				</extracted_values>
+			</ssd_info>
+			<test_results></test_results>
+			<extracted_values></extracted_values>
+		</node_info>
+		<psu_info>
+			<psu_location>TOP</psu_location>
+			<psu_mfg_name>Supermicro</psu_mfg_name>
+			<psu_mfg_part_number>PWS-2K02P-1R</psu_mfg_part_number>
+			<psu_nutanix_part_number>480-0009-0001
+			</psu_nutanix_part_number>
+			<psu_partnumber>PWS-2K02P-1R</psu_partnumber>
+			<psu_serialnumber>P2K04CF25LB2043</psu_serialnumber>
+			<test_results></test_results>
+			<extracted_values>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU0_INFO</name>
+					<description>PSU0 info check</description>
+					<value>P2K04CF25LB2043</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU0_INFO</name>
+					<description>PSU0 info check</description>
+					<value>PWS-2K02P-1R</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU0_INFO</name>
+					<description>PSU0 info check</description>
+					<value>Status\s+|\s+\[STATUS OK\](00h)</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+			</extracted_values>
+		</psu_info>
+		<psu_info>
+			<psu_location>BOTTOM</psu_location>
+			<psu_mfg_name>Supermicro</psu_mfg_name>
+			<psu_mfg_part_number>PWS-2K02P-1R</psu_mfg_part_number>
+			<psu_nutanix_part_number>480-0009-0001
+			</psu_nutanix_part_number>
+			<psu_partnumber>PWS-2K02P-1R</psu_partnumber>
+			<psu_serialnumber>P2K04CF25LB2046</psu_serialnumber>
+			<test_results></test_results>
+			<extracted_values>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU1_INFO</name>
+					<description>PSU1 info check</description>
+					<value>P2K04CF25LB2046</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU1_INFO</name>
+					<description>PSU1 info check</description>
+					<value>PWS-2K02P-1R</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+				<extracted_value>
+					<test_id>32</test_id>
+					<client>IST</client>
+					<name>EXECHK_PSU1_INFO</name>
+					<description>PSU1 info check</description>
+					<value>Status\s+|\s+\[STATUS OK\](00h)</value>
+					<date>01-14-2016 4:27:06 PM MST</date>
+				</extracted_value>
+			</extracted_values>
+		</psu_info>
+		<test_results>
+			<test_result>
+				<test_id>32</test_id>
+				<client>IST</client>
+				<result_code>PASS</result_code>
+				<date>01-14-2016 4:27:06 PM MST</date>
+			</test_result>
+		</test_results>
+		<extracted_values></extracted_values>
+	</chassis_info>
+</tns:system_info>

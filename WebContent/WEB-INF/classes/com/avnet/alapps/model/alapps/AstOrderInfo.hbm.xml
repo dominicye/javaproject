@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 17, 2016 2:43:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstOrderInfo" table="AST_ORDER_INFO" optimistic-lock="version">
+        <composite-id name="id" class="com.avnet.alapps.model.alapps.AstOrderInfoId">
+            <key-property name="icn" type="string">
+                <column name="ICN" length="35" />
+            </key-property>
+            <key-property name="scn" type="string">
+                <column name="SCN" length="13" />
+            </key-property>
+        </composite-id>
+        <property name="shiptoName" type="string">
+            <column name="SHIPTO_NAME" length="50" />
+        </property>
+        <property name="shiptoName2" type="string">
+            <column name="SHIPTO_NAME2" length="50" />
+        </property>
+        <property name="shiptoAddr1" type="string">
+            <column name="SHIPTO_ADDR1" length="50" />
+        </property>
+        <property name="shiptoAddr2" type="string">
+            <column name="SHIPTO_ADDR2" length="50" />
+        </property>
+        <property name="shiptoAddr3" type="string">
+            <column name="SHIPTO_ADDR3" length="50" />
+        </property>
+        <property name="shiptoCity" type="string">
+            <column name="SHIPTO_CITY" length="30" />
+        </property>
+        <property name="shiptoState" type="string">
+            <column name="SHIPTO_STATE" length="30" />
+        </property>
+        <property name="shiptoCountry" type="string">
+            <column name="SHIPTO_COUNTRY" length="30" />
+        </property>
+        <property name="shiptoPostalcode" type="string">
+            <column name="SHIPTO_POSTALCODE" length="30" />
+        </property>
+        <property name="shiptoContactName" type="string">
+            <column name="SHIPTO_CONTACT_NAME" length="30" />
+        </property>
+        <property name="shiptoContactPhone" type="string">
+            <column name="SHIPTO_CONTACT_PHONE" length="30" />
+        </property>
+        <property name="customerPo" type="string">
+            <column name="CUSTOMER_PO" length="35" />
+        </property>
+        <property name="customerOrder" type="string">
+            <column name="CUSTOMER_ORDER" length="35" />
+        </property>
+        <property name="updateCount" type="big_decimal">
+            <column name="UPDATE_COUNT" precision="22" scale="0" />
+        </property>
+        <property name="shipviaName" type="string">
+            <column name="SHIPVIA_NAME" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

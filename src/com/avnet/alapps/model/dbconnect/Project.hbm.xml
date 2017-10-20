@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 4:31:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.Project" table="PROJECT" optimistic-lock="version">
+        <id name="projectId" type="big_decimal">
+            <column name="PROJECT_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="custno" type="string">
+            <column name="CUSTNO" length="14" not-null="true" />
+        </property>
+        <property name="companyname" type="string">
+            <column name="COMPANYNAME" length="100" />
+        </property>
+        <property name="custrevisionno" type="string">
+            <column name="CUSTREVISIONNO" length="10" />
+        </property>
+        <property name="projectdesc" type="string">
+            <column name="PROJECTDESC" length="700" />
+        </property>
+        <property name="custpartno" type="string">
+            <column name="CUSTPARTNO" length="50" />
+        </property>
+        <property name="productionqty" type="java.lang.Integer">
+            <column name="PRODUCTIONQTY" precision="5" scale="0" />
+        </property>
+        <property name="runrate" type="java.lang.Integer">
+            <column name="RUNRATE" precision="5" scale="0" />
+        </property>
+        <property name="margin" type="big_decimal">
+            <column name="MARGIN" precision="7" scale="4" />
+        </property>
+        <property name="systemcost" type="big_decimal">
+            <column name="SYSTEMCOST" precision="15" />
+        </property>
+        <property name="approvalflag" type="java.lang.Character">
+            <column name="APPROVALFLAG" length="1" />
+        </property>
+        <property name="instructions" type="string">
+            <column name="INSTRUCTIONS" length="2000" />
+        </property>
+        <property name="aacRevisionNum" type="string">
+            <column name="AAC_REVISION_NUM" length="5" />
+        </property>
+        <property name="integrationType" type="string">
+            <column name="INTEGRATION_TYPE" length="30" />
+        </property>
+        <property name="scope" type="string">
+            <column name="SCOPE" length="800" />
+        </property>
+        <property name="amsnumber" type="string">
+            <column name="AMSNUMBER" length="50" not-null="true" />
+        </property>
+        <property name="projectName" type="string">
+            <column name="PROJECT_NAME" length="60" />
+        </property>
+        <property name="activity" type="string">
+            <column name="ACTIVITY" length="30" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="25" />
+        </property>
+        <property name="protoRequiredDate" type="date">
+            <column name="PROTO_REQUIRED_DATE" length="7" />
+        </property>
+        <property name="protoMaterialrecdate" type="date">
+            <column name="PROTO_MATERIALRECDATE" length="7" />
+        </property>
+        <property name="protoShipdate" type="date">
+            <column name="PROTO_SHIPDATE" length="7" />
+        </property>
+        <property name="protoScheddate" type="date">
+            <column name="PROTO_SCHEDDATE" length="7" />
+        </property>
+        <property name="protoLocation" type="string">
+            <column name="PROTO_LOCATION" length="10" />
+        </property>
+        <property name="buildFacilityName" type="string">
+            <column name="BUILD_FACILITY_NAME" length="6" />
+        </property>
+        <property name="hardwareOnly" type="java.lang.Boolean">
+            <column name="HARDWARE_ONLY" precision="1" scale="0" />
+        </property>
+        <property name="buildFromParts" type="java.lang.Boolean">
+            <column name="BUILD_FROM_PARTS" precision="1" scale="0" />
+        </property>
+        <property name="requireImage" type="java.lang.Boolean">
+            <column name="REQUIRE_IMAGE" precision="1" scale="0" />
+        </property>
+        <property name="specialLabel" type="java.lang.Boolean">
+            <column name="SPECIAL_LABEL" precision="1" scale="0" />
+        </property>
+        <property name="specialBox" type="java.lang.Boolean">
+            <column name="SPECIAL_BOX" precision="1" scale="0" />
+        </property>
+        <property name="difficultyLevel" type="big_decimal">
+            <column name="DIFFICULTY_LEVEL" precision="22" scale="0" />
+        </property>
+        <property name="clientNotes" type="string">
+            <column name="CLIENT_NOTES" length="700" />
+        </property>
+        <property name="projectAppIdent" type="string">
+            <column name="PROJECT_APP_IDENT" length="1" not-null="true" />
+        </property>
+        <property name="bnewellCustname" type="string">
+            <column name="BNEWELL_CUSTNAME" length="60" />
+        </property>
+        <property name="flatPanel" type="java.lang.Boolean">
+            <column name="FLAT_PANEL" precision="1" scale="0" />
+        </property>
+        <property name="updateUser" type="string">
+            <column name="UPDATE_USER" length="17" />
+        </property>
+        <property name="quoteId" type="java.lang.Integer">
+            <column name="QUOTE_ID" precision="8" scale="0" />
+        </property>
+        <property name="quoteVersion" type="java.lang.Short">
+            <column name="QUOTE_VERSION" precision="3" scale="0" />
+        </property>
+        <property name="quotePrjname" type="string">
+            <column name="QUOTE_PRJNAME" length="50" />
+        </property>
+        <property name="amsRequest" type="string">
+            <column name="AMS_REQUEST" length="1" />
+        </property>
+        <property name="insertDate" type="date">
+            <column name="INSERT_DATE" length="7" />
+        </property>
+        <property name="auditFlg" type="string">
+            <column name="AUDIT_FLG" length="1" />
+        </property>
+        <property name="printOptionFlg" type="string">
+            <column name="PRINT_OPTION_FLG" length="1" />
+        </property>
+        <property name="originatingAmsnumber" type="string">
+            <column name="ORIGINATING_AMSNUMBER" length="50" />
+        </property>
+        <property name="insertUser" type="string">
+            <column name="INSERT_USER" length="17" not-null="true" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="UPDATE_DATE" length="7" />
+        </property>
+        <property name="licenseUsage" type="string">
+            <column name="LICENSE_USAGE" length="500" />
+        </property>
+        <property name="warrantyFlg" type="string">
+            <column name="WARRANTY_FLG" length="1" />
+        </property>
+        <property name="oemFlg" type="string">
+            <column name="OEM_FLG" length="1" />
+        </property>
+        <property name="imcSerialFlg" type="string">
+            <column name="IMC_SERIAL_FLG" length="1" />
+        </property>
+        <property name="projectTypeId" type="java.lang.Short">
+            <column name="PROJECT_TYPE_ID" precision="3" scale="0" />
+        </property>
+        <property name="projectActivityId" type="java.lang.Short">
+            <column name="PROJECT_ACTIVITY_ID" precision="3" scale="0" />
+        </property>
+        <property name="thirdPartyIntFl" type="string">
+            <column name="THIRD_PARTY_INT_FL" length="1" />
+        </property>
+        <property name="thirdPartyIntName" type="string">
+            <column name="THIRD_PARTY_INT_NAME" length="50" />
+        </property>
+        <property name="lockedFl" type="string">
+            <column name="LOCKED_FL" length="1" />
+        </property>
+        <property name="lockedBy" type="string">
+            <column name="LOCKED_BY" length="17" />
+        </property>
+        <property name="waiverFl" type="string">
+            <column name="WAIVER_FL" length="1" />
+        </property>
+        <property name="waiverId" type="string">
+            <column name="WAIVER_ID" length="20" />
+        </property>
+        <property name="waiverScn" type="string">
+            <column name="WAIVER_SCN" length="13" />
+        </property>
+        <property name="businessProcessId" type="big_decimal">
+            <column name="BUSINESS_PROCESS_ID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="itsTeamId" type="int">
+            <column name="ITS_TEAM_ID" precision="8" scale="0" not-null="true">
+                <comment>An Identifier of the default ITS Team responsible for the build/assembly of finished goods based on the Project.</comment>
+            </column>
+        </property>
+        <property name="shipmentScheduledFl" type="string">
+            <column name="SHIPMENT_SCHEDULED_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a Shipment is scheduled for integration orders based on this project.</comment>
+            </column>
+        </property>
+        <property name="avnetQuoteNo" type="string">
+            <column name="AVNET_QUOTE_NO" length="20">
+                <comment>This is avnets quote number</comment>
+            </column>
+        </property>
+        <property name="bomTypeId" type="big_decimal">
+            <column name="BOM_TYPE_ID" precision="22" scale="0">
+                <comment>This is the unique BOM type identifier</comment>
+            </column>
+        </property>
+        <property name="compareableTypeId" type="big_decimal">
+            <column name="COMPAREABLE_TYPE_ID" precision="22" scale="0">
+                <comment>This is the unique identifier for compareable type</comment>
+            </column>
+        </property>
+        <property name="currentAmsQuoteId" type="big_decimal">
+            <column name="CURRENT_AMS_QUOTE_ID" precision="22" scale="0">
+                <comment>This is the ID of the most current AMS Quote. This field can be null if there has not been an AMS quote created in the system for this project.</comment>
+            </column>
+        </property>
+        <property name="currentPlcId" type="big_decimal">
+            <column name="CURRENT_PLC_ID" precision="22" scale="0">
+                <comment>This is the ID of the most current PLC (Project Life Cycle). This field can be null if there has not been an PLC created in the system for this
+                project.</comment>
+            </column>
+        </property>
+        <property name="dealNo" type="string">
+            <column name="DEAL_NO" length="30">
+                <comment>This is the Deal number.</comment>
+            </column>
+        </property>
+        <property name="orderableOnHoldFl" type="string">
+            <column name="ORDERABLE_ON_HOLD_FL" length="1" not-null="true">
+                <comment>This flag denotes weather a project is orderable even though it has been placed on hold. This field impacts Q2O</comment>
+            </column>
+        </property>
+        <property name="quoteRequestNo" type="string">
+            <column name="QUOTE_REQUEST_NO" length="30">
+                <comment>This is the cutomers quote request number</comment>
+            </column>
+        </property>
+        <property name="r2oQuoteNo" type="string">
+            <column name="R2O_QUOTE_NO" length="30">
+                <comment>This is the quote request number as referenced by R2O</comment>
+            </column>
+        </property>
+        <property name="tipsNo" type="string">
+            <column name="TIPS_NO" length="30">
+                <comment>Tool for integration and pricing integration number</comment>
+            </column>
+        </property>
+        <property name="logicalDeleteFl" type="string">
+            <column name="LOGICAL_DELETE_FL" length="1" not-null="true" />
+        </property>
+        <property name="endusername" type="string">
+            <column name="ENDUSERNAME" length="60" />
+        </property>
+        <property name="recordNo" type="string">
+            <column name="RECORD_NO" length="30" />
+        </property>
+        <property name="exportComplianceFl" type="string">
+            <column name="EXPORT_COMPLIANCE_FL" length="1" />
+        </property>
+        <property name="osiRequestDt" type="date">
+            <column name="OSI_REQUEST_DT" length="7" />
+        </property>
+        <property name="osiFeeAm" type="big_decimal">
+            <column name="OSI_FEE_AM" precision="22" scale="0" />
+        </property>
+        <property name="osiRequestTm" type="string">
+            <column name="OSI_REQUEST_TM" length="5" />
+        </property>
+        <property name="projectCategoryId" type="big_decimal">
+            <column name="PROJECT_CATEGORY_ID" precision="22" scale="0" />
+        </property>
+        <property name="planConsumptionWarehouseCd" type="string">
+            <column name="PLAN_CONSUMPTION_WAREHOUSE_CD" length="4">
+                <comment>A Code identifying an Avnet Warehouse used in Plan Consumption for a Project.</comment>
+            </column>
+        </property>
+        <property name="erpPartNumber" type="string">
+            <column name="ERP_PART_NUMBER" length="30" />
+        </property>
+        <property name="vendorMaterialNo" type="string">
+            <column name="VENDOR_MATERIAL_NO" length="40" />
+        </property>
+        <property name="sourceErpId" type="java.lang.Integer">
+            <column name="SOURCE_ERP_ID" precision="5" scale="0" />
+        </property>
+        <property name="originatingProjectId" type="big_decimal">
+            <column name="ORIGINATING_PROJECT_ID" precision="22" scale="0" />
+        </property>
+        <property name="govRatedOrderFl" type="string">
+            <column name="GOV_RATED_ORDER_FL" length="1" not-null="true" />
+        </property>
+        <property name="govPriorityRatingCd" type="string">
+            <column name="GOV_PRIORITY_RATING_CD" length="20" />
+        </property>
+        <property name="fgiFl" type="string">
+            <column name="FGI_FL" length="1" />
+        </property>
+        <property name="sourceInspectionFl" type="string">
+            <column name="SOURCE_INSPECTION_FL" length="1" />
+        </property>
+        <property name="lastProducedDt" type="date">
+            <column name="LAST_PRODUCED_DT" length="7" />
+        </property>
+        <property name="rackServiceFl" type="string">
+            <column name="RACK_SERVICE_FL" length="1" />
+        </property>
+        <property name="tlaMfgCd" type="string">
+            <column name="TLA_MFG_CD" length="10" />
+        </property>
+        <property name="tlaCommCd" type="string">
+            <column name="TLA_COMM_CD" length="10" />
+        </property>
+        <property name="tlaGroupCd" type="string">
+            <column name="TLA_GROUP_CD" length="10" />
+        </property>
+        <property name="cooAssessmentTypeId" type="big_decimal">
+            <column name="COO_ASSESSMENT_TYPE_ID" precision="22" scale="0" />
+        </property>
+        <property name="bindingRulesExistFl" type="string">
+            <column name="BINDING_RULES_EXIST_FL" length="1" />
+        </property>
+        <property name="bindingRuleNo" type="string">
+            <column name="BINDING_RULE_NO" length="20" />
+        </property>
+        <property name="bindingRuleCommentTx" type="string">
+            <column name="BINDING_RULE_COMMENT_TX" length="200" />
+        </property>
+        <property name="exportComplianceRequiredFl" type="string">
+            <column name="EXPORT_COMPLIANCE_REQUIRED_FL" length="1" />
+        </property>
+        <property name="bomInstructionCd" type="string">
+            <column name="BOM_INSTRUCTION_CD" length="40" />
+        </property>
+        <property name="cooAssessmentQuestionId" type="big_decimal">
+            <column name="COO_ASSESSMENT_QUESTION_ID" precision="22" scale="0" />
+        </property>
+        <property name="tlaReadyFl" type="string">
+            <column name="TLA_READY_FL" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

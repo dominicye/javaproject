@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 20, 2016 1:55:17 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstPart" table="AST_PART" optimistic-lock="version">
+        <id name="partId" type="big_decimal">
+            <column name="PART_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astCompType" class="com.avnet.alapps.model.alapps.AstCompType" fetch="select">
+            <column name="COMP_TYPE_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true" />
+        </property>
+        <property name="keyValue" type="string">
+            <column name="KEY_VALUE" length="300" not-null="true" />
+        </property>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" />
+        </property>
+        <property name="createUsrId" type="string">
+            <column name="CREATE_USR_ID" length="20" />
+        </property>
+        <property name="updateDt" type="java.util.Date">
+            <column name="UPDATE_DT" />
+        </property>
+        <property name="updateUsrId" type="string">
+            <column name="UPDATE_USR_ID" length="20" />
+        </property>
+        <set name="astPartAsms" table="AST_PART_ASM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PART_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAsm" />
+        </set>
+        <set name="astPartAttrs" table="AST_PART_ATTR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PART_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAttr" />
+        </set>
+        <one-to-one name="astSubPartCtrl" class="com.avnet.alapps.model.alapps.AstSubPartCtrl"></one-to-one>
+    </class>
+</hibernate-mapping>

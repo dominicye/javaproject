@@ -1,0 +1,1 @@
+This is dir is used for temporary Jasper virtualization files. File must be here so dir does not get trimmed during deploy.

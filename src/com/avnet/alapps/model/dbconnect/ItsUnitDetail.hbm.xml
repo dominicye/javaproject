@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 4:31:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.ItsUnitDetail" table="ITS_UNIT_DETAIL" optimistic-lock="version">
+        <id name="itsUnitDetailId" type="long">
+            <column name="ITS_UNIT_DETAIL_ID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="itsPartId" type="java.lang.Integer">
+            <column name="ITS_PART_ID" precision="8" scale="0" />
+        </property>
+        <property name="itsUnitTypeId" type="int">
+            <column name="ITS_UNIT_TYPE_ID" precision="8" scale="0" not-null="true" />
+        </property>
+        <property name="itsPartMfgcode" type="string">
+            <column name="ITS_PART_MFGCODE" length="10" />
+        </property>
+        <property name="itsPartMfgpartno" type="string">
+            <column name="ITS_PART_MFGPARTNO" length="40" />
+        </property>
+        <property name="amsTechMinutes" type="java.lang.Integer">
+            <column name="AMS_TECH_MINUTES" precision="8" scale="0" />
+        </property>
+        <property name="unitBuildSteps" type="java.lang.Short">
+            <column name="UNIT_BUILD_STEPS" precision="4" scale="0" />
+        </property>
+        <property name="techTimeSysBuildFlg" type="string">
+            <column name="TECH_TIME_SYS_BUILD_FLG" length="1" />
+        </property>
+        <property name="buildStepsSysGenFlg" type="string">
+            <column name="BUILD_STEPS_SYS_GEN_FLG" length="1" />
+        </property>
+        <property name="insertUser" type="string">
+            <column name="INSERT_USER" length="17" not-null="true" />
+        </property>
+        <property name="insertDate" type="date">
+            <column name="INSERT_DATE" length="7" not-null="true" />
+        </property>
+        <property name="updateUser" type="string">
+            <column name="UPDATE_USER" length="17" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="UPDATE_DATE" length="7" />
+        </property>
+        <property name="itsInvoiceNo" type="string">
+            <column name="ITS_INVOICE_NO" length="35" />
+        </property>
+        <property name="itsScn" type="string">
+            <column name="ITS_SCN" length="13" />
+        </property>
+        <property name="benchTimeMinutesQt" type="big_decimal">
+            <column name="BENCH_TIME_MINUTES_QT" precision="22" scale="0" />
+        </property>
+        <property name="dcrBuildStepsQt" type="java.lang.Short">
+            <column name="DCR_BUILD_STEPS_QT" precision="4" scale="0" />
+        </property>
+        <property name="itsScheduleId" type="java.lang.Integer">
+            <column name="ITS_SCHEDULE_ID" precision="8" scale="0" />
+        </property>
+        <property name="maxConnectedStepNo" type="java.lang.Short">
+            <column name="MAX_CONNECTED_STEP_NO" precision="4" scale="0" />
+        </property>
+        <property name="unitSerialNumber" type="string">
+            <column name="UNIT_SERIAL_NUMBER" length="40" />
+        </property>
+        <property name="itsLineItemNo" type="string">
+            <column name="ITS_LINE_ITEM_NO" length="10" />
+        </property>
+        <property name="batchNo" type="string">
+            <column name="BATCH_NO" length="10" />
+        </property>
+        <property name="sapMaterialNo" type="string">
+            <column name="SAP_MATERIAL_NO" length="18" />
+        </property>
+        <property name="partDescription" type="string">
+            <column name="PART_DESCRIPTION" length="60" />
+        </property>
+        <property name="countryOfOriginCd" type="string">
+            <column name="COUNTRY_OF_ORIGIN_CD" length="3" />
+        </property>
+        <property name="dataCaptureRequiredFl" type="string">
+            <column name="DATA_CAPTURE_REQUIRED_FL" length="1">
+                <comment>A Y/N Flag identifying whether Data Capture is Required.</comment>
+            </column>
+        </property>
+        <property name="sourceErpId" type="java.lang.Integer">
+            <column name="SOURCE_ERP_ID" precision="5" scale="0" />
+        </property>
+        <property name="unitDateLotCd" type="string">
+            <column name="UNIT_DATE_LOT_CD" length="20" />
+        </property>
+        <property name="consolidatedUnitFl" type="string">
+            <column name="CONSOLIDATED_UNIT_FL" length="1" not-null="true" />
+        </property>
+        <property name="consolidatedUnitQt" type="big_decimal">
+            <column name="CONSOLIDATED_UNIT_QT" precision="22" scale="0" />
+        </property>
+        <property name="dateLotWeeklyBuildQt" type="big_decimal">
+            <column name="DATE_LOT_WEEKLY_BUILD_QT" precision="22" scale="0" />
+        </property>
+        <property name="connectorContactQt" type="string">
+            <column name="CONNECTOR_CONTACT_QT" length="15" />
+        </property>
+        <property name="dcrTouchMinuteQt" type="big_decimal">
+            <column name="DCR_TOUCH_MINUTE_QT" precision="22" scale="0" />
+        </property>
+        <property name="pfndMinuteQt" type="big_decimal">
+            <column name="PFND_MINUTE_QT" precision="22" scale="0" />
+        </property>
+        <set name="dataCaptureDetails" table="DATA_CAPTURE_DETAIL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ITS_UNIT_DETAIL_ID" precision="10" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.DataCaptureDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2015 4:15:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfcreport.Site" table="SITE" optimistic-lock="version">
+        <comment>An Avnet Programming Center Site, which performs value added services for Avnet Cusotmers. A Site is also known as a Location and Facility.</comment>
+        <id name="siteId" type="big_decimal">
+            <column name="SITE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="siteCd" type="string">
+            <column name="SITE_CD" length="5" not-null="true" unique="true">
+                <comment>A Code identifying a Site.</comment>
+            </column>
+        </property>
+        <property name="siteNm" type="string">
+            <column name="SITE_NM" length="50" not-null="true" unique="true">
+                <comment>A English Name of a Site.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="cutoffTm" type="date">
+            <column name="CUTOFF_TM" length="7" not-null="true" />
+        </property>
+        <property name="timeZoneId" type="big_decimal">
+            <column name="TIME_ZONE_ID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="primaryPostalAddressId" type="big_decimal">
+            <column name="PRIMARY_POSTAL_ADDRESS_ID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a Site is currently Active for use.</comment>
+            </column>
+        </property>
+        <property name="commentTx" type="string">
+            <column name="COMMENT_TX" length="200">
+                <comment>Text containing Comments about a Site.</comment>
+            </column>
+        </property>
+        <property name="serviceCostMethodFactorNo" type="big_decimal">
+            <column name="SERVICE_COST_METHOD_FACTOR_NO" precision="22" scale="0" not-null="true">
+                <comment>A Number identifying the Site specific Factor to be applied against the Costs found within the Service Cost Method Matrix table.</comment>
+            </column>
+        </property>
+        <property name="defaultSourceId" type="big_decimal">
+            <column name="DEFAULT_SOURCE_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Source which is the Default for a given Site.</comment>
+            </column>
+        </property>
+        <property name="siteDs" type="string">
+            <column name="SITE_DS" length="50" />
+        </property>
+        <property name="sourcePlantId" type="string">
+            <column name="SOURCE_PLANT_ID" length="4" />
+        </property>
+        <set name="firstArticles" table="FIRST_ARTICLE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="OWNER_SITE_ID" precision="22" scale="0">
+                    <comment>An Identifier of the Site which Owns and is responsible for ongoing maintenance of a First Article.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.FirstArticle" />
+        </set>
+        <set name="workOrders" table="WORK_ORDER" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="SITE_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Site.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.WorkOrder" />
+        </set>
+    </class>
+</hibernate-mapping>

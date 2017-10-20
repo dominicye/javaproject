@@ -1,0 +1,130 @@
+{
+  "chassisAttrs": [
+    {
+      "nutanixSerialNum": "16AP99990719",
+      "chassisSerialNum": "C2170AE46NA00409"
+    }
+  ],
+  "chassisParts": [
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "BOTTOM"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K02P-1R",
+      "serialNum": "P2K04CF48NB03569"
+    },
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "TOP"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-2K02P-1R",
+      "serialNum": "P2K04CF48NB03559"
+    }
+  ],
+  "nodeData": [
+    {
+      "nodeAttrs": [
+        {
+          "attrNm": "location",
+          "attrDs": "Location",
+          "dataSourceNm": "USER",
+          "dataTypeNm": "STRING",
+          "valueTx": "C"
+        }
+      ],
+      "nodeParts": [
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB0-CPB0Q",
+          "serialNum": "1E5557F9"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA2"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB0-CPB0Q",
+          "serialNum": "1E550019"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMB1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB0-CPB0Q",
+          "serialNum": "1E555819"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMB2"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "M393A4K40BB0-CPB0Q",
+          "serialNum": "1E550509"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A1"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "9XG9MCE29"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A2"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "9XG9MD079"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "SATA1"
+          },
+          "compTypeNm": "SATA DOM",
+          "serialNum": "B2A115110600400789"
+        }
+      ]
+    }
+  ]
+}

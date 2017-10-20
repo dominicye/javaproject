@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:sec="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       	http://www.springframework.org/schema/beans/spring-beans.xsd
+       	http://www.springframework.org/schema/security 
+       	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+       	
+       	<!-- http://www.springframework.org/schema/security/spring-security-4.0.xsd -->
+    <!-- sec:global-method-security secured-annotations="enabled" / -->
+    
+
+	
+    <sec:http pattern="/**" auto-config="true" disable-url-rewriting="true"  use-expressions="true">
+        <sec:custom-filter ref="preAuthenticatedProcessingFilter" position="PRE_AUTH_FILTER" />
+    </sec:http>   	
+
+
+	<bean id="securityContextPersistenceFilter" class="org.springframework.security.web.context.SecurityContextPersistenceFilter"/>
+	
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider ref="preAuthenticatedAuthenticationProvider" />
+	</sec:authentication-manager>
+
+	<bean id="enterpriseLDAPReader" class="com.avnet.alapps.security.EnterpriseLDAPReader">
+	</bean>
+	
+	<bean id="tier" class="org.springframework.jndi.JndiObjectFactoryBean">
+    	<property name="jndiName" value="cell/persistent/tier" />
+    </bean>
+	
+	<bean id="administrationDAO" class="com.avnet.alapps.security.AdministrationDAO">
+	</bean>
+	
+	<bean id="securityDao" class="com.avnet.alapps.security.SecurityDAO">
+	</bean>
+	
+	<bean id="securityService" class="com.avnet.alapps.security.SecurityService">
+		<property name="securityDao" ref="securityDao" />
+		<property name="administrationDAO" ref="administrationDAO" />
+		<property name="enterpriseLDAPReader" ref="enterpriseLDAPReader" />
+	</bean>
+	
+	<bean id="userDetailsService" class="com.avnet.alapps.security.AvnetUserDetailsService">
+		<property name="securityService" ref="securityService"/>
+		<property name="enterpriseLDAPReader" ref="enterpriseLDAPReader" />
+	</bean>
+ 
+	<bean id="preAuthenticatedProcessingFilter" class="com.avnet.alapps.security.PreAuthenticatedProcessingFilter">
+		<property name="authenticationManager" ref="authenticationManager" />
+		<property name="tier" ref="tier" />
+	</bean>
+
+	<bean id="preAuthenticatedAuthenticationProvider" class="org.springframework.security.web.authentication.preauth.PreAuthenticatedAuthenticationProvider">
+		<property name="preAuthenticatedUserDetailsService">
+			<bean id="userDetailsServiceWrapper" class="org.springframework.security.core.userdetails.UserDetailsByNameServiceWrapper">
+				<property name="userDetailsService" ref="userDetailsService" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="httpRequestAccessDecisionManager"  class="org.springframework.security.access.vote.AffirmativeBased">
+        <constructor-arg>
+            <list>
+                <bean class="org.springframework.security.access.vote.RoleVoter"/>
+            </list>
+        </constructor-arg>
+        <property name="allowIfAllAbstainDecisions" value="false"/>
+    </bean>
+
+</beans>

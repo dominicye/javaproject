@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 11, 2016 1:59:58 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.TopLevelAssembly" table="TOP_LEVEL_ASSEMBLY" schema="FASTADM" optimistic-lock="version">
+        <id name="topLevelAssemblyId" type="big_decimal">
+            <column name="TOP_LEVEL_ASSEMBLY_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="project" class="com.avnet.alapps.model.dbconnect.Project" fetch="select">
+            <column name="TOP_LEVEL_PROJECT_ID" precision="22" scale="0" />
+        </many-to-one>
+        <property name="topLevelAssemblyStatusId" type="big_decimal">
+            <column name="TOP_LEVEL_ASSEMBLY_STATUS_ID" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applCreateUserid" type="string">
+            <column name="APPL_CREATE_USERID" length="17" not-null="true" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+        <property name="applUpdateUserid" type="string">
+            <column name="APPL_UPDATE_USERID" length="17" />
+        </property>
+        <property name="customerPartNo" type="string">
+            <column name="CUSTOMER_PART_NO" length="50" />
+        </property>
+        <property name="currTlaRevId" type="big_decimal">
+            <column name="CURR_TLA_REV_ID" precision="22" scale="0" />
+        </property>
+        <property name="customerRevNo" type="string">
+            <column name="CUSTOMER_REV_NO" length="10" />
+        </property>
+        <property name="sapMaterialNo" type="string">
+            <column name="SAP_MATERIAL_NO" length="18" />
+        </property>
+        <property name="tlaDs" type="string">
+            <column name="TLA_DS" length="200" />
+        </property>
+        <property name="tlaNm" type="string">
+            <column name="TLA_NM" length="60" />
+        </property>
+        <property name="lockedById" type="string">
+            <column name="LOCKED_BY_ID" length="6" />
+        </property>
+        <property name="lockedFl" type="string">
+            <column name="LOCKED_FL" length="1" />
+        </property>
+        <property name="tlaReasonTx" type="string">
+            <column name="TLA_REASON_TX" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

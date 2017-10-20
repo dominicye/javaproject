@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://alapps.avnet.com/ALAPPSResponseSchema" elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://alapps.avnet.com/ALAPPSResponseSchema" attributeFormDefault="unqualified">
+    <element name="system_info">
+    	<complexType>
+    		<sequence>
+    			<element name="chassis_info" minOccurs="1" maxOccurs="1">
+    				<complexType>
+    					<choice minOccurs="0" maxOccurs="unbounded"><!-- Not really a limited choice, but allows for unordered, unbounded elements -->
+    						<element name="chassis_backplane_mcu_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+    						<element name="chassis_customer_order_line_number" type="string" minOccurs="1" maxOccurs="1"></element>
+    						<element name="chassis_customer_salesorder_ref" type="string" minOccurs="1" maxOccurs="1"></element>							
+							<element name="chassis_hardware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_nutanix_serial_number" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_nutanix_top_level_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_production_cell" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="chassis_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+							<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>						
+							<element name="psu_info" minOccurs="0" maxOccurs="unbounded">
+								<complexType>
+									<all>
+										<element name="psu_location" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="psu_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="psu_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="psu_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="psu_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="psu_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+										<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+										<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+									</all>
+								</complexType>
+							</element>
+    						<element name="node_info" minOccurs="0" maxOccurs="unbounded">
+    							<complexType> 								
+    								<choice minOccurs="0" maxOccurs="unbounded"><!-- Not really a limited choice, but allows for unordered, unbounded elements -->
+    									<element name="node_location"
+    										type="string" minOccurs="1" maxOccurs="1">
+    									</element>
+    									<element name="mb_info" minOccurs="0" maxOccurs="1">
+    										<complexType>
+    											<all>
+													<element name="mb_bmc_product_manufacturer" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_bmc_product_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_bmcipmi_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_dmi_system_mfg" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_dmi_system_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_hardware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_ipmi_mac" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_mac_1" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_mac_2" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_nic_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_nutanix_bios_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_sas_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="mb_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="cpu_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+    												<element name="cpu_core_count" type="int" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_hardware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="cpu_speed" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="dimm_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+    												<element name="memory_capacity" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_data_rate" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="memory_speed" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="hdd_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+    												<element name="hdd_capacity" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_size" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_speed" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="hdd_psid" type="string" minOccurs="0" maxOccurs="1"></element>
+													<element name="hdd_msid" type="string" minOccurs="0" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="nic_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+    												<element name="nic_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mac_1" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mac_2" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mac_3" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mac_4" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_port_count" type="int" minOccurs="1" maxOccurs="1"></element>
+													<element name="nic_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>  
+    									<element name="sata_dom_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+			    									<element name="satadom_capacity" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="satadom_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="ssd_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+    												<element name="ssd_capacity" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_firmware_version" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_size" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="ssd_psid" type="string" minOccurs="0" maxOccurs="1"></element>
+													<element name="ssd_msid" type="string" minOccurs="0" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>   												
+    											</all>
+    										</complexType>
+    									</element>
+    									<element name="gpu_info" minOccurs="0" maxOccurs="unbounded">
+    										<complexType>
+    											<all>
+													<element name="gpu_location" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="gpu_mfg_name" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="gpu_mfg_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="gpu_nutanix_part_number" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="gpu_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="gpu_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+													<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+													<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>												
+    											</all>
+    										</complexType>
+    									</element> 	
+    									<element name="test_results" type="tns:testResults" minOccurs="0" maxOccurs="1"></element>
+										<element name="extracted_values" type="tns:extractedValues" minOccurs="0" maxOccurs="1"></element>										
+    								</choice>
+    							</complexType>
+    						</element>
+    					</choice>
+    				</complexType>
+    			</element>
+    		</sequence>
+    	</complexType>
+    </element>
+    
+    <simpleType name="resultCodeType">
+		<restriction base="string">
+			<enumeration value="PASS"></enumeration>
+			<enumeration value="FAIL"></enumeration>
+			<enumeration value="ABORT"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="clientType">
+		<restriction base="string">
+			<enumeration value="IST"></enumeration>
+			<enumeration value="Burn In"></enumeration>
+			<enumeration value="ORT"></enumeration>
+			<enumeration value="Config"></enumeration>
+			<enumeration value="FST"></enumeration>
+			<enumeration value="Imaging"></enumeration>
+			<enumeration value="OBA"></enumeration>
+			<enumeration value="Run In"></enumeration>
+			<enumeration value="FRU Test"></enumeration>
+			<enumeration value="One Off"></enumeration>
+		</restriction>
+	</simpleType>
+	
+	<complexType name="testResult">
+		<all>
+			<element name="test_id" type="string" minOccurs="1" maxOccurs="1"></element>
+			<element name="client" type="tns:clientType" minOccurs="1" maxOccurs="1"></element>
+			<element name="result_code" type="tns:resultCodeType" minOccurs="1" maxOccurs="1"></element>
+			<element name="date" type="string" minOccurs="1" maxOccurs="1"></element>
+		</all>
+	</complexType>
+	
+	<complexType name="testResults">
+			<sequence>
+				<element name="test_result" type="tns:testResult" minOccurs="0" maxOccurs="unbounded"></element>
+			</sequence>
+	</complexType>
+	
+	<complexType name="extractedValue">
+		<all>
+			<element name="test_id" type="string" minOccurs="1" maxOccurs="1"></element>
+			<element name="client" type="tns:clientType" minOccurs="1" maxOccurs="1"></element>
+			<element name="name" type="string" minOccurs="1" maxOccurs="1"></element>
+			<element name="description" type="string" minOccurs="1" maxOccurs="1"></element>
+			<element name="value" type="string" minOccurs="1" maxOccurs="1"></element>
+			<element name="date" type="string" minOccurs="1" maxOccurs="1"></element>
+		</all>
+	</complexType>
+	
+	<complexType name="extractedValues">
+			<sequence>
+				<element name="extracted_value" type="tns:extractedValue" minOccurs="0" maxOccurs="unbounded"></element>
+			</sequence>
+	</complexType>
+	
+</schema>

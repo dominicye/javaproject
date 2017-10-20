@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 1, 2016 4:06:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.ItsTeam" table="ITS_TEAM" optimistic-lock="version">
+        <id name="itsTeamId" type="int">
+            <column name="ITS_TEAM_ID" precision="8" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="itsTeamDesc" type="string">
+            <column name="ITS_TEAM_DESC" length="30" />
+        </property>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="4" not-null="true" />
+        </property>
+        <property name="insertDate" type="date">
+            <column name="INSERT_DATE" length="7" />
+        </property>
+        <property name="insertUser" type="string">
+            <column name="INSERT_USER" length="17" not-null="true" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="UPDATE_DATE" length="7" />
+        </property>
+        <property name="updateUser" type="string">
+            <column name="UPDATE_USER" length="17" />
+        </property>
+        <property name="targetDefaultFte" type="java.lang.Short">
+            <column name="TARGET_DEFAULT_FTE" precision="3" scale="0">
+                <comment>The projected number of Full-Time Equivalents for a Team.</comment>
+            </column>
+        </property>
+        <property name="targetDollarsPerFte" type="java.lang.Integer">
+            <column name="TARGET_DOLLARS_PER_FTE" precision="8" scale="0">
+                <comment>The amount is targeted integration charges at a cost level per FTE.</comment>
+            </column>
+        </property>
+        <property name="buildFacilityId" type="big_decimal">
+            <column name="BUILD_FACILITY_ID" precision="22" scale="0" />
+        </property>
+        <set name="projects" table="PROJECT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ITS_TEAM_ID" precision="8" scale="0" not-null="true">
+                    <comment>An Identifier of the default ITS Team responsible for the build/assembly of finished goods based on the Project.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.Project" />
+        </set>
+    </class>
+</hibernate-mapping>

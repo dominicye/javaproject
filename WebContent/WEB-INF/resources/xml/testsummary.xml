@@ -1,0 +1,118 @@
+<test_results_info>
+	<test_result>
+		<test_id>79</test_id>
+		<client>Imaging</client>
+		<result_code>FAIL</result_code>
+		<date>01-29-2016 2:54:47 PM MST</date>
+		<test_result_items>
+			<test_result>
+				<test_name>NOS_IMAGE</test_name>
+				<test_description>NOS Image</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>4.5.0.2</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S016546
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>GET_CLUSTER_ID</test_name>
+				<test_description>Get the mother board cluster ID
+				</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>36548</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018362
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>NOS_IMAGE</test_name>
+				<test_description>NOS Image</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>4.5.0.2</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018362
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>NOS_IMAGE</test_name>
+				<test_description>NOS Image</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>4.5.0.2</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018370
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>GET_CLUSTER_ID</test_name>
+				<test_description>Get the mother board cluster ID
+				</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>36547</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S016546
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>GET_CLUSTER_ID</test_name>
+				<test_description>Get the mother board cluster ID
+				</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>36546</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018370
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>GET_CLUSTER_ID</test_name>
+				<test_description>Get the mother board cluster ID
+				</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>36545</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018364
+				</component_serialnumber>
+			</test_result>
+			<test_result>
+				<test_name>NOS_IMAGE</test_name>
+				<test_description>NOS Image</test_description>
+				<result_code>imaging failure</result_code>
+				<extracted_value>4.5.0.2</extracted_value>
+				<date>01-29-2016 2:54:47 PM MST</date>
+				<component_type>mb</component_type>
+				<component_location>1</component_location>
+				<component_partnumber>NODE-6027TR-H70RF+-XXX
+				</component_partnumber>
+				<component_serialnumber>ZM156S018364
+				</component_serialnumber>
+			</test_result>
+		</test_result_items>
+	</test_result>
+</test_results_info>

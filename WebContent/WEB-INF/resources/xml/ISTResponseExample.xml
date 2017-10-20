@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:test_result xmlns:tns="http://alapps.avnet.com/ISTResponseSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alapps.avnet.com/ISTResponseSchema ISTResponseSchema.xsd">
+  <client>IST</client>
+  <chassis_partnumber>CSE-217HQ+-R2K02BP</chassis_partnumber>
+  <chassis_serialnumber>C2170AE28N90375</chassis_serialnumber>
+  <test_station>iss-vm1</test_station>
+  <tester_name>A01-A</tester_name>
+  <operator_id>developer</operator_id>
+  <result_code>FAIL</result_code>
+  <fail_results></fail_results>
+  <pass_results></pass_results>
+  <node_result>
+  	  <component_location>A</component_location>
+	  <fail_results>
+	    <fail_result>
+	      <test_name>EXECHK_CPU_INFO</test_name>
+	      <test_description>CPU info check</test_description>
+	      <fail_code>160399</fail_code>
+	      <fail_description>variable aim::varBox(CPU0_HARDWARE_VERSION) dose not exist</fail_description>
+	      <component_type>cpu</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber> ?-? CPU0_PARTNUMBER ?-? </component_partnumber>
+	      <component_serialnumber> ?-? CPU0_SERIALNUMBER ?-? </component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </fail_result>
+	  </fail_results>
+	  <pass_results>
+	    <pass_result>
+	      <test_name>EXEC_GET_MB_MAC_1</test_name>
+	      <test_description>get mb mac address</test_description>
+	      <component_type>mb</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x16384a0)</component_partnumber>
+	      <component_serialnumber>HASH(0x1638740)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_MB_MAC_2</test_name>
+	      <test_description>get mb mac address</test_description>
+	      <component_type>mb</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x164cf98)</component_partnumber>
+	      <component_serialnumber>HASH(0x164d160)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_MAC_1</test_name>
+	      <test_description>get nic mac address</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x164d640)</component_partnumber>
+	      <component_serialnumber>HASH(0x164d7c0)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_MAC_2</test_name>
+	      <test_description>get nic mac address</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x164dc88)</component_partnumber>
+	      <component_serialnumber>HASH(0x164de20)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_FW_1</test_name>
+	      <test_description>get nic fw version</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x1650200)</component_partnumber>
+	      <component_serialnumber>HASH(0x1650398)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_FW_2</test_name>
+	      <test_description>get nic fw version</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x1650818)</component_partnumber>
+	      <component_serialnumber>HASH(0x16509f8)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_MEM_INFO</test_name>
+	      <test_description>MEM info check</test_description>
+	      <component_type>memory</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>M393A2G40DB0-CPB</component_partnumber>
+	      <component_serialnumber>MEMU0001536590030979</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_HDD_INFO</test_name>
+	      <test_description>HDD info check</test_description>
+	      <component_type>hdd</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>ST2000NX0253</component_partnumber>
+	      <component_serialnumber>S4603D82</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_SSD_INFO</test_name>
+	      <test_description>SSD info check</test_description>
+	      <component_type>ssd</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>SSDSC2BX480G4</component_partnumber>
+	      <component_serialnumber>BTHC5061011B480MGN</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_PSU0_INFO</test_name>
+	      <test_description>PSU0 info check</test_description>
+	      <component_type>psu</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+	      <component_serialnumber>P2K04CF25LB2043</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_PSU1_INFO</test_name>
+	      <test_description>PSU1 info check</test_description>
+	      <component_type>psu</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+	      <component_serialnumber>P2K04CF25LB2046</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	  </pass_results>
+	</node_result>	
+	<node_result>
+  	  <component_location>B</component_location>
+	  <fail_results>
+	    <fail_result>
+	      <test_name>EXECHK_CPU_INFO</test_name>
+	      <test_description>CPU info check</test_description>
+	      <fail_code>160399</fail_code>
+	      <fail_description>variable aim::varBox(CPU0_HARDWARE_VERSION) dose not exist</fail_description>
+	      <component_type>cpu</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber> ?-? CPU0_PARTNUMBER ?-? </component_partnumber>
+	      <component_serialnumber> ?-? CPU0_SERIALNUMBER ?-? </component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </fail_result>
+	  </fail_results>
+	  <pass_results>
+	    <pass_result>
+	      <test_name>EXEC_GET_MB_MAC_1</test_name>
+	      <test_description>get mb mac address</test_description>
+	      <component_type>mb</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x16384a0)</component_partnumber>
+	      <component_serialnumber>HASH(0x1638740)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_MB_MAC_2</test_name>
+	      <test_description>get mb mac address</test_description>
+	      <component_type>mb</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x164cf98)</component_partnumber>
+	      <component_serialnumber>HASH(0x164d160)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_MAC_1</test_name>
+	      <test_description>get nic mac address</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x164d640)</component_partnumber>
+	      <component_serialnumber>HASH(0x164d7c0)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_MAC_2</test_name>
+	      <test_description>get nic mac address</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x164dc88)</component_partnumber>
+	      <component_serialnumber>HASH(0x164de20)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_FW_1</test_name>
+	      <test_description>get nic fw version</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>HASH(0x1650200)</component_partnumber>
+	      <component_serialnumber>HASH(0x1650398)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXEC_GET_NIC_FW_2</test_name>
+	      <test_description>get nic fw version</test_description>
+	      <component_type>nic</component_type>
+	      <component_location>2</component_location>
+	      <component_partnumber>HASH(0x1650818)</component_partnumber>
+	      <component_serialnumber>HASH(0x16509f8)</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_MEM_INFO</test_name>
+	      <test_description>MEM info check</test_description>
+	      <component_type>memory</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>M393A2G40DB0-CPB</component_partnumber>
+	      <component_serialnumber>MEMU0001536590030979</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_HDD_INFO</test_name>
+	      <test_description>HDD info check</test_description>
+	      <component_type>hdd</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>ST2000NX0253</component_partnumber>
+	      <component_serialnumber>S4603D82</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_SSD_INFO</test_name>
+	      <test_description>SSD info check</test_description>
+	      <component_type>ssd</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>SSDSC2BX480G4</component_partnumber>
+	      <component_serialnumber>BTHC5061011B480MGN</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_PSU0_INFO</test_name>
+	      <test_description>PSU0 info check</test_description>
+	      <component_type>psu</component_type>
+	      <component_location>0</component_location>
+	      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+	      <component_serialnumber>P2K04CF25LB2043</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	    <pass_result>
+	      <test_name>EXECHK_PSU1_INFO</test_name>
+	      <test_description>PSU1 info check</test_description>
+	      <component_type>psu</component_type>
+	      <component_location>1</component_location>
+	      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+	      <component_serialnumber>P2K04CF25LB2046</component_serialnumber>
+	      <component_extracted_value></component_extracted_value>
+	    </pass_result>
+	  </pass_results>
+	</node_result>	  
+</tns:test_result>

@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 22, 2016 12:57:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.ProductionOrderHeader" table="PRODUCTION_ORDER_HEADER" schema="FASTADM" optimistic-lock="version">
+        <composite-id name="id" class="com.avnet.alapps.model.dbconnect.ProductionOrderHeaderId">
+            <key-property name="productionOrderNo" type="big_decimal">
+                <column name="PRODUCTION_ORDER_NO" precision="22" scale="0" />
+            </key-property>
+            <key-property name="sourceErpId" type="int">
+                <column name="SOURCE_ERP_ID" precision="5" scale="0" />
+            </key-property>
+        </composite-id>
+        <property name="salesOrderNo" type="string">
+            <column name="SALES_ORDER_NO" length="10" />
+        </property>
+        <property name="orderTypeCd" type="string">
+            <column name="ORDER_TYPE_CD" length="4" />
+        </property>
+        <property name="productionOrderQt" type="big_decimal">
+            <column name="PRODUCTION_ORDER_QT" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="squareSetDt" type="date">
+            <column name="SQUARE_SET_DT" length="7" />
+        </property>
+        <property name="sapMaterialNo" type="string">
+            <column name="SAP_MATERIAL_NO" length="18" not-null="true" />
+        </property>
+        <property name="plantCd" type="string">
+            <column name="PLANT_CD" length="4" not-null="true" />
+        </property>
+        <property name="mfgpartno" type="string">
+            <column name="MFGPARTNO" length="40" />
+        </property>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="osiRequiredFl" type="string">
+            <column name="OSI_REQUIRED_FL" length="4" />
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applCreateUserid" type="string">
+            <column name="APPL_CREATE_USERID" length="17" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+        <property name="applUpdateUserid" type="string">
+            <column name="APPL_UPDATE_USERID" length="17" />
+        </property>
+        <property name="salesOrderLineItemNo" type="java.lang.Integer">
+            <column name="SALES_ORDER_LINE_ITEM_NO" precision="6" scale="0" />
+        </property>
+        <property name="partDescription" type="string">
+            <column name="PART_DESCRIPTION" length="200" />
+        </property>
+        <property name="manufacturerNm" type="string">
+            <column name="MANUFACTURER_NM" length="15" />
+        </property>
+        <property name="serialNoRequiredFl" type="string">
+            <column name="SERIAL_NO_REQUIRED_FL" length="1" />
+        </property>
+        <property name="toplevelUom" type="string">
+            <column name="TOPLEVEL_UOM" length="3" />
+        </property>
+        <property name="batchNo" type="string">
+            <column name="BATCH_NO" length="20" />
+        </property>
+        <property name="totalCostAm" type="big_decimal">
+            <column name="TOTAL_COST_AM" precision="15" scale="4" />
+        </property>
+        <property name="totalResaleAm" type="big_decimal">
+            <column name="TOTAL_RESALE_AM" precision="15" scale="4" />
+        </property>
+        <property name="integrationCostAm" type="big_decimal">
+            <column name="INTEGRATION_COST_AM" precision="15" scale="4" />
+        </property>
+        <property name="materialAvailableDt" type="date">
+            <column name="MATERIAL_AVAILABLE_DT" length="7" />
+        </property>
+        <property name="basicStartDt" type="date">
+            <column name="BASIC_START_DT" length="7" />
+        </property>
+        <property name="basicEndDt" type="date">
+            <column name="BASIC_END_DT" length="7" />
+        </property>
+        <property name="specialInstructions2Tx" type="string">
+            <column name="SPECIAL_INSTRUCTIONS2_TX" length="2000" />
+        </property>
+        <property name="origProdOrderNo" type="java.lang.Long">
+            <column name="ORIG_PROD_ORDER_NO" precision="10" scale="0" />
+        </property>
+        <property name="splitFl" type="string">
+            <column name="SPLIT_FL" length="1" />
+        </property>
+        <property name="plannedOrderNo" type="string">
+            <column name="PLANNED_ORDER_NO" length="10" />
+        </property>
+        <property name="governmentContractNo" type="string">
+            <column name="GOVERNMENT_CONTRACT_NO" length="22" />
+        </property>
+        <property name="priorityCd" type="string">
+            <column name="PRIORITY_CD" length="4" />
+        </property>
+        <property name="aogCd" type="string">
+            <column name="AOG_CD" length="10" />
+        </property>
+        <property name="matrnDs" type="string">
+            <column name="MATRN_DS" length="60" />
+        </property>
+        <property name="collectiveOrderFl" type="string">
+            <column name="COLLECTIVE_ORDER_FL" length="1" />
+        </property>
+        <property name="parentProdOrderNo" type="big_decimal">
+            <column name="PARENT_PROD_ORDER_NO" precision="22" scale="0" />
+        </property>
+        <property name="parentOrderLineItemNo" type="big_decimal">
+            <column name="PARENT_ORDER_LINE_ITEM_NO" precision="22" scale="0" />
+        </property>
+        <property name="leadProdOrderNo" type="big_decimal">
+            <column name="LEAD_PROD_ORDER_NO" precision="22" scale="0" />
+        </property>
+        <property name="childOrderQt" type="big_decimal">
+            <column name="CHILD_ORDER_QT" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

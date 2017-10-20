@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 2, 2016 5:45:55 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.CarrierCode" table="CARRIER_CODE" schema="FASTADM" optimistic-lock="version">
+        <id name="carrierCode" type="string">
+            <column name="CARRIER_CODE" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="carrierName" type="string">
+            <column name="CARRIER_NAME" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

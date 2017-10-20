@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 12:40:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstDataType" table="AST_DATA_TYPE" optimistic-lock="version">
+        <id name="dataTypeId" type="big_decimal">
+            <column name="DATA_TYPE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="typeNm" type="string">
+            <column name="TYPE_NM" length="50" not-null="true" unique="true" />
+        </property>
+        <set name="astCompTypeAttrs" table="AST_COMP_TYPE_ATTR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="DATA_TYPE_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstCompTypeAttr" />
+        </set>
+    </class>
+</hibernate-mapping>

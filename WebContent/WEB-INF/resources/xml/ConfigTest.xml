@@ -1,0 +1,2261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:test_result xmlns:tns="http://alapps.avnet.com/ISTResponseSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alapps.avnet.com/ISTResponseSchema ISTResponseSchema.xsd">
+  <client>Config</client>
+  <chassis_partnumber>SYS-2028TP-HC0R</chassis_partnumber>
+  <chassis_serialnumber>15SM60370014</chassis_serialnumber>
+  <test_station>iss-vm1</test_station>
+  <tester_name>A04</tester_name>
+  <operator_id>developer</operator_id>
+  <result_code>PASS</result_code>
+  <fail_results></fail_results>
+  <pass_results>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_1</test_name>
+      <test_description>get psu1 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber></component_partnumber>
+      <component_serialnumber></component_serialnumber>
+      <component_extracted_value>PW consumption   | [0-9][0-9].000     | Watts      | ok</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_1</test_name>
+      <test_description>get psu1 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber></component_partnumber>
+      <component_serialnumber></component_serialnumber>
+      <component_extracted_value>PS1 Status       | 0x1        | discrete   | 0x0100</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_2</test_name>
+      <test_description>get psu2 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>2</component_location>
+      <component_partnumber></component_partnumber>
+      <component_serialnumber></component_serialnumber>
+      <component_extracted_value>PW consumption   | [0-9][0-9].000     | Watts      | ok</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_2</test_name>
+      <test_description>get psu2 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>2</component_location>
+      <component_partnumber></component_partnumber>
+      <component_serialnumber></component_serialnumber>
+      <component_extracted_value>PS2 Status       | 0x1        | discrete   | 0x0100</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>0</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2046</component_serialnumber>
+      <component_extracted_value>Status\s+|\s+\[STATUS OK\](00h)</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>0</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2046</component_serialnumber>
+      <component_extracted_value>P2K04CF25LB2046</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>0</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2046</component_serialnumber>
+      <component_extracted_value>PWS-2K02P-1R</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2043</component_serialnumber>
+      <component_extracted_value>Status\s+|\s+\[STATUS OK\](00h)</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2043</component_serialnumber>
+      <component_extracted_value>P2K04CF25LB2043</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber>PWS-2K02P-1R</component_partnumber>
+      <component_serialnumber>P2K04CF25LB2043</component_serialnumber>
+      <component_extracted_value>PWS-2K02P-1R</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXEC_PSU_COUNT_CHECK</test_name>
+      <test_description>check psu count</test_description>
+      <component_type>psu</component_type>
+      <component_location>1</component_location>
+      <component_partnumber></component_partnumber>
+      <component_serialnumber></component_serialnumber>
+      <component_extracted_value>2</component_extracted_value>
+    </pass_result>
+  </pass_results>
+  <node_result>
+    <component_location>A</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.0b</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>G4-1.2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.92</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>fw</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>MPTFW-06.00.00.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_1</test_name>
+        <test_description>check mb mac port 1 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:70</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_2</test_name>
+        <test_description>check mb mac port 2 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:71</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_IPMI_MAC</test_name>
+        <test_description>check ipmi mac address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:66:b6:86</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_1</test_name>
+        <test_description>get fw version of mb port 1</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_2</test_name>
+        <test_description>get fw version of mb port 2</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>NIC_CTO_VERIFY</test_name>
+        <test_description>NIC CTO info check</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>C-NIC-10G-2</component_partnumber>
+        <component_serialnumber>VA157S002300</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_1</test_name>
+        <test_description>check nic mac port 1 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:12:7c</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_2</test_name>
+        <test_description>check nic mac port 2 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:12:7d</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>15SM60370014</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>NX-3040-G4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_DMI_SYSTEM_MFG</test_name>
+        <test_description>get product manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_PN</test_name>
+        <test_description>get board part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034849</component_serialnumber>
+        <component_extracted_value>X10DRT-P-NI22</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_SN</test_name>
+        <test_description>get board serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034849</component_serialnumber>
+        <component_extracted_value>OM156S034849</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034849</component_serialnumber>
+        <component_extracted_value>Supermicro</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_PRODUCT_SN</test_name>
+        <test_description>get dmi product serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0123456789</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_CHASSIS_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>C2170AE28N90375</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>get backplane mcu fw version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_GET_BACKPLANE_REVISION</test_name>
+        <test_description>get backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>BPN Revision       : 1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU1</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_2</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242874</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242866</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402428C8</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402433BC</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY004024279D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402428A7</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040243391</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F42E7C</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242872</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242829</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402433BD</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F432C1</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242976</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402433EA</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402433EC</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY00402432C1</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A5</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602ZBE</component_serialnumber>
+        <component_extracted_value>A5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A4</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603D82</component_serialnumber>
+        <component_extracted_value>A4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A3</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602DJ6</component_serialnumber>
+        <component_extracted_value>A3</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A6</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603DFQ</component_serialnumber>
+        <component_extracted_value>A6</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>A2</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC5061011B480MGN</component_serialnumber>
+        <component_extracted_value>A2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>A1</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC50100053480MGN</component_serialnumber>
+        <component_extracted_value>A1</component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>B</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.0b</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>G4-1.2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.92</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>fw</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>MPTFW-06.00.00.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_1</test_name>
+        <test_description>check mb mac port 1 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:6c</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_2</test_name>
+        <test_description>check mb mac port 2 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:6d</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_IPMI_MAC</test_name>
+        <test_description>check ipmi mac address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:66:b6:85</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_1</test_name>
+        <test_description>get fw version of mb port 1</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_2</test_name>
+        <test_description>get fw version of mb port 2</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>NIC_CTO_VERIFY</test_name>
+        <test_description>NIC CTO info check</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>C-NIC-10G-2</component_partnumber>
+        <component_serialnumber>VA157S002292</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_1</test_name>
+        <test_description>check nic mac port 1 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:3d:de</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_2</test_name>
+        <test_description>check nic mac port 2 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:3d:df</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>15SM60370014</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>NX-3040-G4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_DMI_SYSTEM_MFG</test_name>
+        <test_description>get product manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_PN</test_name>
+        <test_description>get board part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034848</component_serialnumber>
+        <component_extracted_value>X10DRT-P-NI22</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_SN</test_name>
+        <test_description>get board serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034848</component_serialnumber>
+        <component_extracted_value>OM156S034848</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034848</component_serialnumber>
+        <component_extracted_value>Supermicro</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_PRODUCT_SN</test_name>
+        <test_description>get dmi product serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0123456789</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_CHASSIS_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>C2170AE28N90375</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>get backplane mcu fw version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_GET_BACKPLANE_REVISION</test_name>
+        <test_description>get backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>BPN Revision       : 1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU1</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_3</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C27</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C5C</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C46</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20CAA</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C1F</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C2B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C7C</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C1D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F2029D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C21</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C83</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C58</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20BBF</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C81</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C0A</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C57</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B3</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602ZBV</component_serialnumber>
+        <component_extracted_value>B3</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B6</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603CLC</component_serialnumber>
+        <component_extracted_value>B6</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B5</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602ZG5</component_serialnumber>
+        <component_extracted_value>B5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B4</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603DFW</component_serialnumber>
+        <component_extracted_value>B4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>B2</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC506502HN480MGN</component_serialnumber>
+        <component_extracted_value>B2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>B1</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC506101ZQ480MGN</component_serialnumber>
+        <component_extracted_value>B1</component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>C</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.0b</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>G4-1.2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.92</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>fw</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>MPTFW-06.00.00.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_1</test_name>
+        <test_description>check mb mac port 1 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7f:b2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_2</test_name>
+        <test_description>check mb mac port 2 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7f:b3</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_IPMI_MAC</test_name>
+        <test_description>check ipmi mac address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:66:b6:bd</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_1</test_name>
+        <test_description>get fw version of mb port 1</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_2</test_name>
+        <test_description>get fw version of mb port 2</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>NIC_CTO_VERIFY</test_name>
+        <test_description>NIC CTO info check</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>C-NIC-10G-2</component_partnumber>
+        <component_serialnumber>VA157S002312</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_1</test_name>
+        <test_description>check nic mac port 1 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:3c:96</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_2</test_name>
+        <test_description>check nic mac port 2 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:3c:97</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>15SM60370014</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>NX-3040-G4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_DMI_SYSTEM_MFG</test_name>
+        <test_description>get product manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_PN</test_name>
+        <test_description>get board part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S035046</component_serialnumber>
+        <component_extracted_value>X10DRT-P-NI22</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_SN</test_name>
+        <test_description>get board serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S035046</component_serialnumber>
+        <component_extracted_value>OM156S035046</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S035046</component_serialnumber>
+        <component_extracted_value>Supermicro</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_PRODUCT_SN</test_name>
+        <test_description>get dmi product serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0123456789</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_CHASSIS_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>C2170AE28N90375</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>get backplane mcu fw version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_GET_BACKPLANE_REVISION</test_name>
+        <test_description>get backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>BPN Revision       : 1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU1</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+		<component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_5</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F68</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F99</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F0D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242EC4</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C45</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F7F</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F0F</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242F82</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C7D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C40</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C44</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C0B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C56</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C49</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C85</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040F20C5A</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C3</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602ZW9</component_serialnumber>
+        <component_extracted_value>C3</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C6</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603CSY</component_serialnumber>
+        <component_extracted_value>C6</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C5</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4601B3H</component_serialnumber>
+        <component_extracted_value>C5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C4</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4602ZBJ</component_serialnumber>
+        <component_extracted_value>C4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>C2</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC506101JE480MGN</component_serialnumber>
+        <component_extracted_value>C2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>C1</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC506101KK480MGN</component_serialnumber>
+        <component_extracted_value>C1</component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>D</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.0b</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>G4-1.2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.92</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>fw</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>MPTFW-06.00.00.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_1</test_name>
+        <test_description>check mb mac port 1 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:da</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_MB_MAC_2</test_name>
+        <test_description>check mb mac port 2 address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:64:7e:db</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_GET_IPMI_MAC</test_name>
+        <test_description>check ipmi mac address</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:66:b5:b9</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_1</test_name>
+        <test_description>get fw version of mb port 1</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_FW_VERSION_MB_NIC_2</test_name>
+        <test_description>get fw version of mb port 2</test_description>
+        <component_type>mb</component_type>
+        <component_location>2</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>firmware-version: 1.63, 0x80000a05</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>NIC_CTO_VERIFY</test_name>
+        <test_description>NIC CTO info check</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>C-NIC-10G-2</component_partnumber>
+        <component_serialnumber>VA157S002308</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_1</test_name>
+        <test_description>check nic mac port 1 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:12:94</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_NIC_MAC_2</test_name>
+        <test_description>check nic mac port 2 address</test_description>
+        <component_type>nic</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0c:c4:7a:bc:12:95</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>15SM60370014</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>NX-3040-G4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_DMI_SYSTEM_MFG</test_name>
+        <test_description>get product manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_PN</test_name>
+        <test_description>get board part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034713</component_serialnumber>
+        <component_extracted_value>X10DRT-P-NI22</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BOARD_SN</test_name>
+        <test_description>get board serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034713</component_serialnumber>
+        <component_extracted_value>OM156S034713</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>NODE-2028TP-HC0R-XXX</component_partnumber>
+        <component_serialnumber>OM156S034713</component_serialnumber>
+        <component_extracted_value>Supermicro</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_PRODUCT_SN</test_name>
+        <test_description>get dmi product serial number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>0123456789</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_CHASSIS_SN</test_name>
+        <test_description>get chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>C2170AE28N90375</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>get backplane mcu fw version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_GET_BACKPLANE_REVISION</test_name>
+        <test_description>get backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>BPN Revision       : 1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU1</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Socket Designation: CPU2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Xeon</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Intel</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>2600 MHz</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>0</component_location>
+        <component_partnumber>CM8064401446117S R1XR</component_partnumber>
+        <component_serialnumber>FAKE_CPU_SN_7</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY004024288B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242631</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242619</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242EBD</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242E89</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242E65</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242E8D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242D8B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242607</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242DBC</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242DBD</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242DC0</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY004024264B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242606</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242630</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH2</component_location>
+        <component_partnumber>C-MEM-16GB-DDR4</component_partnumber>
+        <component_serialnumber>TESTONLY0040242609</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>1</component_location>
+        <component_partnumber></component_partnumber>
+        <component_serialnumber></component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D6</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4601X73</component_serialnumber>
+        <component_extracted_value>D6</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D5</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603CD6</component_serialnumber>
+        <component_extracted_value>D5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D4</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4601XBK</component_serialnumber>
+        <component_extracted_value>D4</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D3</component_location>
+        <component_partnumber>ST2000NX0253|ST2000NX0253-SN02</component_partnumber>
+        <component_serialnumber>S4603D90</component_serialnumber>
+        <component_extracted_value>D3</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>D2</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC519107BC480MGN</component_serialnumber>
+        <component_extracted_value>D2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>D1</component_location>
+        <component_partnumber>SSDSC2BX480G4</component_partnumber>
+        <component_serialnumber>BTHC519104K1480MGN</component_serialnumber>
+        <component_extracted_value>D1</component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+</tns:test_result>

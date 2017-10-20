@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2015 4:15:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfcreport.SourceWorkOrder" table="SOURCE_WORK_ORDER" optimistic-lock="version">
+        <comment>Information from a given Source which triggered the creation of an Avnet Programming Center Work Order.</comment>
+        <id name="sourceWorkOrderId" type="big_decimal">
+            <column name="SOURCE_WORK_ORDER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="billToCustomerNm" type="string">
+            <column name="BILL_TO_CUSTOMER_NM" length="100">
+                <comment>The Name of the Customer who will be Billed for an Order. Within Genesis/DSR, this column originates from EMP7.DSR_SHIPTO_LOCN.SHIPTO_LOCN_NAME where the
+                column, SHIPTO_CUST_LOCN_NBR is equal to a Ship Plate value of 000.</comment>
+            </column>
+        </property>
+        <property name="billToCustomerNo" type="string">
+            <column name="BILL_TO_CUSTOMER_NO" length="50">
+                <comment>An Identifier of the Customer who ordered the Parts associated with an order. Within Genesis/DSR, the Bil To Customer Number originates from
+                EMP7.DSR_INVOICE.BILTO_CUST_NBR.</comment>
+            </column>
+        </property>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="coiRejectReplaceMethodCd" type="string">
+            <column name="COI_REJECT_REPLACE_METHOD_CD" length="5">
+                <comment>A Code identifying the Method used for Replacing Rejected Parts, when the Parts are owned by the Customer.</comment>
+            </column>
+        </property>
+        <property name="customerPartNo" type="string">
+            <column name="CUSTOMER_PART_NO" length="35">
+                <comment>An Identifier of a Part, as assigned by the Customer. This Identifier describes the Part, from the point of view of the Customer, after Value Added
+                Services have been applied to the Part. Within Genesis/DSR, this data originates from EMP7.DSR_INVOICE_LINE.CUST_PART_NBR.</comment>
+            </column>
+        </property>
+        <property name="inventoryMfgCd" type="string">
+            <column name="INVENTORY_MFG_CD" length="10">
+                <comment>A Code identifying the Manufacturer/Supplier of an Inventory Part, as defined by the Source. Within Genesis/DSR, this data originates from
+                EMP7.DSR_INVOICE_LINE.MFG_CD.</comment>
+            </column>
+        </property>
+        <property name="inventoryPartNo" type="string">
+            <column name="INVENTORY_PART_NO" length="50" not-null="true">
+                <comment>An Number/Identifier of the Inventory Part, as defined by the Source. Within Genesis/DSR, this data originates from
+                EMP7.DSR_INVOICE_LINE.PART_NBR.</comment>
+            </column>
+        </property>
+        <property name="invoiceLineNo" type="string">
+            <column name="INVOICE_LINE_NO" length="3">
+                <comment>A Line Number within the Invoice Number. Within Genesis/DSR, this data originates from EMP7.DSR_INVOICE_LINE.LINE_ITEM_NBR.</comment>
+            </column>
+        </property>
+        <property name="invoiceNo" type="string">
+            <column name="INVOICE_NO" length="30">
+                <comment>An Identifier of an Invoice Number. Within Genesis/DSR, this data originates from EMP7.DSR_INVOICE_LINE.INVOICE_NBR.</comment>
+            </column>
+        </property>
+        <property name="manufacturerCd" type="string">
+            <column name="MANUFACTURER_CD" length="10">
+                <comment>A Code identifying the Manufacturer/Supplier of a Part. Within Genesis/DSR, this data originates from EMP7.DSR_PART.SUPPLIER_MFG_CD.</comment>
+            </column>
+        </property>
+        <property name="manufacturerPartNo" type="string">
+            <column name="MANUFACTURER_PART_NO" length="50">
+                <comment>An Number/Identifier of the Manufacturer/Supplier Part, as defined by the Manufacturer/Supplier. Within Genesis/DSR, this data originates from
+                EMP7.DSR_PART.SUPPLIER_PART_NBR.</comment>
+            </column>
+        </property>
+        <property name="orderQt" type="big_decimal">
+            <column name="ORDER_QT" precision="22" scale="0" not-null="true">
+                <comment>The Quantity of a Part Ordered by a Customer. Within Genesis/DSR, this data originates from EMP7.DSR_INVOICE_LINE.LINE_ITEM_SHIP_QTY.</comment>
+            </column>
+        </property>
+        <property name="orderReleaseDt" type="date">
+            <column name="ORDER_RELEASE_DT" length="7">
+                <comment>The Date and Time an Order was Released to the Avnet Warehouse for fulfillment. Within Genesis/DSR, this data originates from the table
+                EMP7.DSR_SALES_ORDER_SHIPMENT. The columns are SHIPPER_CREATE_DT and SHIPPER_CREATE_TM.</comment>
+            </column>
+        </property>
+        <property name="promisedDeliveryDt" type="date">
+            <column name="PROMISED_DELIVERY_DT" length="7">
+                <comment>The Date on which a Customer was Promised delivery of the Parts associated with a Source Work Order. Within Genesis/DSR, this data originates from
+                EMP7.DSR_SALES_ORDER_LINE.PROMISED_DELV_DT.</comment>
+            </column>
+        </property>
+        <property name="requiredDeliveryDt" type="date">
+            <column name="REQUIRED_DELIVERY_DT" length="7">
+                <comment>The Date on which a Customer Requires delivery of the Parts associated with a Source Work Order. Within Genesis/DSR, this data originates from
+                EMP7.DSR_INVOICE_LINE.REQUIRED_DT.</comment>
+            </column>
+        </property>
+        <property name="resaleUnitPriceAm" type="big_decimal">
+            <column name="RESALE_UNIT_PRICE_AM" precision="22" scale="0">
+                <comment>The Amount that a single Unit/Part associated with a Work Order will be Sold to the Customer. Within Genesis/DSR, this data originates from
+                EMP7.DSR_INVOICE_LINE.RESALE_PRICE_AMT.</comment>
+            </column>
+        </property>
+        <property name="salesOrderLineNo" type="string">
+            <column name="SALES_ORDER_LINE_NO" length="3">
+                <comment>A Line Number within the Sales Order Number. Within Genesis/DSR, this data originates from EMP7.DSR_SALES_ORDER_LINE.LINE_ITEM_NBR. The Sales Order Line
+                Item Number is identical to the corresponding Invoice Line Item Number within Genesis.</comment>
+            </column>
+        </property>
+        <property name="salesOrderNo" type="string">
+            <column name="SALES_ORDER_NO" length="30">
+                <comment>An Identifier of a Sales Order. Within Genesis/DSR, this data originates from EMP7.DSR_INVOICE.SCN.</comment>
+            </column>
+        </property>
+        <property name="shipByDt" type="date">
+            <column name="SHIP_BY_DT" length="7">
+                <comment>The Date an Order must be Shipped and leave the warehouse, so that the Order will be received by the Customer when needed. This is documented within the
+                requirements as the Must Go Date. Please refer to the business requirements for calculating the value for this column.</comment>
+            </column>
+        </property>
+        <property name="shipToCustomerNm" type="string">
+            <column name="SHIP_TO_CUSTOMER_NM" length="100">
+                <comment>The Name of the Customer who will be Shipped the Parts associated with an Order. Within Genesis/DSR, this column originates from
+                EMP7.DSR_SHIPTO_LOCN.SHIPTO_LOCN_NAME where the column, SHIPTO_CUST_LOCN_NBR is equal to a Ship Plate value between 000 and 099.</comment>
+            </column>
+        </property>
+        <property name="shipToCustomerNo" type="string">
+            <column name="SHIP_TO_CUSTOMER_NO" length="50">
+                <comment>An Identifier of the Customer where the Parts are being Shipped. Within Genesis/DSR, the End Customer Number originates from
+                EMP7.DSR_INVOICE.SHIPTO_CUST_NBR.</comment>
+            </column>
+        </property>
+        <property name="sourceId" type="big_decimal">
+            <column name="SOURCE_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Source.</comment>
+            </column>
+        </property>
+        <property name="specialHandlingCd" type="string">
+            <column name="SPECIAL_HANDLING_CD" length="5">
+                <comment>A Code identifying the Special Handling required for a Source Work Order. Within Genesis/DSR, this data originates from
+                EMP7.DSR_SALES_ORDER_LINE.SPCL_HANDLING_CD.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="salesPersonNm" type="string">
+            <column name="SALES_PERSON_NM" length="50">
+                <comment>The complete Name of the Sales Person associated with the Sales Order associated with a Work Order.</comment>
+            </column>
+        </property>
+        <property name="sourceStorageLocationCd" type="string">
+            <column name="SOURCE_STORAGE_LOCATION_CD" length="10" />
+        </property>
+        <property name="sourceBatchId" type="string">
+            <column name="SOURCE_BATCH_ID" length="10" />
+        </property>
+        <set name="workOrders" table="WORK_ORDER" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="SOURCE_WORK_ORDER_ID" precision="22" scale="0" not-null="true">
+                    <comment>An Identifier of the Source Work Order information which triggered the Work Order to be created.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.WorkOrder" />
+        </set>
+    </class>
+</hibernate-mapping>

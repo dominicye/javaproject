@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.ContactType" table="CONTACT_TYPE" optimistic-lock="version">
+        <comment>A Type of Contact within the Avnet Programming Center applications.</comment>
+        <id name="contactTypeId" type="big_decimal">
+            <column name="CONTACT_TYPE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="contactTypeCd" type="string">
+            <column name="CONTACT_TYPE_CD" length="5" not-null="true" unique="true">
+                <comment>A Code identifying a Contact Type.</comment>
+            </column>
+        </property>
+        <property name="contactTypeNm" type="string">
+            <column name="CONTACT_TYPE_NM" length="50" not-null="true" unique="true">
+                <comment>A Name of a Contact Type.</comment>
+            </column>
+        </property>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <set name="userContacts" table="USER_CONTACT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTACT_TYPE_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Contact Type.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserContact" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>appendGrid</title>
+<link rel="stylesheet" type="text/css" href="jquery-ui.structure.min.css"/>
+<link rel="stylesheet" type="text/css" href="jquery-ui.theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="jquery.appendGrid-1.6.1.css"/>
+<style id="cssSource" type="text/css">/* In order to change the icon of jQuery button, extra CSS is required to override existing settings */
+button.insert
+{
+    height: 42px !important;
+    width: auto !important;
+}
+button.insert .ui-icon-insert
+{
+    width: 32px;
+    height: 32px;
+    margin-top: -16px !important;
+    /* This demo used data URI format image. You can replace it with something like url(your_image_url.png) */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABHlJREFUeNrEV01sE0cUfjOzduy4IQkNuK0ot56QKlSRljb8HAJq5FAJiVZCHAgcyoETFxQJCilQ9efCjRsihJ9IlUobJOKkBSJIZUFb1B7oqZdKlUCE36ghdszu7PDe7Kx3vXZCiB0x0vPOeHfn/X3fe7NMKQWvcrAa37feODI8lJes25YuVPjCfAX0q0DfDj0z8/WWhlodaFpyOKsWOvD9VqtGAxLkOY0/J8m78hAwxsBCDRcG+mFbz25wHHqk7JlYrQaw0n40QWGsPL8c/xCc45XWqjwHlMO6AoqVg4r5gjfYLICz6qGUhkAXmQq0UEBYySLvyhiblwFW59HsRcVFZuyLjwmlz+YygBTTaE2SVm8uUWzlBVsITHRMQDwGOg3+M3MZkJTAM/u3rgbbyRZ//TITNsJ68+jwkK14t+MqDahnEvPeexHAVaWQvN/iwPZ0Hu/hkgsQloAfBwZBSumTsSxN5PGQC7zbVd6mDm56YHu79u6b7/+A8cCIptePjPyf29sJRdwMjJf0jr+thYB79/gvMPHtJzBtkwEAP5wZhE937tAsCOt/p5GlKQJJUr5vWztI1y0l8O+703D5n0ew/7MPMHTZ4rU+bUSCPCflJ3+75yHb5JWMoCDsbk9jNNBT3MpFhUzQVdJfeh2tvGRAghROoLmXbj8wm1JoOLSkknDq9wno2bIGGvho8edDXW/7AGtLxQ21jM3gZUF5IQFBFDTCmLd2dQIqDdBOPC5gfFEhjwAVMwwPC6Vlyve2JSnKaGf0gms8pH0qhYGqxgKOd5+6FixpSnlVG+OnDKi4sGB07BZcPZxZG4ZOW8oyVAtoF1AOiw9ehFFMf9PcZZ5DUQOUPfUkdzN3qwMMCF0sr+9t+AgBxOCv8RtwtS+zAZ+744GMQQJptbI5Yeqa8oqgX1sF18iLoZ54nJzDd4ShIc6VW9kNm1BWorQZg2Kbjo2MrOvqhPHsFRjzlP+Lch+lOd07+JNsbO0I07BgI7pkQMMPlzqw6608zEhSyrEWWEhBR9MwnIN9n/ek/SiQEctQlhM7NvYO5jZ/NUqPrkdZgRL3ux/KKpSNKJ0oXa8dGtadbQalgJJHmUJ5jGB4hDKJ8xOnz+nrQ1w/cAIhfaSc2DllhEbh+nc79lgNjQS4u8ZzvxARHP8z/1H0WqXBypQdNMMw0FicWIk0pAppVzTMqpVQK3GKeW7m4VIcNTZQ6lZyXDchAmpIQL24GzphBfM+GhHKqzQqnwkBC2Bx2rEGf6TRaAPAQ78uRMSCeTSjBZ0q41ald8ynFTYjQjG3FjECA6f6kf687NihI4A1gGh45tx5rxvW+RC+PHHwkqYhskrZEZHm8Nl/9ry+ysh9n4Y1jTD1ZASFBLo4gY9aIaFbzY+GC4YCm+Wjg83xEVI3A3jlaavUqHioQ9YdhH77ZqYWVI+OlxtRJQy8VgN093vB2Nmza/YCVisGE8XJXHPfSAd9IblqljJBuVAK1CJ8nEZb+cuMJ9Tma/46pkOtPle+vDPYG2H6uQADAJ1hUu3dKalXAAAAAElFTkSuQmCC) !important;
+}
+button.insert .ui-button-text
+{
+    padding-left: 48px;
+}
+button.append, button.removeLast, button.remove, button.moveUp
+{
+    width: auto !important;
+    height: auto !important;
+}</style>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.11.1.min.js"></script>
+<script type="text/javascript" src="jquery.appendGrid-1.6.1.js"></script>
+
+  </head>
+  <body>
+  <script id="jsSource" type="text/javascript">
+$(function () {
+    // Initialize appendGrid
+    $('#tblAppendGrid').appendGrid({
+        caption: 'My CD Collections',
+        columns: [
+            { name: 'Album', display: 'Album', type: 'text', ctrlAttr: { maxlength: 100 }, ctrlCss: { width: '100px' }, onChange: function (evt, rowIndex) { alert('You have changed the value of `Album` at row ' + rowIndex); } },
+            { name: 'Artist', display: 'Artist', type: 'text', ctrlAttr: { maxlength: 100 }, ctrlCss: { width: '80px'} },
+            { name: 'Year', display: 'Year', type: 'text', ctrlAttr: { maxlength: 4 }, ctrlCss: { width: '40px'} },
+            { name: 'Origin', display: 'Origin', type: 'select', ctrlOptions: { 0: '{Choose}', 1: 'Hong Kong', 2: 'Taiwan', 3: 'Japan', 4: 'Korea', 5: 'US', 6: 'Others'} },
+            { name: 'Price', display: 'Price', type: 'text', ctrlAttr: { maxlength: 10 }, ctrlCss: { width: '50px', 'text-align': 'right' }, value: 0 }
+        ],
+        initData: [
+            { 'Album': 'Dearest', 'Artist': 'Theresa Fu', 'Year': '2009', 'Origin': 1, 'Price': 168.9 },
+            { 'Album': 'To be Free', 'Artist': 'Arashi', 'Year': '2010', 'Origin': 3, 'Price': 152.6 },
+            { 'Album': 'Count On Me', 'Artist': 'Show Luo', 'Year': '2012', 'Origin': 2, 'Price': 306.8 },
+            { 'Album': 'Wonder Party', 'Artist': 'Wonder Girls', 'Year': '2012', 'Origin': 4, 'Price': 108.6 },
+            { 'Album': 'Reflection', 'Artist': 'Kelly Chen', 'Year': '2013', 'Origin': 1, 'Price': 138.2 }
+        ],
+        customRowButtons: [
+			      { uiButton: { icons: { primary: 'ui-icon-star' }, text: false }, click: setFavorite, btnCss: { 'min-width': '30px' }, btnAttr: { title: 'Set favorite!' }, atTheFront: true },
+			      { uiButton: { icons: { primary: 'ui-icon-print' }, label: 'Print' }, click: function (evtObj, uniqueIndex, rowData) { alert('You clicked the print button!'); }, btnClass: 'print', atTheFront: true },
+            { uiButton: { icons: { primary: 'ui-icon-gear', secondary: 'ui-icon-triangle-1-s' }, label: 'Config' }, click: handleConfig }
+		    ],
+        customFooterButtons: [
+            { uiButton: { icons: { primary: 'ui-icon-check' }, text: false }, btnAttr: { title: 'Validation' }, click: function (evt) { alert('Great! Validation passed!'); }, atTheFront: true },
+            { uiButton: { icons: { primary: 'ui-icon-refresh' }, label: 'Refresh' }, btnCss: { 'color': '#ff0000' }, click: function (evt) { alert('You clicked `Refresh` button!'); }, atTheFront: true },
+            { uiButton: { icons: { primary: 'ui-icon-arrowthickstop-1-s' }, text: false }, btnAttr: { title: 'Download Data' }, click: function (evt) { alert('Download is in process...'); } }
+        ],
+        customGridButtons: {
+            // jQuery UI Button with text and another theme icon.
+            append: { icons: { primary: 'ui-icon-star' }, text: true, label: 'Append' },
+            // jQuery UI Button with text but not icon.
+            removeLast: { icons: {}, text: false, label: 'Remove Last Row' },
+            // A jQuery UI hack to use a custom image as jQuery UI Button icon.
+            insert: { icons: { primary: 'ui-icon-insert' }, text: true, label: 'Insert' },
+            // Using DOM button element.
+            remove: $('<button></button>').text('Remove').get(0),
+            // Generate a DOM button by a function.
+            moveUp: function () {
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.innerHTML = '^';
+                return button;
+            },
+            // Generate a DOM div as button by a function.
+            moveDown: function () {
+                var div = document.createElement('div');
+                div.innerHTML = 'v';
+                div.style.padding = '2px 12px 2px 12px';
+                div.style.backgroundColor = '#ff9999';
+                div.style.display = 'inline';
+                return div;
+            }
+        }
+    });
+});
+function setFavorite(evtObj, uniqueIndex, rowData) {
+    alert('I know you love this album now :)');
+    // Check the caller button exist in event object
+    if (evtObj && evtObj.target) {
+        // Do something on the button, such as disable the button
+        $(evtObj.target).button('disable');
+    }
+}
+function handleConfig(evtObj, uniqueIndex, rowData) {
+    // Test the rowData object
+    alert('You clicked config of album `' + rowData.Album + '` row!');
+}
+  </script>
+  <form action="" method="post">
+<table id="tblAppendGrid">
+</table>
+  </form>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 20, 2016 1:55:17 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstPartAsm" table="AST_PART_ASM" optimistic-lock="version">
+        <id name="partAsmId" type="big_decimal">
+            <column name="PART_ASM_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astPartAsm" class="com.avnet.alapps.model.alapps.AstPartAsm" fetch="select">
+            <column name="PARENT_PART_ASM_ID" precision="22" scale="0" />
+        </many-to-one>
+        <many-to-one name="astPart" class="com.avnet.alapps.model.alapps.AstPart" fetch="select">
+            <column name="PART_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" />
+        </property>
+        <property name="createUsrId" type="string">
+            <column name="CREATE_USR_ID" length="20" />
+        </property>
+        <property name="touchLevel" type="big_decimal">
+            <column name="TOUCH_LEVEL" precision="22" scale="0" />
+        </property>
+        <property name="depopFl" type="big_decimal">
+            <column name="DEPOP_FL" precision="22" scale="0" />
+        </property>
+        <property name="updateDt" type="java.util.Date">
+            <column name="UPDATE_DT" />
+        </property>
+        <property name="updateUsrId" type="string">
+            <column name="UPDATE_USR_ID" length="20" />
+        </property>
+        <set name="astPartAsmExcludeds" table="AST_PART_ASM_EXCLUDED" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PARENT_PART_ASM_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAsmExcluded" />
+        </set>
+        <set name="astPartAsms" table="AST_PART_ASM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PARENT_PART_ASM_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAsm" />
+        </set>
+        <set name="astTestResults" table="AST_TEST_RESULT" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PART_ASM_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstTestResult" />
+        </set>
+        <set name="astPartAsmAttrs" table="AST_PART_ASM_ATTR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PART_ASM_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAsmAttr" />
+        </set>
+        <set name="astTestResultItems" table="AST_TEST_RESULT_ITEM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PART_ASM_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstTestResultItem" />
+        </set>
+    </class>
+</hibernate-mapping>

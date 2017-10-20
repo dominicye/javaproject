@@ -1,0 +1,130 @@
+{
+  "chassisAttrs": [
+    {
+      "nutanixSerialNum": "16AP13250001",
+      "chassisSerialNum": ""
+    }
+  ],
+  "chassisParts": [
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "BOTTOM"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-1K62P-1R",
+      "serialNum": "P1K65CF29CT1394"
+    },
+    {
+      "0": {
+        "attrNm": "location",
+        "attrDs": "Location",
+        "dataSourceNm": "USER",
+        "dataTypeNm": "STRING",
+        "valueTx": "TOP"
+      },
+      "compTypeNm": "Power Supply",
+      "partNum": "PWS-1K62P-1R",
+      "serialNum": "P1K65CF29CT1400"
+    }
+  ],
+  "nodeData": [
+    {
+      "nodeAttrs": [
+        {
+          "attrNm": "location",
+          "attrDs": "Location",
+          "dataSourceNm": "USER",
+          "dataTypeNm": "STRING",
+          "valueTx": "A"
+        }
+      ],
+      "nodeParts": [
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA1"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR3",
+          "serialNum": "31253BB8"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA2"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR3",
+          "serialNum": "31253920"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA3"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR3",
+          "serialNum": "31253921"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "P1-DIMMA4"
+          },
+          "compTypeNm": "Memory",
+          "partNum": "C-MEM-16GB-DDR3",
+          "serialNum": "31253BEC"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A2"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "Z1X6JYHD"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A3"
+          },
+          "compTypeNm": "Hard Disk Drive",
+          "serialNum": "Z1X623YE"
+        },
+        {
+          "0": {
+            "attrNm": "location",
+            "attrDs": "Location",
+            "dataSourceNm": "USER",
+            "dataTypeNm": "STRING",
+            "valueTx": "A1"
+          },
+          "compTypeNm": "Solid State Drive",
+          "serialNum": "BTHC545403TK480MGN"
+        }
+      ]
+    }
+  ]
+}

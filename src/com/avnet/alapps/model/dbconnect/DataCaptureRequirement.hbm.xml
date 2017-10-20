@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 4:31:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.DataCaptureRequirement" table="DATA_CAPTURE_REQUIREMENT" optimistic-lock="version">
+        <comment>A Requirement of the Data Capture Process.</comment>
+        <id name="dataCaptureRequirementId" type="big_decimal">
+            <column name="DATA_CAPTURE_REQUIREMENT_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="dataCaptureCharacteristic" class="com.avnet.alapps.model.dbconnect.DataCaptureCharacteristic" fetch="select">
+            <column name="DATA_CAPTURE_CHARACTERISTIC_ID" precision="22" scale="0" not-null="true">
+                <comment>A unique Identifier of a Data Capture Characteristic, assigned internally by the Embedded application.</comment>
+            </column>
+        </many-to-one>
+        <property name="partOnlyFl" type="string">
+            <column name="PART_ONLY_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether the Requirement is Only relevant at the Part level.</comment>
+            </column>
+        </property>
+        <property name="requirementQt" type="big_decimal">
+            <column name="REQUIREMENT_QT" precision="22" scale="0" not-null="true">
+                <comment>The Quantity of a given Requirement which is relevant to a given situation.</comment>
+            </column>
+        </property>
+        <property name="requirementDs" type="string">
+            <column name="REQUIREMENT_DS" length="100" not-null="true">
+                <comment>A Description of the Data Capture Requirement.</comment>
+            </column>
+        </property>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether the Requirement is Active for use.</comment>
+            </column>
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+        <property name="applCreateUserId" type="string">
+            <column name="APPL_CREATE_USER_ID" length="17" not-null="true" />
+        </property>
+        <property name="applUpdateUserId" type="string">
+            <column name="APPL_UPDATE_USER_ID" length="17" />
+        </property>
+        <set name="dataCaptureDetails" table="DATA_CAPTURE_DETAIL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="DATA_CAPTURE_REQUIREMENT_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Data Capture Requirement, assigned internally by the Embedded application.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.DataCaptureDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

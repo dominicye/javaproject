@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 17, 2016 2:43:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstOrderInfoWaybill" table="AST_ORDER_INFO_WAYBILL" optimistic-lock="version">
+        <composite-id name="id" class="com.avnet.alapps.model.alapps.AstOrderInfoWaybillId">
+            <key-property name="scn" type="string">
+                <column name="SCN" length="13" />
+            </key-property>
+            <key-property name="sapDelivery" type="string">
+                <column name="SAP_DELIVERY" length="10" />
+            </key-property>
+        </composite-id>
+        <property name="carrierName" type="string">
+            <column name="CARRIER_NAME" length="40" />
+        </property>
+        <property name="waybill" type="string">
+            <column name="WAYBILL" length="30" />
+        </property>
+        <property name="shipDt" type="date">
+            <column name="SHIP_DT" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

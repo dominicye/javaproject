@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AstDailyTestResults" language="groovy" pageWidth="2200" pageHeight="842" columnWidth="2200" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="d55d9bf5-20a1-419c-a0a3-9565a6629983">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="10"/>
+	<property name="ireport.y" value="0"/>
+	<field name="createDate" class="java.util.Date"/>
+	<field name="testSessionId" class="java.math.BigDecimal"/>
+	<field name="testSystemName" class="java.lang.String"/>
+	<field name="testResultCode" class="java.lang.String"/>
+	<field name="chassisSerialNumber" class="java.lang.String"/>
+	<field name="touchLevel" class="java.math.BigDecimal"/>
+	<field name="testName" class="java.lang.String"/>
+	<field name="testDescription" class="java.lang.String"/>
+	<field name="testResultItemCode" class="java.lang.String"/>
+	<field name="testResultItemCodeName" class="java.lang.String"/>
+	<field name="testResultItemCodeDescription" class="java.lang.String"/>
+	<field name="componentSerialNumber" class="java.lang.String"/>
+	<field name="nutanixTopLevelPartNumber" class="java.lang.String"/>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5286af46-d6c6-4b0f-aceb-2da5d6862fda" x="0" y="0" width="119" height="20"/>
+				<textElement/>
+				<text><![CDATA[CREATE_DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="45bf56e1-5c8e-4932-8222-9ac8175c089e" x="119" y="0" width="108" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_SESSION_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b1de4e9a-a1ac-402c-8026-f2a12f2606be" x="227" y="0" width="134" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_SYSTEM_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1bb27e1a-cb0b-4375-a4f7-bc36555d38c2" x="361" y="0" width="129" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_RESULT_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba28e060-6713-4d3e-b253-ba5dfe0edb47" x="490" y="0" width="162" height="20"/>
+				<textElement/>
+				<text><![CDATA[CHASSIS_SERIAL_NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0a2a2ab-0289-4bd2-b09d-4aa1804da16e" x="802" y="0" width="97" height="20"/>
+				<textElement/>
+				<text><![CDATA[TOUCH_LEVEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b800808f-272f-4de6-abfd-3eb786f95815" x="899" y="0" width="151" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="655b22b2-2f0d-4c90-8c51-c03234b3670d" x="1050" y="0" width="426" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_DESC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d306c77f-8fb2-4a4b-9f74-49442d0c0c33" x="1476" y="0" width="156" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_RESULT_ITEM_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e58fa1c2-d371-4b6c-88f0-bdd2a81b0e27" x="1632" y="0" width="189" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_RESULT_ITEM_CODE_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3151e131-c205-4ec7-9dc5-a5ec88fc912e" x="1821" y="0" width="195" height="20"/>
+				<textElement/>
+				<text><![CDATA[TEST_RESULT_ITEM_CODE_DESC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37672018-904d-4f79-929b-a30389d0e967" x="2016" y="0" width="184" height="20"/>
+				<textElement/>
+				<text><![CDATA[COMPONENT_SERIAL_NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0a2a2ab-0289-4bd2-b09d-4aa1804da16e" x="652" y="0" width="150" height="20"/>
+				<textElement/>
+				<text><![CDATA[CHASSIS_PART]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField pattern="dd-MMM-yyyy h.mm a" isBlankWhenNull="true">
+				<reportElement uuid="7c38de4e-6001-475c-9ba4-9d2b28a140af" x="0" y="0" width="119" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{createDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="274e36fa-4c1c-426c-9911-6c98c9a47d5e" x="119" y="0" width="108" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testSessionId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="61cac520-a285-409d-93e5-e8393ded0a68" x="227" y="0" width="134" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testSystemName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="64e21903-20b6-44fb-93d4-2b8d110706ff" x="361" y="0" width="129" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testResultCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b9b0d7c0-0fbd-4e23-ad52-97be15d791b3" x="490" y="0" width="162" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{chassisSerialNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fd9765ca-5989-40bb-a5db-abd0a5403e40" x="802" y="0" width="97" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{touchLevel}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="95faff88-8098-4761-8a4b-2966d7799d67" x="899" y="0" width="151" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b74a7eaf-1289-451f-b2f6-a76e11ab2171" x="1050" y="0" width="426" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testDescription}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="19b8f86d-5dd0-4936-9248-08596b6b252d" x="1476" y="0" width="156" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testResultItemCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="057214eb-818c-42fd-bca3-236cccc91076" x="1632" y="0" width="189" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testResultItemCodeName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b34b6224-b15c-4caf-bf6b-675e17e4396e" x="1821" y="0" width="195" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testResultItemCodeDescription}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c652179e-862d-427e-b373-ee8357bad2c0" x="2016" y="0" width="184" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{componentSerialNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fd9765ca-5989-40bb-a5db-abd0a5403e40" x="652" y="0" width="150" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nutanixTopLevelPartNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

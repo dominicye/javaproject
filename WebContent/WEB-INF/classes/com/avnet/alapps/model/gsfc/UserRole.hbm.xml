@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.UserRole" table="USER_ROLE" optimistic-lock="version">
+        <comment>A Role a User may assume.</comment>
+        <id name="userRoleId" type="big_decimal">
+            <column name="USER_ROLE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="internalRoleFl" type="string">
+            <column name="INTERNAL_ROLE_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a User Role is considered Internal to Avnet Programming Center Application(s).</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="userRoleCd" type="string">
+            <column name="USER_ROLE_CD" length="5" unique="true">
+                <comment>A Code identifying a User Role.</comment>
+            </column>
+        </property>
+        <property name="userRoleNm" type="string">
+            <column name="USER_ROLE_NM" length="50" not-null="true" unique="true">
+                <comment>A Name of a User Role.</comment>
+            </column>
+        </property>
+        <set name="userRoleOperations" table="USER_ROLE_OPERATION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_ROLE_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a User Role.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserRoleOperation" />
+        </set>
+        <set name="userses" table="USERS" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="PRIMARY_USER_ROLE_ID" precision="22" scale="0">
+                    <comment>An Identifier of the Primary User Role assigned to a User.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.Users" />
+        </set>
+    </class>
+</hibernate-mapping>

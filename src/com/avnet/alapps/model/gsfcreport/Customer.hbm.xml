@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2015 4:15:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfcreport.Customer" table="CUSTOMER" optimistic-lock="version">
+        <comment>A Customer which uses Avnet Programming Center services.</comment>
+        <id name="customerId" type="big_decimal">
+            <column name="CUSTOMER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="customerNm" type="string">
+            <column name="CUSTOMER_NM" length="100" not-null="true">
+                <comment>The Name of a Customer.</comment>
+            </column>
+        </property>
+        <property name="customerNo" type="big_decimal">
+            <column name="CUSTOMER_NO" precision="22" scale="0" not-null="true" unique="true">
+                <comment>A Number uniquely identifying a Customer, which may be used/exposed outside of the Avnet Programming Center applications/systems.</comment>
+            </column>
+        </property>
+        <property name="defaultPostalAddressId" type="big_decimal">
+            <column name="DEFAULT_POSTAL_ADDRESS_ID" precision="22" scale="0">
+                <comment>The Identifier of the Default Postal Address of a Customer.</comment>
+            </column>
+        </property>
+        <property name="industryClassId" type="big_decimal">
+            <column name="INDUSTRY_CLASS_ID" precision="22" scale="0">
+                <comment>A unique Identifier of an Industry Classification.</comment>
+            </column>
+        </property>
+        <property name="preferredLanguageId" type="big_decimal">
+            <column name="PREFERRED_LANGUAGE_ID" precision="22" scale="0">
+                <comment>An Identifier of the Preferred Language of a Customer.</comment>
+            </column>
+        </property>
+        <property name="languageId" type="big_decimal">
+            <column name="LANGUAGE_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Preferred Language of a Customer.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="minimumOrderCostAm" type="big_decimal">
+            <column name="MINIMUM_ORDER_COST_AM" precision="22" scale="0">
+                <comment>A Minimum Cost Amount for a single Order associated with a Customer, regardless of number of Units/Parts ordered.</comment>
+            </column>
+        </property>
+        <set name="firstArticles" table="FIRST_ARTICLE" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CUSTOMER_ID" precision="22" scale="0">
+                    <comment>An Identifier of the Customer who requested that the First Article be created.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.FirstArticle" />
+        </set>
+        <set name="workOrders" table="WORK_ORDER" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CUSTOMER_ID" precision="22" scale="0">
+                    <comment>An Identifier of the Customer associated with a Work Order.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.WorkOrder" />
+        </set>
+    </class>
+</hibernate-mapping>

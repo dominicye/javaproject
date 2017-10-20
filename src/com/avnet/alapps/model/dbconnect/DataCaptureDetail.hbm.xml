@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 4, 2016 4:31:44 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.DataCaptureDetail" table="DATA_CAPTURE_DETAIL" optimistic-lock="version">
+        <comment>Detail regarding Data Captured at the Integration, Unit Detail or Part level.</comment>
+        <id name="dataCaptureDetailId" type="big_decimal">
+            <column name="DATA_CAPTURE_DETAIL_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="integration" class="com.avnet.alapps.model.dbconnect.Integration" fetch="select">
+            <column name="ITS_INVOICE_NO" length="35" not-null="true" />
+            <column name="ITS_SCN" length="13" not-null="true" />
+            <column name="SOURCE_ERP_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="itsPart" class="com.avnet.alapps.model.dbconnect.ItsPart" fetch="select">
+            <column name="ITS_PART_ID" precision="8" scale="0" />
+        </many-to-one>
+        <many-to-one name="itsUnitDetail" class="com.avnet.alapps.model.dbconnect.ItsUnitDetail" fetch="select">
+            <column name="ITS_UNIT_DETAIL_ID" precision="10" scale="0" />
+        </many-to-one>
+        <many-to-one name="dataCaptureRequirement" class="com.avnet.alapps.model.dbconnect.DataCaptureRequirement" fetch="select">
+            <column name="DATA_CAPTURE_REQUIREMENT_ID" precision="22" scale="0" not-null="true">
+                <comment>A unique Identifier of a Data Capture Requirement, assigned internally by the Embedded application.</comment>
+            </column>
+        </many-to-one>
+        <property name="characteristicValueTx" type="string">
+            <column name="CHARACTERISTIC_VALUE_TX" length="200" not-null="true">
+                <comment>Text containing the Value Captured. This Value is associated with the Data Capture Characteristic within the Data Capture Requirement.</comment>
+            </column>
+        </property>
+        <property name="noteTx" type="string">
+            <column name="NOTE_TX" length="500">
+                <comment>General Notes which may be entered during Detail Data Capture.</comment>
+            </column>
+        </property>
+        <property name="technicianId" type="string">
+            <column name="TECHNICIAN_ID" length="17" not-null="true">
+                <comment>An Identifier of the Technician who Captured the Detail data.</comment>
+            </column>
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+        <property name="applCreateUserId" type="string">
+            <column name="APPL_CREATE_USER_ID" length="17" not-null="true" />
+        </property>
+        <property name="applUpdateUserId" type="string">
+            <column name="APPL_UPDATE_USER_ID" length="17" />
+        </property>
+    </class>
+</hibernate-mapping>

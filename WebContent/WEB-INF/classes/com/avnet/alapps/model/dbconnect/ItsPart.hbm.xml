@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 13, 2016 5:16:21 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.ItsPart" table="ITS_PART" schema="FASTADM" optimistic-lock="version">
+        <id name="itsPartId" type="int">
+            <column name="ITS_PART_ID" precision="8" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="itsPart" class="com.avnet.alapps.model.dbconnect.ItsPart" fetch="select">
+            <column name="ITS_PART_ID_RECURS" precision="8" scale="0" />
+        </many-to-one>
+        <property name="itsInvoiceNo" type="string">
+            <column name="ITS_INVOICE_NO" length="35" not-null="true" />
+        </property>
+        <property name="itsScn" type="string">
+            <column name="ITS_SCN" length="13" not-null="true" />
+        </property>
+        <property name="itsPartProjectbomId" type="int">
+            <column name="ITS_PART_PROJECTBOM_ID" precision="8" scale="0" not-null="true" />
+        </property>
+        <property name="itsPartUlSn" type="string">
+            <column name="ITS_PART_UL_SN" length="35" />
+        </property>
+        <property name="itsPartSn" type="string">
+            <column name="ITS_PART_SN" length="40" />
+        </property>
+        <property name="itsPartMfgpartno" type="string">
+            <column name="ITS_PART_MFGPARTNO" length="40" not-null="true" />
+        </property>
+        <property name="itsPartMfgcode" type="string">
+            <column name="ITS_PART_MFGCODE" length="10" not-null="true" />
+        </property>
+        <property name="itsPartDescription" type="string">
+            <column name="ITS_PART_DESCRIPTION" length="2000" />
+        </property>
+        <property name="itsPartTechBadgeno" type="string">
+            <column name="ITS_PART_TECH_BADGENO" length="15" />
+        </property>
+        <property name="itsBottom" type="string">
+            <column name="ITS_BOTTOM" length="1" not-null="true" />
+        </property>
+        <property name="itsImcPartFlg" type="string">
+            <column name="ITS_IMC_PART_FLG" length="1" />
+        </property>
+        <property name="itsCutbackFlg" type="string">
+            <column name="ITS_CUTBACK_FLG" length="1" />
+        </property>
+        <property name="itsSerialOverrideFlg" type="string">
+            <column name="ITS_SERIAL_OVERRIDE_FLG" length="1" />
+        </property>
+        <property name="itsLineitemno" type="string">
+            <column name="ITS_LINEITEMNO" length="10" />
+        </property>
+        <property name="itsPartCost" type="big_decimal">
+            <column name="ITS_PART_COST" precision="14" scale="4" />
+        </property>
+        <property name="itsPartResale" type="big_decimal">
+            <column name="ITS_PART_RESALE" precision="14" scale="4" />
+        </property>
+        <property name="itsPartDupserialFlg" type="string">
+            <column name="ITS_PART_DUPSERIAL_FLG" length="1" />
+        </property>
+        <property name="itsPartScanFlg" type="string">
+            <column name="ITS_PART_SCAN_FLG" length="1" />
+        </property>
+        <property name="itsPartChassisFlg" type="string">
+            <column name="ITS_PART_CHASSIS_FLG" length="1" />
+        </property>
+        <property name="itsPartControlno" type="string">
+            <column name="ITS_PART_CONTROLNO" length="20" />
+        </property>
+        <property name="scn" type="string">
+            <column name="SCN" length="13" not-null="true" />
+        </property>
+        <property name="invoiceNo" type="string">
+            <column name="INVOICE_NO" length="14" not-null="true" />
+        </property>
+        <property name="insertDate" type="date">
+            <column name="INSERT_DATE" length="7" />
+        </property>
+        <property name="insertUser" type="string">
+            <column name="INSERT_USER" length="17" not-null="true" />
+        </property>
+        <property name="updateDate" type="date">
+            <column name="UPDATE_DATE" length="7" />
+        </property>
+        <property name="updateUser" type="string">
+            <column name="UPDATE_USER" length="17" />
+        </property>
+        <property name="consolidatedPartFl" type="string">
+            <column name="CONSOLIDATED_PART_FL" length="1" not-null="true" />
+        </property>
+        <property name="consolidatedPartQt" type="big_decimal">
+            <column name="CONSOLIDATED_PART_QT" precision="22" scale="0" />
+        </property>
+        <property name="modifiedQtIcnFl" type="string">
+            <column name="MODIFIED_QT_ICN_FL" length="1" not-null="true" />
+        </property>
+        <property name="itsUnitDetailId" type="big_decimal">
+            <column name="ITS_UNIT_DETAIL_ID" precision="22" scale="0" />
+        </property>
+        <property name="custPartNo" type="string">
+            <column name="CUST_PART_NO" length="30" />
+        </property>
+        <property name="scnCustomerLineNo" type="big_decimal">
+            <column name="SCN_CUSTOMER_LINE_NO" precision="22" scale="0" />
+        </property>
+        <property name="custDrawingTx" type="string">
+            <column name="CUST_DRAWING_TX" length="25" />
+        </property>
+        <property name="custReferenceTx01" type="string">
+            <column name="CUST_REFERENCE_TX_01" length="25" />
+        </property>
+        <property name="partVerificationTx" type="string">
+            <column name="PART_VERIFICATION_TX" length="50" />
+        </property>
+        <property name="partVerificationRequiredFl" type="string">
+            <column name="PART_VERIFICATION_REQUIRED_FL" length="1" not-null="true" />
+        </property>
+        <property name="autoTestPartFl" type="string">
+            <column name="AUTO_TEST_PART_FL" length="1" />
+        </property>
+        <property name="sapMaterialNo" type="string">
+            <column name="SAP_MATERIAL_NO" length="18" />
+        </property>
+        <property name="serialNoRequiredFl" type="string">
+            <column name="SERIAL_NO_REQUIRED_FL" length="1" />
+        </property>
+        <property name="reservationLineItem" type="string">
+            <column name="RESERVATION_LINE_ITEM" length="4" />
+        </property>
+        <property name="reservationNo" type="string">
+            <column name="RESERVATION_NO" length="10" />
+        </property>
+        <property name="goodsMvmtFl" type="java.lang.Character">
+            <column name="GOODS_MVMT_FL" length="1" />
+        </property>
+        <property name="countryOfOriginCd" type="string">
+            <column name="COUNTRY_OF_ORIGIN_CD" length="3" />
+        </property>
+        <property name="dataCaptureRequiredFl" type="string">
+            <column name="DATA_CAPTURE_REQUIRED_FL" length="1">
+                <comment>A Y/N Flag identifying whether Data Capture is Required.</comment>
+            </column>
+        </property>
+        <property name="batchNo" type="string">
+            <column name="BATCH_NO" length="10">
+                <comment>The Red Prairie Batch Number provided by the SAP ERP applications.</comment>
+            </column>
+        </property>
+        <property name="sourceErpId" type="java.lang.Integer">
+            <column name="SOURCE_ERP_ID" precision="5" scale="0" />
+        </property>
+        <property name="storageLocationId" type="string">
+            <column name="STORAGE_LOCATION_ID" length="10" />
+        </property>
+        <property name="componentUom" type="string">
+            <column name="COMPONENT_UOM" length="3" />
+        </property>
+        <property name="movementTypeCd" type="string">
+            <column name="MOVEMENT_TYPE_CD" length="10" />
+        </property>
+        <set name="itsParts" table="ITS_PART" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ITS_PART_ID_RECURS" precision="8" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.ItsPart" />
+        </set>
+        <set name="dataCaptureDetails" table="DATA_CAPTURE_DETAIL" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ITS_PART_ID" precision="8" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.dbconnect.DataCaptureDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

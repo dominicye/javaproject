@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 23, 2016 12:12:01 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.dbconnect.Orderaddress" table="ORDERADDRESS" schema="GENESIS_OWN" optimistic-lock="version">
+        <id name="scn" type="string">
+            <column name="SCN" length="13" />
+            <generator class="assigned" />
+        </id>
+        <property name="billtoname" type="string">
+            <column name="BILLTONAME" length="25" />
+        </property>
+        <property name="billtoaddress1" type="string">
+            <column name="BILLTOADDRESS1" length="30" />
+        </property>
+        <property name="billtoaddress2" type="string">
+            <column name="BILLTOADDRESS2" length="30" />
+        </property>
+        <property name="billtoaddress3" type="string">
+            <column name="BILLTOADDRESS3" length="30" />
+        </property>
+        <property name="billtocity" type="string">
+            <column name="BILLTOCITY" length="15" />
+        </property>
+        <property name="billtostateprovince" type="string">
+            <column name="BILLTOSTATEPROVINCE" length="2" />
+        </property>
+        <property name="billtopostalcode" type="string">
+            <column name="BILLTOPOSTALCODE" length="9" />
+        </property>
+        <property name="billtocountry" type="string">
+            <column name="BILLTOCOUNTRY" length="4" />
+        </property>
+        <property name="billtoattention" type="string">
+            <column name="BILLTOATTENTION" length="30" />
+        </property>
+        <property name="shiptoname" type="string">
+            <column name="SHIPTONAME" length="25" />
+        </property>
+        <property name="shiptoaddress1" type="string">
+            <column name="SHIPTOADDRESS1" length="30" />
+        </property>
+        <property name="shiptoaddress2" type="string">
+            <column name="SHIPTOADDRESS2" length="30" />
+        </property>
+        <property name="shiptoaddress3" type="string">
+            <column name="SHIPTOADDRESS3" length="30" />
+        </property>
+        <property name="shiptocity" type="string">
+            <column name="SHIPTOCITY" length="15" />
+        </property>
+        <property name="shiptostateprovince" type="string">
+            <column name="SHIPTOSTATEPROVINCE" length="2" />
+        </property>
+        <property name="shiptopostalcode" type="string">
+            <column name="SHIPTOPOSTALCODE" length="9" />
+        </property>
+        <property name="shiptocountry" type="string">
+            <column name="SHIPTOCOUNTRY" length="4" />
+        </property>
+        <property name="shiptoattention" type="string">
+            <column name="SHIPTOATTENTION" length="30" />
+        </property>
+        <property name="lastupdatedate" type="string">
+            <column name="LASTUPDATEDATE" length="8" />
+        </property>
+        <property name="lastupdatetime" type="string">
+            <column name="LASTUPDATETIME" length="8" />
+        </property>
+        <property name="genesiscreatedate" type="big_decimal">
+            <column name="GENESISCREATEDATE" precision="22" scale="0" />
+        </property>
+        <property name="genesiscreatetime" type="big_decimal">
+            <column name="GENESISCREATETIME" precision="22" scale="0" />
+        </property>
+        <property name="insertdate" type="date">
+            <column name="INSERTDATE" length="7" />
+        </property>
+        <property name="insertuser" type="string">
+            <column name="INSERTUSER" length="25" />
+        </property>
+        <property name="updatedate" type="date">
+            <column name="UPDATEDATE" length="7" />
+        </property>
+        <property name="updateuser" type="string">
+            <column name="UPDATEUSER" length="25" />
+        </property>
+        <property name="applSorRecordFl" type="string">
+            <column name="APPL_SOR_RECORD_FL" length="1" not-null="true" />
+        </property>
+        <property name="applCreateDt" type="date">
+            <column name="APPL_CREATE_DT" length="7" not-null="true" />
+        </property>
+        <property name="applUpdateDt" type="date">
+            <column name="APPL_UPDATE_DT" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

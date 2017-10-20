@@ -1,0 +1,1525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:test_result xmlns:tns="http://alapps.avnet.com/ISTResponseSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://alapps.avnet.com/ISTResponseSchema ISTResponseSchema.xsd">
+  <client>IST</client>
+  <chassis_partnumber>CSE-827HQ+-R2K04A</chassis_partnumber>
+  <chassis_serialnumber>16AP99990706</chassis_serialnumber>
+  <test_station>iss-vm19</test_station>
+  <tester_name>A01</tester_name>
+  <operator_id>chart</operator_id>
+  <result_code>PASS</result_code>
+  <result_start>11 Jul 2016 03:05:19 AM</result_start>
+  <result_stop>11 Jul 2016 03:41:27 AM</result_stop>
+  <fail_results></fail_results>
+  <pass_results>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>TOP</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1125</component_serialnumber>
+      <component_extracted_value>PWS</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>TOP</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1125</component_serialnumber>
+      <component_extracted_value>Module</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU0_INFO</test_name>
+      <test_description>PSU0 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>TOP</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1125</component_serialnumber>
+      <component_extracted_value>Number</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>BOTTOM</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1126</component_serialnumber>
+      <component_extracted_value>PWS</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>BOTTOM</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1126</component_serialnumber>
+      <component_extracted_value>Module</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>EXECHK_PSU1_INFO</test_name>
+      <test_description>PSU1 info check</test_description>
+      <component_type>psu</component_type>
+      <component_location>BOTTOM</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1126</component_serialnumber>
+      <component_extracted_value>Number</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_1</test_name>
+      <test_description>get psu1 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>TOP</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1125</component_serialnumber>
+      <component_extracted_value>PS1</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_1</test_name>
+      <test_description>get psu1 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>TOP</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1125</component_serialnumber>
+      <component_extracted_value>Status</component_extracted_value>
+    </pass_result>
+    <pass_result>
+      <test_name>GLC_EXEC_PSU_2</test_name>
+      <test_description>get psu2 exec info</test_description>
+      <component_type>psu</component_type>
+      <component_location>BOTTOM</component_location>
+      <component_partnumber>PWS-2K04A-1R</component_partnumber>
+      <component_serialnumber>P2K4ACF50NB1126</component_serialnumber>
+      <component_extracted_value>0x1</component_extracted_value>
+    </pass_result>
+  </pass_results>
+  <node_result>
+    <component_location>A</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>Version:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>G5T-1.21</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>Revision</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>3.28</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>image's</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>version</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>is</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>MPTFW-10.00.07.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>verify chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>TEST-1606089</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_PN</test_name>
+        <test_description>Return BackPlane P/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>BPN-SAS3-827HQ</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_SN</test_name>
+        <test_description>Return BackPlane S/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>JB162S001622</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>Return BackPlane Revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>NX-1065-G5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_MB_VERSION</test_name>
+        <test_description>get mb version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N014939</component_serialnumber>
+        <component_extracted_value>1.10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>verify backplane mcu version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>verify backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701996</component_serialnumber>
+        <component_extracted_value>Core</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701996</component_serialnumber>
+        <component_extracted_value>Count:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701996</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU2</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701575</component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8D6E</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8C38</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8DC2</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8A8E</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8D5F</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8D43</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8490</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8289</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011047</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHDW6</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>A2</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHDC1</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>A1</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>0QY37E7A</component_serialnumber>
+        <component_extracted_value>D300</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>BCA11603180011047</component_serialnumber>
+        <component_extracted_value>S560301N</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>SATA_DOM_FW_VERIFY</test_name>
+        <test_description>verify sata-dom partnumber, serial number, fw and capacity</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011047</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>B</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>Version:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>G5T-1.21</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>Revision</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>3.28</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>image's</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>version</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>is</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>MPTFW-10.00.07.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>verify chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>TEST-1606089</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_PN</test_name>
+        <test_description>Return BackPlane P/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>BPN-SAS3-827HQ</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_SN</test_name>
+        <test_description>Return BackPlane S/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>JB162S001622</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>Return BackPlane Revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>NX-1065-G5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_MB_VERSION</test_name>
+        <test_description>get mb version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N004560</component_serialnumber>
+        <component_extracted_value>1.10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>verify backplane mcu version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>verify backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701240</component_serialnumber>
+        <component_extracted_value>Core</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701240</component_serialnumber>
+        <component_extracted_value>Count:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701240</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU2</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6S53T3402367</component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8DB0</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D844F</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8530</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D85BC</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8571</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D828D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8534</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D85C0</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011046</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHDCA</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>B2</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHD61</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>B1</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>0QY3B6GA</component_serialnumber>
+        <component_extracted_value>D300</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>BCA11603180011046</component_serialnumber>
+        <component_extracted_value>S560301N</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>SATA_DOM_FW_VERIFY</test_name>
+        <test_description>verify sata-dom partnumber, serial number, fw and capacity</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011046</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>C</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>Version:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>G5T-1.21</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>Revision</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>3.28</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>image's</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>version</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>is</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>MPTFW-10.00.07.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>verify chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>TEST-1606089</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_PN</test_name>
+        <test_description>Return BackPlane P/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>BPN-SAS3-827HQ</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_SN</test_name>
+        <test_description>Return BackPlane S/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>JB162S001622</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>Return BackPlane Revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>NX-1065-G5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_MB_VERSION</test_name>
+        <test_description>get mb version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N023145</component_serialnumber>
+        <component_extracted_value>1.10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>verify backplane mcu version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>verify backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6S53T3402608</component_serialnumber>
+        <component_extracted_value>Core</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6S53T3402608</component_serialnumber>
+        <component_extracted_value>Count:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6S53T3402608</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU2</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6UM614701534</component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D85BF</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8531</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D852D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D856A</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8569</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8532</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D861D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D860D</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011045</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHDB9</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>C2</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHD52</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>C1</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>0QY37JLA</component_serialnumber>
+        <component_extracted_value>D300</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>BCA11603180011045</component_serialnumber>
+        <component_extracted_value>S560301N</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>SATA_DOM_FW_VERIFY</test_name>
+        <test_description>verify sata-dom partnumber, serial number, fw and capacity</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011045</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+  <node_result>
+    <component_location>D</component_location>
+    <fail_results></fail_results>
+    <pass_results>
+      <pass_result>
+        <test_name>EXEC_BMC_FACTORY_DEFAULT_CHECK</test_name>
+        <test_description>reset bmc to factory default</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>factory default completed</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>Version:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BIOS_INFO</test_name>
+        <test_description>Check bios version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>G5T-1.21</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>Revision</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_BMC_VERSION</test_name>
+        <test_description>Check bmc version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>3.28</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>Firmware</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>image's</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>version</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>is</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>GLC_EXEC_LSI_VERSION</test_name>
+        <test_description>Check lsi version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>MPTFW-10.00.07.00-IT</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_SYSTEM_SN</test_name>
+        <test_description>verify chassis serial number</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>TEST-1606089</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_PN</test_name>
+        <test_description>Return BackPlane P/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>BPN-SAS3-827HQ</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_SN</test_name>
+        <test_description>Return BackPlane S/N</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>JB162S001622</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>Return BackPlane Revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_BMC_PRODUCT_PN</test_name>
+        <test_description>get mb bmc product part number</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>NX-1065-G5</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>VPD_CHECK_MB_MFG_NAME</test_name>
+        <test_description>get board manufacturer name</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>Nutanix</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_MB_VERSION</test_name>
+        <test_description>get mb version</test_description>
+        <component_type>mb</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>ND-X028TP-HC0R-NI22</component_partnumber>
+        <component_serialnumber>TEST-N035776</component_serialnumber>
+        <component_extracted_value>1.10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_MCU</test_name>
+        <test_description>verify backplane mcu version</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.08</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_CHECK_BACKPLANE_REVISION</test_name>
+        <test_description>verify backplane revision</test_description>
+        <component_type>chassis</component_type>
+        <component_location>1</component_location>
+        <component_partnumber>CSE-827HQ+-R2K04A</component_partnumber>
+        <component_serialnumber>C8270AF04NF0122</component_serialnumber>
+        <component_extracted_value>1.01</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M62F58C202074</component_serialnumber>
+        <component_extracted_value>Core</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M62F58C202074</component_serialnumber>
+        <component_extracted_value>Count:</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXECHK_CPU_INFO</test_name>
+        <test_description>CPU info check</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU1</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M62F58C202074</component_serialnumber>
+        <component_extracted_value>10</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>EXEC_CPU_COUNT_CHECK</test_name>
+        <test_description>check cpu count</test_description>
+        <component_type>cpu</component_type>
+        <component_location>CPU2</component_location>
+        <component_partnumber>P4X-DPE52630V4-SR2R7</component_partnumber>
+        <component_serialnumber>M6737D7W01656</component_serialnumber>
+        <component_extracted_value>2</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMA1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D856B</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMB1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8299</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMC1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8533</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P1-DIMMD1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D840E</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMME1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8568</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMF1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D848E</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMG1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8298</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DIMM_RULE_CFG_VERIFY</test_name>
+        <test_description>get dimm info</test_description>
+        <component_type>memory</component_type>
+        <component_location>P2-DIMMH1</component_location>
+        <component_partnumber>M393A2K40BB1-CRC0Q</component_partnumber>
+        <component_serialnumber>S04ZA10604316D8365</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>UNIX_EXEC_SATADOM_COUNT_CHECK</test_name>
+        <test_description>check sata-dom count</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011059</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D2</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAHD2V</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>hdd</component_type>
+        <component_location>D3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>Z1ZAGNWE</component_serialnumber>
+        <component_extracted_value>SN04</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>ssd</component_type>
+        <component_location>D1</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>0QY3B1RA</component_serialnumber>
+        <component_extracted_value>D300</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>DISK_RULE_CFG_VERIFY</test_name>
+        <test_description>get disks info</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>ST4000NM0033</component_partnumber>
+        <component_serialnumber>BCA11603180011059</component_serialnumber>
+        <component_extracted_value>S560301N</component_extracted_value>
+      </pass_result>
+      <pass_result>
+        <test_name>SATA_DOM_FW_VERIFY</test_name>
+        <test_description>verify sata-dom partnumber, serial number, fw and capacity</test_description>
+        <component_type>sata_dom</component_type>
+        <component_location>SLOT3</component_location>
+        <component_partnumber>DHSSL-64GD09BCADCA-B157B</component_partnumber>
+        <component_serialnumber>BCA11603180011059</component_serialnumber>
+        <component_extracted_value></component_extracted_value>
+      </pass_result>
+    </pass_results>
+  </node_result>
+</tns:test_result>

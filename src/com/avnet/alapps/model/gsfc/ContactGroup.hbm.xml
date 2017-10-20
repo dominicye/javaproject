@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.ContactGroup" table="CONTACT_GROUP" optimistic-lock="version">
+        <comment>A Group of Contacts.</comment>
+        <id name="contactGroupId" type="big_decimal">
+            <column name="CONTACT_GROUP_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="groupDs" type="string">
+            <column name="GROUP_DS" length="100">
+                <comment>A Description of a Contact Group.</comment>
+            </column>
+        </property>
+        <property name="groupEmailAddressTx" type="string">
+            <column name="GROUP_EMAIL_ADDRESS_TX">
+                <comment>Text containing an Email associated with a Contact Group, which is separate from any email associated with a Contact.</comment>
+            </column>
+        </property>
+        <property name="groupNm" type="string">
+            <column name="GROUP_NM" length="50" not-null="true">
+                <comment>A Name of a Contact Group.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <set name="contactGroupMembers" table="CONTACT_GROUP_MEMBER" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CONTACT_GROUP_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Contact Group.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.ContactGroupMember" />
+        </set>
+    </class>
+</hibernate-mapping>

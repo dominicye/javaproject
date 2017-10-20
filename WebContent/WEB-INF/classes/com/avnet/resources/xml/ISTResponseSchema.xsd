@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://alapps.avnet.com/ISTResponseSchema" xmlns:tns="http://alapps.avnet.com/ISTResponseSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<element name="test_result">
+		<complexType>		
+    		<sequence>
+    			<element name="client" type="tns:clientType" minOccurs="1" maxOccurs="1"></element>
+    			<element name="chassis_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+    			<element name="chassis_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+    			<element name="test_station" type="string" minOccurs="1" maxOccurs="1"></element>
+    			<element name="tester_name" type="string" minOccurs="1" maxOccurs="1"></element>
+    			<element name="operator_id" type="string" minOccurs="1" maxOccurs="1"></element>
+    			<element name="result_code" type="tns:resultCodeType" minOccurs="1" maxOccurs="1"></element>
+    			<element name="result_start" type="string" minOccurs="0" maxOccurs="1"></element>
+    			<element name="result_stop" type="string" minOccurs="0" maxOccurs="1"></element>
+    			<element name="fail_results" minOccurs="1" maxOccurs="1">
+				<complexType>
+ 					<sequence>
+ 						<element name="fail_result" minOccurs="0" maxOccurs="unbounded">
+ 							<complexType>
+ 								<all>
+ 									<element name="test_name" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="test_description" type="string" minOccurs="1" maxOccurs="1"></element>
+ 									<element name="fail_code" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="fail_description" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_type" type="tns:componentType" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_location" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_extracted_value" type="string" minOccurs="1" maxOccurs="1"></element>
+ 								</all>
+ 							</complexType>
+ 						</element>
+ 					</sequence>
+ 				</complexType>
+				</element>
+				<element name="pass_results" minOccurs="1" maxOccurs="1">
+				<complexType>
+ 					<sequence>
+ 						<element name="pass_result" minOccurs="0" maxOccurs="unbounded">
+ 							<complexType>
+ 								<all>
+ 									<element name="test_name" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="test_description" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_type" type="tns:componentType" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_location" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+			 						<element name="component_extracted_value" type="string" minOccurs="1" maxOccurs="1"></element>
+ 								</all>
+ 							</complexType>
+ 						</element>
+ 					</sequence>
+ 				</complexType>
+				</element>
+    			<element name="node_result" minOccurs="0" maxOccurs="unbounded">
+    				<complexType>
+		 				<sequence>
+		 					<element name="component_location" type="string" minOccurs="1" maxOccurs="1"></element>
+			    			<element name="fail_results" minOccurs="1" maxOccurs="1">
+								<complexType>
+				 					<sequence>
+				 						<element name="fail_result" minOccurs="0" maxOccurs="unbounded">
+				 							<complexType>
+				 								<all>
+				 									<element name="test_name" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="test_description" type="string" minOccurs="1" maxOccurs="1"></element>
+				 									<element name="fail_code" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="fail_description" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_type" type="tns:componentType" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_location" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_extracted_value" type="string" minOccurs="1" maxOccurs="1"></element>
+				 								</all>
+				 							</complexType>
+				 						</element>
+				 					</sequence>
+				 				</complexType>
+			 				</element>
+			 				<element name="pass_results" minOccurs="1" maxOccurs="1">
+								<complexType>
+				 					<sequence>
+				 						<element name="pass_result" minOccurs="0" maxOccurs="unbounded">
+				 							<complexType>
+				 								<all>
+				 									<element name="test_name" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="test_description" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_type" type="tns:componentType" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_location" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_partnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_serialnumber" type="string" minOccurs="1" maxOccurs="1"></element>
+							 						<element name="component_extracted_value" type="string" minOccurs="1" maxOccurs="1"></element>
+				 								</all>
+				 							</complexType>
+				 						</element>
+				 					</sequence>
+				 				</complexType>
+			 				</element>
+	 					</sequence>
+		 			</complexType>
+ 				</element>	
+    		</sequence>
+    	</complexType>
+	</element>
+	<simpleType name="componentType">
+		<restriction base="string">
+			<enumeration value="chassis"></enumeration>
+			<enumeration value="node"></enumeration>
+			<enumeration value="mb"></enumeration>
+			<enumeration value="cpu"></enumeration>
+			<enumeration value="memory"></enumeration>
+			<enumeration value="hdd"></enumeration>
+			<enumeration value="nic"></enumeration>
+			<enumeration value="gpu"></enumeration>
+			<enumeration value="psu"></enumeration>
+			<enumeration value="fw"></enumeration>
+			<enumeration value="ssd"></enumeration>
+			<enumeration value="sata_dom"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="resultCodeType">
+		<restriction base="string">
+			<enumeration value="PASS"></enumeration>
+			<enumeration value="FAIL"></enumeration>
+			<enumeration value="ABORT"></enumeration>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="clientType">
+		<restriction base="string">
+			<enumeration value="IST"></enumeration>
+			<enumeration value="Burn In"></enumeration>
+			<enumeration value="ORT"></enumeration>
+			<enumeration value="Config"></enumeration>
+			<enumeration value="FST"></enumeration>
+			<enumeration value="Imaging"></enumeration>
+			<enumeration value="OBA"></enumeration>
+			<enumeration value="Run In"></enumeration>
+			<enumeration value="FRU Test"></enumeration>
+			<enumeration value="One Off"></enumeration>
+		</restriction>
+	</simpleType>
+</schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 12:40:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstTempBomPart" table="AST_TEMP_BOM_PART" optimistic-lock="version">
+        <id name="partId" type="big_decimal">
+            <column name="PART_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astTempBom" class="com.avnet.alapps.model.alapps.AstTempBom" fetch="select">
+            <column name="BOM_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="partNum" type="string">
+            <column name="PART_NUM" length="100" />
+        </property>
+        <property name="serialNum" type="string">
+            <column name="SERIAL_NUM" length="100" />
+        </property>
+        <property name="partDs" type="string">
+            <column name="PART_DS" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

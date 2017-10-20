@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 14, 2015 5:50:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfc.Operation" table="OPERATION" optimistic-lock="version">
+        <comment>An Operation which may be performed within one or more Avnet Programming Center applications.</comment>
+        <id name="operationId" type="big_decimal">
+            <column name="OPERATION_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="internalOperationFl" type="string">
+            <column name="INTERNAL_OPERATION_FL" length="1">
+                <comment>A Y/N Flag identifying whether the purpose of an Operation is considered Internal to Avnet Programming Center Application(s).</comment>
+            </column>
+        </property>
+        <property name="operationCd" type="string">
+            <column name="OPERATION_CD" length="5" unique="true">
+                <comment>A Code identifying an Operation.</comment>
+            </column>
+        </property>
+        <property name="operationDs" type="string">
+            <column name="OPERATION_DS" length="100" not-null="true">
+                <comment>A Description of an Operation.</comment>
+            </column>
+        </property>
+        <property name="operationNm" type="string">
+            <column name="OPERATION_NM" length="50" not-null="true" unique="true">
+                <comment>A Name of an Operation.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <set name="userOperations" table="USER_OPERATION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="OPERATION_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of an Operation.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserOperation" />
+        </set>
+        <set name="userRoleOperations" table="USER_ROLE_OPERATION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="OPERATION_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of an Operation.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfc.UserRoleOperation" />
+        </set>
+    </class>
+</hibernate-mapping>

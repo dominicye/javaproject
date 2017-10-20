@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2015 4:15:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfcreport.FirstArticle" table="FIRST_ARTICLE" optimistic-lock="version">
+        <comment>An agreement between Avnet and an Avnet Customer. This agreement contains information and instructions on how to apply a unique set of value added services
+        against one or more Manufacturer Parts assigned to the First Article.</comment>
+        <id name="firstArticleId" type="big_decimal">
+            <column name="FIRST_ARTICLE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="site" class="com.avnet.alapps.model.gsfcreport.Site" fetch="select">
+            <column name="OWNER_SITE_ID" precision="22" scale="0">
+                <comment>An Identifier of the Site which Owns and is responsible for ongoing maintenance of a First Article.</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="customer" class="com.avnet.alapps.model.gsfcreport.Customer" fetch="select">
+            <column name="CUSTOMER_ID" precision="22" scale="0">
+                <comment>An Identifier of the Customer who requested that the First Article be created.</comment>
+            </column>
+        </many-to-one>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="custFirstArticlePgmNm" type="string">
+            <column name="CUST_FIRST_ARTICLE_PGM_NM" length="100">
+                <comment>Name/Number/Identifier/Desc provided by the Customer which identifies and/or describes a First Article.</comment>
+            </column>
+        </property>
+        <property name="custFirstArticlePgmRevNo" type="string">
+            <column name="CUST_FIRST_ARTICLE_PGM_REV_NO" length="50">
+                <comment>Text/Number identifying a Revision to a First Article Program, as provided by the Customer.</comment>
+            </column>
+        </property>
+        <property name="customerPartNo" type="string">
+            <column name="CUSTOMER_PART_NO" length="50">
+                <comment>A Number/Identifier of a Part, as provided by the Customer.</comment>
+            </column>
+        </property>
+        <property name="firstArticleRequestId" type="big_decimal">
+            <column name="FIRST_ARTICLE_REQUEST_ID" precision="22" scale="0">
+                <comment>An Identifier of the First Article Request.</comment>
+            </column>
+        </property>
+        <property name="firstArticleSerialNo" type="big_decimal">
+            <column name="FIRST_ARTICLE_SERIAL_NO" precision="22" scale="0" not-null="true" unique="true">
+                <comment>A Number uniquely identifying a First Article, which may be used outside of the First Article application to identify the First Article.</comment>
+            </column>
+        </property>
+        <property name="firstArticleStatusDt" type="date">
+            <column name="FIRST_ARTICLE_STATUS_DT" length="7" not-null="true">
+                <comment>The Date and Time a First Article was assigned its current First Article Status.</comment>
+            </column>
+        </property>
+        <property name="firstArticleStatusId" type="big_decimal">
+            <column name="FIRST_ARTICLE_STATUS_ID" precision="22" scale="0" not-null="true">
+                <comment>A unique Identifier of a First Article Status.</comment>
+            </column>
+        </property>
+        <property name="firstArticleStatusUserId" type="big_decimal">
+            <column name="FIRST_ARTICLE_STATUS_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for a the current Status of a First Article.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="customerApproverNm" type="string">
+            <column name="CUSTOMER_APPROVER_NM" length="50">
+                <comment>The Name of the person at the Customer who Approved a First Article.</comment>
+            </column>
+        </property>
+        <property name="customerApprovalDt" type="date">
+            <column name="CUSTOMER_APPROVAL_DT" length="7">
+                <comment>The Date on which a person at the Customer Approved a First Article.</comment>
+            </column>
+        </property>
+        <property name="avnetLogisticsGeneratedFl" type="string">
+            <column name="AVNET_LOGISTICS_GENERATED_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a First Article was created due to the business endeavors of the Avnet Logistics team.</comment>
+            </column>
+        </property>
+        <property name="avnetLogisticsLegacyFl" type="string">
+            <column name="AVNET_LOGISTICS_LEGACY_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether a First Article was converted from the Avnet Logistics Legacy system/environment.</comment>
+            </column>
+        </property>
+        <property name="specificationFileNm" type="string">
+            <column name="SPECIFICATION_FILE_NM" length="100">
+                <comment>The Name of a File containing a Programming Specification document.</comment>
+            </column>
+        </property>
+        <property name="endCustomerPartNo" type="string">
+            <column name="END_CUSTOMER_PART_NO" length="50">
+                <comment>The Part Number assigned by the End Customer, which is associated with a First Article.</comment>
+            </column>
+        </property>
+        <property name="contractManufacturerSiteId" type="big_decimal">
+            <column name="CONTRACT_MANUFACTURER_SITE_ID" precision="22" scale="0">
+                <comment>A unique Identifier of a Contract Manufacturer Site.</comment>
+            </column>
+        </property>
+        <property name="estimatedAnnualPartQt" type="big_decimal">
+            <column name="ESTIMATED_ANNUAL_PART_QT" precision="22" scale="0">
+                <comment>The Estimated Number of Parts the Customer expects to order from Avnet on an Annual basis.</comment>
+            </column>
+        </property>
+        <property name="customerDrawingRevisionNo" type="string">
+            <column name="CUSTOMER_DRAWING_REVISION_NO" length="50" />
+        </property>
+        <property name="customerPartRevisionNo" type="string">
+            <column name="CUSTOMER_PART_REVISION_NO" length="50" />
+        </property>
+        <property name="itarFl" type="string">
+            <column name="ITAR_FL" length="1" not-null="true" />
+        </property>
+        <property name="businessUnitTx" type="string">
+            <column name="BUSINESS_UNIT_TX" length="25" />
+        </property>
+        <property name="platformTx" type="string">
+            <column name="PLATFORM_TX" length="25" />
+        </property>
+    </class>
+</hibernate-mapping>

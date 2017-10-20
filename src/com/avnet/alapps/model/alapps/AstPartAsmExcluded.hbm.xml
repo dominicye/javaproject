@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 13, 2016 4:22:01 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstPartAsmExcluded" table="AST_PART_ASM_EXCLUDED" optimistic-lock="version">
+        <id name="partAsmExcludedId" type="big_decimal">
+            <column name="PART_ASM_EXCLUDED_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astPartAsm" class="com.avnet.alapps.model.alapps.AstPartAsm" fetch="select">
+            <column name="PARENT_PART_ASM_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="partNumber" type="string">
+            <column name="PART_NUMBER" length="300" />
+        </property>
+        <property name="serialNumber" type="string">
+            <column name="SERIAL_NUMBER" length="300" />
+        </property>
+        <property name="reasonTx" type="string">
+            <column name="REASON_TX" length="300" />
+        </property>
+        <property name="partCount" type="big_decimal">
+            <column name="PART_COUNT" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

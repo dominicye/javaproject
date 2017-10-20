@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2015 4:23:02 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.MinAstTestResult" table="AST_TEST_RESULT" optimistic-lock="version">
+        <id name="testResultId" type="big_decimal">
+            <column name="TEST_RESULT_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astTestResultCode" class="com.avnet.alapps.model.alapps.AstTestResultCode" fetch="select">
+            <column name="TEST_RESULT_CODE_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="astPartAsm" class="com.avnet.alapps.model.alapps.MinAstPartAsm" fetch="select">
+            <column name="PART_ASM_ID" precision="22" scale="0" />
+        </many-to-one>
+        <property name="testStation" type="string">
+            <column name="TEST_STATION" length="100" />
+        </property>
+        <property name="testerName" type="string">
+            <column name="TESTER_NAME" length="300" />
+        </property>
+        <property name="operatorId" type="string">
+            <column name="OPERATOR_ID" length="20" />
+        </property>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" not-null="true" />
+        </property>
+        <property name="testSystemNm" type="string">
+            <column name="TEST_SYSTEM_NM" length="20" />
+        </property>
+        <set name="astTestResultItems" table="AST_TEST_RESULT_ITEM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="TEST_RESULT_ID" precision="22" scale="0" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.MinAstTestResultItem" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,174 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="NutanixDataElement">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="System_Name" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element type="xs:string" name="System_Name"/>
+						<xs:element type="xs:string" name="Serial_Number"/>
+						<xs:element type="xs:string" name="Ship_Date"/>
+						<xs:element type="xs:string" name="Invoice_Date"/>
+						<xs:element type="xs:string" name="Invoice_Number"/>
+						<xs:element type="xs:string" name="Shipping_Carrier"/>
+						<xs:element type="xs:string" name="Shipping_Tracking_Number"/>
+						<xs:element name="End_Customer_Ship_To_Address" maxOccurs="unbounded">
+						<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="Address_1"/>
+									<xs:element type="xs:string" name="Address_2"/>
+									<xs:element type="xs:string" name="City_State_Zip"/>
+									</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element type="xs:string" name="Date_of_Mfg"/>
+						<xs:element type="xs:string" name="CUSTSO"/>
+						<xs:element type="xs:string" name="CUSTPO"/>
+						<xs:element type="xs:string" name="ORDER_Number"/>
+						<xs:element type="xs:string" name="Country_Of_Origin"/>
+						<xs:element type="xs:string" name="ECO"/>
+						<xs:element name="chassis_info" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+									<xs:element type="xs:string" name="chassis_backplane_mcu_firmware_version"/>
+									<xs:element type="xs:string" name="ITS_DC_attribute_REV"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="psu_info" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+									<xs:element type="xs:string" name="ITS_DC_attribute_REV"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="node" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="node"/>
+									<xs:element type="xs:string" name="OS_Version"/>
+									<xs:element type="xs:string" name="Cluster_ID"/>
+									<xs:element type="xs:string" name="OOBA_License_Key"/>
+									<xs:element name="mb_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+												<xs:element type="xs:string" name="mb_firmware_version"/>
+												<xs:element type="xs:string" name="mb_bmcipmi_firmware_version"/>
+												<xs:element type="xs:string" name="mb_mac_1"/>
+												<xs:element type="xs:string" name="mb_mac_2"/>
+												<xs:element type="xs:string" name="mb_sas_firmware_version"/>
+												<xs:element type="xs:string" name="mb_ipmi_mac"/>
+												<xs:element type="xs:string" name="mb_location"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>	
+									<xs:element name="cpu_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="nic_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+												<xs:element type="xs:string" name="nic_firmware_version"/>
+												<xs:element type="xs:string" name="nic_mac_1"/>
+												<xs:element type="xs:string" name="nic_mac_2"/>
+												<xs:element type="xs:string" name="nic_mac_3"/>
+												<xs:element type="xs:string" name="nic_mac_4"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="satadom_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="dimm_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>									
+									<xs:element name="ssd_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>	
+												<xs:element type="xs:string" name="ssd_firmware_version"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="hdd_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>	
+												<xs:element type="xs:string" name="ITS_DC_attribute_PS_ID"/>	
+												<xs:element type="xs:string" name="ITS_DC_attribute_BS_ID"/>
+												<xs:element type="xs:string" name="hdd_firmware_version"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>			
+									<xs:element name="gpu_info" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+												<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>	
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>	
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>						
+						<xs:element name="cable" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_MFGPARTNO"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_description"/>
+									<xs:element type="xs:string" name="ITS_PART.ITS_PART_SN"/>	
+									<xs:element type="xs:string" name="Cable_Order_Qty_Count"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>		
+						<xs:element name="test_record_info" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element type="xs:string" name="Client_Type" minOccurs="0"/>
+									<xs:element type="xs:string" name="Start_Time" minOccurs="0"/>
+									<xs:element type="xs:string" name="Pass_Time" minOccurs="0"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+  </xs:element>
+</xs:schema>

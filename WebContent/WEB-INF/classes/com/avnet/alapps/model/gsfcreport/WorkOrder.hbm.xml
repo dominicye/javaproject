@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 31, 2015 4:15:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.gsfcreport.WorkOrder" table="WORK_ORDER" optimistic-lock="version">
+        <comment>An Order for Work to be performed by an Avnet Programming Center.</comment>
+        <id name="workOrderId" type="big_decimal">
+            <column name="WORK_ORDER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="sourceWorkOrder" class="com.avnet.alapps.model.gsfcreport.SourceWorkOrder" fetch="select">
+            <column name="SOURCE_WORK_ORDER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Source Work Order information which triggered the Work Order to be created.</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="site" class="com.avnet.alapps.model.gsfcreport.Site" fetch="select">
+            <column name="SITE_ID" precision="22" scale="0" not-null="true">
+                <comment>A unique Identifier of a Site.</comment>
+            </column>
+        </many-to-one>
+        <many-to-one name="customer" class="com.avnet.alapps.model.gsfcreport.Customer" fetch="select">
+            <column name="CUSTOMER_ID" precision="22" scale="0">
+                <comment>An Identifier of the Customer associated with a Work Order.</comment>
+            </column>
+        </many-to-one>
+        <property name="createDt" type="date">
+            <column name="CREATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created.</comment>
+            </column>
+        </property>
+        <property name="createUserId" type="big_decimal">
+            <column name="CREATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="customerOwnedInventoryFl" type="string">
+            <column name="CUSTOMER_OWNED_INVENTORY_FL" length="1">
+                <comment>A Y/N Flag identifying that the Inventory/Parts associated with a Work Order are owned by the Customer.</comment>
+            </column>
+        </property>
+        <property name="firstArticleSerialNo" type="big_decimal">
+            <column name="FIRST_ARTICLE_SERIAL_NO" precision="22" scale="0">
+                <comment>The First Article Serial Number to be used by a Work Order.</comment>
+            </column>
+        </property>
+        <property name="orderQt" type="big_decimal">
+            <column name="ORDER_QT" precision="22" scale="0" not-null="true">
+                <comment>The Quantity of a Part associated with a Work Order.</comment>
+            </column>
+        </property>
+        <property name="shipDateCommitToSalesFl" type="string">
+            <column name="SHIP_DATE_COMMIT_TO_SALES_FL" length="1">
+                <comment>A Y/N Flag identifying whether the Programming Center has Committed a Ship Date to the Avnet Sales person regarding a given Work Order. Within Joblog,
+                this is currently known as the BOARD_FL.</comment>
+            </column>
+        </property>
+        <property name="sourcePartId" type="big_decimal">
+            <column name="SOURCE_PART_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Source Part associated with a Work Order.</comment>
+            </column>
+        </property>
+        <property name="updateDt" type="date">
+            <column name="UPDATE_DT" length="7" not-null="true">
+                <comment>The Date and Time that a row of information within this table was initially Created or Last Updated.</comment>
+            </column>
+        </property>
+        <property name="updateUserId" type="big_decimal">
+            <column name="UPDATE_USER_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the User responsible for Creating or Last Updating a row of information within this table.</comment>
+            </column>
+        </property>
+        <property name="workOrderNo" type="big_decimal">
+            <column name="WORK_ORDER_NO" precision="22" scale="0" not-null="true" unique="true">
+                <comment>A unique Number assigned to a Work Order, which may be exposed outside of the database on UI screeens.</comment>
+            </column>
+        </property>
+        <property name="workOrderStatusId" type="big_decimal">
+            <column name="WORK_ORDER_STATUS_ID" precision="22" scale="0" not-null="true">
+                <comment>An Identifier of the Work Order Status currently assigned to a Work Order.</comment>
+            </column>
+        </property>
+        <property name="externalProblemFl" type="string">
+            <column name="EXTERNAL_PROBLEM_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether an External Problem outside the control of the Programming Center occurred, which may have caused the Work Order to miss
+                its expected Shipment Date.</comment>
+            </column>
+        </property>
+        <property name="valueAddUnitCostAm" type="big_decimal">
+            <column name="VALUE_ADD_UNIT_COST_AM" precision="22" scale="0">
+                <comment>The Cost to Avnet to apply the associated Value Added Services to a single Unit/Part.</comment>
+            </column>
+        </property>
+        <property name="commentTx" type="string">
+            <column name="COMMENT_TX" length="2000">
+                <comment>A Comment about a Work Order.</comment>
+            </column>
+        </property>
+        <property name="carrierServiceLevelCd" type="string">
+            <column name="CARRIER_SERVICE_LEVEL_CD" length="5">
+                <comment>A Code identifying the Carrier and Level of Service to be used to ship the Parts to the Customer. The Source/ERP provides the Carrier Service Level, but
+                sometimes the programming center operator has a need to modify this columns value. This column provides the ability to capture the modified column value.</comment>
+            </column>
+        </property>
+        <property name="customerPurchaseOrderNo" type="string">
+            <column name="CUSTOMER_PURCHASE_ORDER_NO" length="30">
+                <comment>An Identifier of the Purchase Order from a Customer. The Source/ERP provides the Customer Purchase Order, but sometimes the programming center operator
+                has a need to modify this columns value. This column provides the ability to capture the modified column value.</comment>
+            </column>
+        </property>
+        <property name="miscellaneousTx01" type="string">
+            <column name="MISCELLANEOUS_TX_01" length="2000">
+                <comment>The First Miscellaneous Text associated with a Source Work Order. The Source/ERP provides the First Miscellaneous Text, but sometimes the programming
+                center operator has a need to modify this columns value. This column provides the ability to capture the modified column value.</comment>
+            </column>
+        </property>
+        <property name="partValueAddCd" type="string">
+            <column name="PART_VALUE_ADD_CD" length="5">
+                <comment>A Code identifying the type of overall Value Added services to be applied to a Part. The Source/ERP provides the Part Value Add Code, but sometimes the
+                programming center operator has a need to modify this columns value. This column provides the ability to capture the modified column value.</comment>
+            </column>
+        </property>
+        <property name="shippedQt" type="big_decimal">
+            <column name="SHIPPED_QT" precision="22" scale="0">
+                <comment>The Number of Parts which were Shipped to the Customer.</comment>
+            </column>
+        </property>
+        <property name="specialInstructionTx" type="string">
+            <column name="SPECIAL_INSTRUCTION_TX" length="2000">
+                <comment>A Special Instruction about a Source Work Order. The Source/ERP provides the Special Instruction Text, but sometimes the programming center operator has a
+                need to modify this columns value. This column provides the ability to capture the modified column value.</comment>
+            </column>
+        </property>
+        <property name="onTimeDeliveryFl" type="string">
+            <column name="ON_TIME_DELIVERY_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying whether the Parts associated with a Work Order were Delivered to the Customer On-Time.</comment>
+            </column>
+        </property>
+        <property name="kitPartNo" type="string">
+            <column name="KIT_PART_NO" length="50">
+                <comment>A Part Number assigned by a given Source, which encompasses both a core Part and the Value Added Services assigned to the core Part. This combined concept
+                is assigned a unique Part Number.</comment>
+            </column>
+        </property>
+        <property name="cutbackRequiredFl" type="string">
+            <column name="CUTBACK_REQUIRED_FL" length="1">
+                <comment>A Y/N Flag identifying whether a Cutback within the Avnet ERP system is Required.</comment>
+            </column>
+        </property>
+        <property name="orderLineNo" type="string">
+            <column name="ORDER_LINE_NO" length="25">
+                <comment>An Order Line Number passed from the Avnet ERP system.</comment>
+            </column>
+        </property>
+        <property name="vendorNo" type="string">
+            <column name="VENDOR_NO" length="25">
+                <comment>A Vendor Number associated with a Work Order.</comment>
+            </column>
+        </property>
+        <property name="shopTicketFl" type="string">
+            <column name="SHOP_TICKET_FL" length="1" not-null="true">
+                <comment>A Y/N Flag identifying if an Order is a Shop Ticket Order.</comment>
+            </column>
+        </property>
+        <property name="salesOrgNm" type="string">
+            <column name="SALES_ORG_NM" length="10" />
+        </property>
+        <property name="militaryOrderFl" type="string">
+            <column name="MILITARY_ORDER_FL" length="1" not-null="true" />
+        </property>
+        <set name="workOrderStatusHsts" table="WORK_ORDER_STATUS_HST" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="WORK_ORDER_ID" precision="22" scale="0" not-null="true">
+                    <comment>A unique Identifier of a Work Order.</comment>
+                </column>
+            </key>
+            <one-to-many class="com.avnet.alapps.model.gsfcreport.WorkOrderStatusHst" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 8, 2016 1:52:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstCompTypeAttr" table="AST_COMP_TYPE_ATTR" optimistic-lock="version">
+        <id name="compTypeAttrId" type="big_decimal">
+            <column name="COMP_TYPE_ATTR_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="astDataType" class="com.avnet.alapps.model.alapps.AstDataType" fetch="select">
+            <column name="DATA_TYPE_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="astDataSource" class="com.avnet.alapps.model.alapps.AstDataSource" fetch="select">
+            <column name="DATA_SOURCE_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <many-to-one name="astCompType" class="com.avnet.alapps.model.alapps.AstCompType" fetch="select">
+            <column name="COMP_TYPE_ID" precision="22" scale="0" not-null="true" />
+        </many-to-one>
+        <property name="attrNm" type="string">
+            <column name="ATTR_NM" length="50" not-null="true" />
+        </property>
+        <property name="attrDs" type="string">
+            <column name="ATTR_DS" length="100" not-null="true" />
+        </property>
+        <property name="xmlTag" type="string">
+            <column name="XML_TAG" length="100" />
+        </property>
+        <property name="activeFl" type="string">
+            <column name="ACTIVE_FL" length="1" not-null="true" />
+        </property>
+        <property name="keyFl" type="string">
+            <column name="KEY_FL" length="1" />
+        </property>
+        <property name="createDt" type="java.util.Date">
+            <column name="CREATE_DT" />
+        </property>
+        <property name="updateDt" type="java.util.Date">
+            <column name="UPDATE_DT" />
+        </property>
+        <property name="createUsrId" type="string">
+            <column name="CREATE_USR_ID" length="20" />
+        </property>
+        <property name="updateUsrId" type="string">
+            <column name="UPDATE_USR_ID" length="20" />
+        </property>
+        <property name="editableFl" type="string">
+            <column name="EDITABLE_FL" length="1" />
+        </property>
+        <set name="astPartAttrs" table="AST_PART_ATTR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="COMP_TYPE_ATTR_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstPartAttr" />
+        </set>
+    </class>
+</hibernate-mapping>

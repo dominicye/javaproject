@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 5, 2015 12:40:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.avnet.alapps.model.alapps.AstDataSource" table="AST_DATA_SOURCE" optimistic-lock="version">
+        <id name="dataSourceId" type="big_decimal">
+            <column name="DATA_SOURCE_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="sourceNm" type="string">
+            <column name="SOURCE_NM" length="50" not-null="true" unique="true" />
+        </property>
+        <property name="sourceDs" type="string">
+            <column name="SOURCE_DS" length="100" not-null="true" />
+        </property>
+        <set name="astCompTypeAttrs" table="AST_COMP_TYPE_ATTR" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="DATA_SOURCE_ID" precision="22" scale="0" not-null="true" />
+            </key>
+            <one-to-many class="com.avnet.alapps.model.alapps.AstCompTypeAttr" />
+        </set>
+    </class>
+</hibernate-mapping>
